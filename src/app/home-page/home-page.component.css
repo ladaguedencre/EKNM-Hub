@@ -1,0 +1,32 @@
+.home-section {
+  text-decoration: none;
+  font-family: 'Raleway';
+  position: relative;
+  font-size: 30px;
+  border: None;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  height: 100px;
+  transition-duration: 0.2s;
+}
+
+.home-section:hover {
+  color: gray;
+}
+
+.home-section:active {
+  color: black;
+}
+
+.separator {
+  background: white;
+  height: 2px;
+}
+
+.container-sm {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  padding: 0px 40px 0px 40px;
+}
