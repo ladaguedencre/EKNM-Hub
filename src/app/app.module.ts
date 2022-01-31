@@ -10,6 +10,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { InfoPageComponent } from './info-page/info-page.component';
+import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { InfoPageComponent } from './info-page/info-page.component';
     ProjectsPageComponent,
     HomePageComponent,
     SectionTitleComponent,
-    InfoPageComponent
+    InfoPageComponent,
+    PlaceholderPageComponent
   ],
   imports: [
     BrowserModule,
