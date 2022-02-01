@@ -9,5 +9,19 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
+.sec-img{
+  opacity: 0;
+  top: -100px;
+  position: relative;
+  transition-duration: 0.5s;
+}
+
+.sec-img:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+
 
