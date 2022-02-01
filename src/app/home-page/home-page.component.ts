@@ -21,6 +21,10 @@ export class HomePageComponent implements OnInit {
     this.router.navigate(['/articles']);
   }
 
+  navigateToBeer() {
+      this.router.navigate(['/beer']);
+    }
+
   navigateToEntertainment() {
     this.router.navigate(['/games']);
   }

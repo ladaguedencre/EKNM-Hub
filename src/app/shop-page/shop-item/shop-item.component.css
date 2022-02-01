@@ -1,0 +1,42 @@
+.shop-container {
+  position: relative;
+  width: 100%;
+}
+
+.shop-image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.shop-middle {
+  transition: .5s ease;
+  opacity: 0;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-container:hover .shop-image {
+  opacity: 1.0;
+}
+
+.shop-container:hover .shop-middle {
+  opacity: 0.6;
+}
+
+p {
+  text-align: center;
+  padding: 1px;
+}

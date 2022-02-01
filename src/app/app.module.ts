@@ -11,6 +11,9 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { SectionTitleComponent } from './section-title/section-title.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
+import { GamesPageComponent } from './games-page/games-page.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
+import { ShopItemComponent } from './shop-page/shop-item/shop-item.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.co
     HomePageComponent,
     SectionTitleComponent,
     InfoPageComponent,
-    PlaceholderPageComponent
+    PlaceholderPageComponent,
+    GamesPageComponent,
+    ShopPageComponent,
+    ShopItemComponent
   ],
   imports: [
     BrowserModule,

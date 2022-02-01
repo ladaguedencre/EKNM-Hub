@@ -5,15 +5,17 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { InfoPageComponent } from './info-page/info-page.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
+import { GamesPageComponent } from './games-page/games-page.component';
+import { ShopPageComponent } from './shop-page/shop-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
+  { path: 'beer', component: PlaceholderPageComponent },
   { path: 'articles', component: PlaceholderPageComponent },
-  { path: 'articles', component: PlaceholderPageComponent },
-  { path: 'games', component: PlaceholderPageComponent },
-  { path: 'warehouse', component: PlaceholderPageComponent },
+  { path: 'games', component: GamesPageComponent },
+  { path: 'warehouse', component: ShopPageComponent },
   { path: 'info', component: InfoPageComponent },
 ];
 

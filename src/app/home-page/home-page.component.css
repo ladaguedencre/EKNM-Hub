@@ -23,10 +23,3 @@
   background: white;
   height: 2px;
 }
-
-.container-sm {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 800px;
-  padding: 0px 40px 0px 40px;
-}

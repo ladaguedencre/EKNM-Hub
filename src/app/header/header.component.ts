@@ -8,6 +8,8 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  imgPath = '../../assets/logohd.png';
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -15,6 +17,14 @@ export class HeaderComponent implements OnInit {
 
   navigateToHome() {
     this.router.navigate(['/home']);
+  }
+
+  onMouseEnter() {
+    //this.imgPath = '../../assets/logohd_selected.png';
+  }
+
+  onMouseLeave() {
+    //this.imgPath = '../../assets/logohd.png';
   }
 
 }

@@ -27,6 +27,18 @@ p {
   text-align: justify;
 }
 
+h1
+{
+  overflow: hidden;
+  font-family: 'Megrim';
+  text-align: center;
+  font-weight: regular;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 h2 {
   text-decoration: none;
   font-family: 'Raleway';
@@ -39,16 +51,15 @@ h2 {
   text-transform: uppercase;
 }
 
-h1
-{
-  overflow: hidden;
-  font-family: 'Megrim';
-  text-align: center;
+h3 {
+  text-decoration: none;
+  font-family: 'Raleway';
   font-weight: regular;
-  font-size: 60px;
+  position: relative;
+  margin: 0;
+  font-size: 24px;
   color: white;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: justify;
 }
 
 .separator {
@@ -62,10 +73,18 @@ h1
   transform: translateY(-50%);
 }
 
+.img-icon {
+  max-width: 120px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .standard-page {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   height: 100%;
+  min-height: 100vh;
 }
 
 .gradient {
@@ -80,4 +99,27 @@ h1
 
 .width-fit-content {
   width: fit-content;
+}
+
+body
+{
+  background-color: #000000;
+  background-image: url(assets/backgrounds/bg4.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover;
+}
+
+.container-sm {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 800px;
+  padding: 0px 40px 0px 40px;
+}
+
+.container-md {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
+  padding: 0px 40px 0px 40px;
 }
