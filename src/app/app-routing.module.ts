@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'games', component: GamesPageComponent },
   { path: 'warehouse', component: ShopPageComponent },
   { path: 'info', component: InfoPageComponent },
+  { path: 'placeholder', component: PlaceholderPageComponent },
 ];
 
 @NgModule({

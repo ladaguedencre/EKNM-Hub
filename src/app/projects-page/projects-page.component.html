@@ -2,6 +2,10 @@
 <div class="standard-page">
   <app-header></app-header>
   <div class="container-md">
-    <app-project-preview></app-project-preview>
+    <section-title [titleText]="'РАЗРАБОТКИ'"></section-title>
+    <div *ngFor=" project in projects">
+      <project-preview></project-preview>
+    </div>
+    <section-title [titleText]="'ПРОЕКТЫ'"></section-title>
   </div>
 </div>
