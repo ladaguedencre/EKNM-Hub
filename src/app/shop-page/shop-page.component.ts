@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemService } from '../models/item.service'
+import { Item } from '../models/item';
 
 @Component({
   selector: 'app-shop-page',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShopPageComponent implements OnInit {
 
-  constructor() { }
+  items = [] as Item[];
+
+  constructor(private itemService: ItemService) { }
 
   ngOnInit(): void {
+    this.items = this.itemService.getItems();
   }
 
 }

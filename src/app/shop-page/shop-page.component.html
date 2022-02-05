@@ -3,21 +3,12 @@
   <app-header></app-header>
   <div class="container-md">
     <section-title [titleText]="'СТИКЕРЫ'"></section-title>
-    <div class="container">
-      <div class="row">
-        <div class="col-3">
-          <shop-item></shop-item>
-        </div>
-        <div class="col-3">
-          <shop-item></shop-item>
-        </div>
-        <div class="col-3">
-          <shop-item></shop-item>
-        </div>
-        <div class="col-3">
-          <shop-item></shop-item>
-        </div>
+    <mat-grid-list cols="4" rowHeight="1:1">
+      <div class="d-flex flex-column" *ngFor="let item of items">
+        <mat-grid-tile>
+          <shop-item [item]="item"></shop-item>
+        </mat-grid-tile>
       </div>
-    </div>
+    </mat-grid-list>
   </div>
 </div>

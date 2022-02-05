@@ -1,17 +1,17 @@
-enum ItemType {
+export enum ItemType {
   Sticker,
   TShirt,
   Mug,
   Other,
 }
 
-enum ItemState {
+export enum ItemState {
   Available = "Доступно",
   NotLeft = "Нет в наличии",
   Preorder = "Предзаказ",
 }
 
-interface Item {
+export interface Item {
   name: string;
   picUrl: string;
   count: number;

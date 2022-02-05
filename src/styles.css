@@ -123,3 +123,6 @@ body
   max-width: 1000px;
   padding: 0px 40px 0px 40px;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
