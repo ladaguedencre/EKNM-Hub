@@ -2,6 +2,6 @@
   <img [src]="item?.picUrl" class="shop-image">
   <div class="d-flex flex-column shop-middle">
     <p>{{item?.name}}</p>
-    <p>{{item?.state}}</p>
+    <p [ngStyle]="setColor()">{{item?.state}}</p>
   </div>
 </div>
