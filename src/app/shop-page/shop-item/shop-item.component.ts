@@ -13,6 +13,7 @@ export class ShopItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const a = this.item;
   }
 
 }

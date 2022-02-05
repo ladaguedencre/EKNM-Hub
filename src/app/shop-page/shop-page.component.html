@@ -1,14 +1,10 @@
-<div class="gradient"></div>
-<div class="standard-page">
-  <app-header></app-header>
-  <div class="container-md">
-    <section-title [titleText]="'СТИКЕРЫ'"></section-title>
-    <mat-grid-list cols="4" rowHeight="1:1">
-      <div class="d-flex flex-column" *ngFor="let item of items">
-        <mat-grid-tile>
-          <shop-item [item]="item"></shop-item>
-        </mat-grid-tile>
-      </div>
-    </mat-grid-list>
-  </div>
+<div class="container-md">
+  <section-title [titleText]="'СТИКЕРЫ'"></section-title>
+  <mat-grid-list cols="{{numberOfStickers}}" rowHeight="1:1">
+    <div class="d-flex flex-column" *ngFor="let item of items">
+      <mat-grid-tile>
+        <shop-item [item]="item"></shop-item>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
 </div>

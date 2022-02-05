@@ -1,12 +1,8 @@
-<div class="gradient"></div>
-<div class="standard-page">
-  <app-header></app-header>
-  <div class="container-md">
-    <section-title [titleText]="'РАЗРАБОТКИ'"></section-title>
-    <div class="d-flex flex-column" *ngFor="let project of projects">
-      <project-preview 
-      [project]="project"></project-preview>
-    </div>
-    <section-title [titleText]="'ПРОЕКТЫ'"></section-title>
+<div class="container-md">
+  <section-title [titleText]="'РАЗРАБОТКИ'"></section-title>
+  <div class="d-flex flex-column" *ngFor="let project of projects">
+    <project-preview 
+    [project]="project"></project-preview>
   </div>
+  <section-title [titleText]="'ПРОЕКТЫ'"></section-title>
 </div>

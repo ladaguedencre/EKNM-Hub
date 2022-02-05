@@ -10,28 +10,28 @@ export class ItemService {
     const items = [] as Item[];
     items.push({
         name: 'Стикер Дефолт',
-        picUrl: '../../assets/shop/st1.png',
+        picUrl: '../../../assets/shop/st1.jpg',
         count: 0,
         itype: ItemType.Sticker,
         state: ItemState.NotLeft,
     } as Item);
     items.push({
         name: 'Стикер Ночь',
-        picUrl: '../../assets/shop/st2.png',
+        picUrl: '../../../assets/shop/st2.jpg',
         count: 0,
         itype: ItemType.Sticker,
         state: ItemState.NotLeft,
     } as Item);
     items.push({
         name: 'Стикер Завод',
-        picUrl: '../../assets/shop/st3.png',
+        picUrl: '../../../assets/shop/st3.jpg',
         count: 0,
         itype: ItemType.Sticker,
         state: ItemState.NotLeft,
     } as Item);
     items.push({
         name: 'Стикер Взлом',
-        picUrl: '../../assets/shop/st4.png',
+        picUrl: '../../../assets/shop/st4.jpg',
         count: 0,
         itype: ItemType.Sticker,
         state: ItemState.NotLeft,
