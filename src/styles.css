@@ -83,7 +83,7 @@ h3 {
 .standard-page {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  height: 100%;
+  height: fit-content;
   min-height: 100vh;
 }
 
