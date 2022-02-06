@@ -14,3 +14,9 @@ img {
   background: white;
   height: 2px;
 }
+
+.card {
+  background: transparent;
+  background-color: transparent;
+  border: 0px;
+}

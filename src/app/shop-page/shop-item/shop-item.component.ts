@@ -35,5 +35,4 @@ export class ShopItemComponent implements OnInit {
       } 
     } 
   }
-
 }

@@ -17,6 +17,7 @@ export interface Project {
   logoUrl: string;
   text: string;
   description: string;
+  codename: string;
   detailsUrl: string;
   state: ProjectState;
   ptype: ProjectType;

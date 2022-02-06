@@ -27,6 +27,17 @@ p {
   text-align: justify;
 }
 
+.lp {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: normal;
+  position: relative;
+  margin: 0;
+  font-size: 16px;
+  color: lightgray;
+  text-align: justify;
+}
+
 h1
 {
   overflow: hidden;
