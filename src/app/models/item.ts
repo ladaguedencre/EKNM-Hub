@@ -1,6 +1,6 @@
 export enum ItemType {
   Sticker,
-  TShirt,
+  Clothing,
   Mug,
   Other,
 }

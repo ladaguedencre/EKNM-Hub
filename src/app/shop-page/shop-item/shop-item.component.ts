@@ -17,14 +17,23 @@ export class ShopItemComponent implements OnInit {
   }
 
   setColor = () => {
-    if(this.item?.state === ItemState.NotLeft) {
-      return {
-        'color': 'red',
-      };
-    }
-    return {
-      'color': 'white',
-    };
+    switch(this.item?.state) { 
+      case ItemState.NotLeft: { 
+        return {
+          'color': 'red',
+        };
+      } 
+      case ItemState.Preorder: { 
+        return {
+          'color': 'yellow',
+        };
+      } 
+      default: { 
+        return {
+          'color': 'white',
+        };
+      } 
+    } 
   }
 
 }

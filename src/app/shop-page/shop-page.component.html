@@ -1,7 +1,15 @@
 <div class="container-md">
   <section-title [titleText]="'СТИКЕРЫ'"></section-title>
-  <mat-grid-list cols="{{numberOfStickers}}" rowHeight="1:1" gutterSize="0.5rem">
-    <div class="d-flex flex-column" *ngFor="let item of items">
+  <mat-grid-list cols="{{numberOfColumns}}" rowHeight="1:1" gutterSize="0.5rem">
+    <div class="d-flex flex-column" *ngFor="let item of stickers">
+      <mat-grid-tile>
+        <shop-item [item]="item"></shop-item>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+  <section-title [titleText]="'УНИФОРМА'"></section-title>
+  <mat-grid-list cols="{{numberOfColumns}}" rowHeight="1:1" gutterSize="0.5rem">
+    <div class="d-flex flex-column" *ngFor="let item of clothing">
       <mat-grid-tile>
         <shop-item [item]="item"></shop-item>
       </mat-grid-tile>

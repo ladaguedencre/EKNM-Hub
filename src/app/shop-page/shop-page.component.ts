@@ -10,30 +10,31 @@ import { Item } from '../models/item';
 export class ShopPageComponent implements OnInit {
   getScreenWidth:any;
   getScreenHeight:any;
-  numberOfStickers = 4;
+  numberOfColumns = 4;
   
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
     console.log(this.getScreenWidth, this.getScreenHeight);
-    this.numberOfStickers = Math.floor(this.getScreenWidth/200);
-    if( this.numberOfStickers > 4){
-      this.numberOfStickers = 4;
+    this.numberOfColumns = Math.floor(this.getScreenWidth/200);
+    if( this.numberOfColumns > 4){
+      this.numberOfColumns = 4;
     }
   }
 
- items = [] as Item[];
+  stickers = [] as Item[];
+  clothing = [] as Item[];
 
-
- // Constructor
- constructor(private itemService: ItemService) {
-     this.onWindowResize();
- }
+  // Constructor
+  constructor(private itemService: ItemService) {
+      this.onWindowResize();
+  }
 
 
 
   ngOnInit(): void {
-    this.items = this.itemService.getItems();
+    this.stickers = this.itemService.getStickers();
+    this.clothing = this.itemService.getClothing();
   }
 }

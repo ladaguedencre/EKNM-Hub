@@ -17,7 +17,7 @@
 .shop-middle {
   transition: .5s ease;
   opacity: 0;
-  background: black;
+  background: rgba(0, 0, 0, 0.7);;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -37,7 +37,7 @@
 
 .shop-container:hover .shop-middle {
   border: 1px black;
-  opacity: 0.6;
+  opacity: 1.0;
 }
 
 p {

@@ -6,7 +6,7 @@ import { ItemType, ItemState, Item } from './item';
   providedIn: 'root',
 })
 export class ItemService {
-  getItems() {
+  getStickers() {
     const items = [] as Item[];
     items.push({
         name: 'Стикер Дефолт',
@@ -35,6 +35,25 @@ export class ItemService {
         count: 0,
         itype: ItemType.Sticker,
         state: ItemState.NotLeft,
+    } as Item);
+    items.push({
+        name: 'Стикер Цех',
+        picUrl: '../../../assets/shop/st5.png',
+        count: 2,
+        itype: ItemType.Sticker,
+        state: ItemState.Available,
+    } as Item);
+    return items
+  }
+
+  getClothing() {
+    const items = [] as Item[];
+    items.push({
+        name: 'Футболка Loss',
+        picUrl: '../../../assets/shop/tshirt1.png',
+        count: 0,
+        itype: ItemType.Clothing,
+        state: ItemState.Preorder,
     } as Item);
     return items
   }
