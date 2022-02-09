@@ -16,6 +16,12 @@
   font-style: regular;
 }
 
+@font-face {
+  font-family: Lemon;
+  src: url('assets/fonts/Lemon Tuesday.otf') format("opentype");
+  font-style: regular;
+}
+
 p {
   text-decoration: none;
   font-family: 'Raleway';

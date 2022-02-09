@@ -11,12 +11,14 @@ import { Project } from '../models/project';
 
 export class ProjectsPageComponent implements OnInit {
 
-  projects = [] as Project[];
+  developments = [] as Project[];
+  otherProjects = [] as Project[];
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    this.projects = this.projectService.getProjects();
+    this.developments = this.projectService.getDevelopments();
+    this.otherProjects = this.projectService.getOthers();
   }
 
 }

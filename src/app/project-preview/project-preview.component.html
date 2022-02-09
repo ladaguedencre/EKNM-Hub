@@ -2,13 +2,18 @@
   <div class="d-flex flex-row">
     <img src={{project?.logoUrl}}>
     <div class="p-2">
-      <h3>{{project?.name}}</h3>
-      <p class="pb-2">{{project?.text}}</p>
+      <h3 class="pb-1">{{project?.name}}</h3>
+      <p class="pb-1">{{project?.text}}</p>
       <p class="pb-2">Статус: {{project?.state}}</p>
-      <a class="btn btn-primary" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
-      [attr.aria-controls]="'collapse' + project?.codename" >
-        Описание
-      </a>
+      <div class="d-flex flex-row">
+        <a class="preview-button" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
+        [attr.aria-controls]="'collapse' + project?.codename" [ngStyle]="getPreviewState()">
+          Описание
+        </a>
+        <a [ngStyle]="getDetailsState()" class="preview-button" role="button" (click)="navigateToDetails()" >
+          Страница
+        </a>
+      </div>
     </div>
   </div>
   <div class="collapse" [id]="'collapse' + project?.codename">

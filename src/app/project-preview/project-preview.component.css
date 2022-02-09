@@ -20,3 +20,34 @@ img {
   background-color: transparent;
   border: 0px;
 }
+
+.preview-button {
+  text-decoration: none;
+  font-family: 'Raleway';
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+  padding: 3px 8px 3px 8px;
+  margin: 0px 10px 0px 0px;
+}
+
+.preview-button:hover {
+  color: rgb(126, 43, 194);
+  font-weight: 500;
+}
+
+.preview-button:active {
+  color: black;
+  font-weight: 500;
+}
+
+.vertical-separator {
+  background: white;
+  font-weight: 500;
+  height: 29px;
+  width: 2px;
+}

@@ -16,6 +16,7 @@ import { GamesPageComponent } from './games-page/games-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { ShopItemComponent } from './shop-page/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { PupaComponent } from './projects/pupa/pupa.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
     PlaceholderPageComponent,
     GamesPageComponent,
     ShopPageComponent,
-    ShopItemComponent
+    ShopItemComponent,
+    PupaComponent
   ],
   imports: [
     BrowserModule,
