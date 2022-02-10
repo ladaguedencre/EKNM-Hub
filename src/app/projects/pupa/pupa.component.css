@@ -44,3 +44,7 @@ img {
 .eknm-button-long:active {
   color: black;
 }
+
+ul li::marker {
+  color: white;
+}

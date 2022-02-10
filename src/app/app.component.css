@@ -2,3 +2,23 @@
   min-width: 400px;
   overflow: auto;
 }
+.bgBase{
+  background-color: #000000;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size:  cover;
+}
+
+.bg1{
+  background-image: url(../assets/backgrounds/bg1.png);
+}
+
+.bg2{
+  background-image: url(../assets/backgrounds/bg2.png);
+}
+.bg3{
+  background-image: url(../assets/backgrounds/bg3.png);
+}
+.bg4{
+  background-image: url(../assets/backgrounds/bg4.png);
+}

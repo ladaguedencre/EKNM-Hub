@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
+import { Subject, takeUntil } from 'rxjs';
+import { SharedService } from './services/shared.service';
+import { SubjectsDataService } from './services/subject-data.service';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +9,26 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent {
+export class AppComponent implements OnInit, OnDestroy  {
+  private ngUnsubscribe = new Subject();
   title = 'EKNM Hub';
+  bg = 'bg4';
+  constructor(public sharedService: SharedService,
+              private cdr: ChangeDetectorRef,
+              private subjects: SubjectsDataService) { }
+
+  ngOnInit(): void {
+    this.subjects.subject(1)
+    .pipe(takeUntil(this.ngUnsubscribe))
+    .subscribe(data => {
+      this.bg = data;
+      this.cdr.detectChanges();
+    });
+  }
+
+
+  ngOnDestroy() {
+    this.ngUnsubscribe.next();
+    this.ngUnsubscribe.complete();
+  }
 }
