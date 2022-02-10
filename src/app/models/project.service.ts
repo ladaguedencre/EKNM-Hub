@@ -28,6 +28,16 @@ export class ProjectService {
       state: ProjectState.InProgress,
       ptype: ProjectType.Development
     } as Project);
+    projects.push({
+      name: 'BeerGAN',
+      logoUrl: '../../assets/projects/placeholder.jpeg',
+      text: 'Нейронная генерация картинок пивных бутылок, в будущем с превращением в NFT',
+      description: '',
+      detailsUrl: '',
+      codename: 'beergan',
+      state: ProjectState.InProgress,
+      ptype: ProjectType.Development
+    } as Project);
     return projects
   }
 

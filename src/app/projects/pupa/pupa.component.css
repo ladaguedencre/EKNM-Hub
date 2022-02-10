@@ -24,3 +24,23 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+.eknm-button-long {
+  text-decoration: none;
+  font-family: 'Raleway';
+  position: relative;
+  font-size: 28px;
+  border: None;
+  background-color: transparent;
+  color: white;
+  height: 100px;
+  transition-duration: 0.2s;
+}
+
+.eknm-button-long:hover {
+  color: rgb(126, 43, 194);
+}
+
+.eknm-button-long:active {
+  color: black;
+}

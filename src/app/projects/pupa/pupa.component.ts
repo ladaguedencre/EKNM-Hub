@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pupa',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PupaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateToArticle() {
+    this.router.navigate(['/lib/cumzonx-history']);
+  }
+
+  viewFile() {
+    window.open('../../../assets/pupa/pupa 0.3.pdf', '_blank');
   }
 
 }

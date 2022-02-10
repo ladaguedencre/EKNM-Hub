@@ -37,12 +37,10 @@ img {
 
 .preview-button:hover {
   color: rgb(126, 43, 194);
-  font-weight: 500;
 }
 
 .preview-button:active {
   color: black;
-  font-weight: 500;
 }
 
 .vertical-separator {
