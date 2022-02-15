@@ -17,6 +17,9 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
 import { ShopItemComponent } from './shop-page/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { PupaComponent } from './projects/pupa/pupa.component';
+import { LibraryPageComponent } from './library-page/library-page.component';
+import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
+import { PokemonAbuseComponent } from './library/pokemon-abuse/pokemon-abuse.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import { PupaComponent } from './projects/pupa/pupa.component';
     GamesPageComponent,
     ShopPageComponent,
     ShopItemComponent,
-    PupaComponent
+    PupaComponent,
+    LibraryPageComponent,
+    ArticleInfoComponent,
+    PokemonAbuseComponent
   ],
   imports: [
     BrowserModule,

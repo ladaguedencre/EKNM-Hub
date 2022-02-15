@@ -6,11 +6,11 @@
       <p class="pb-1">{{project?.text}}</p>
       <p class="pb-2">Статус: {{project?.state}}</p>
       <div class="d-flex flex-row">
-        <a class="preview-button" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
+        <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
         [attr.aria-controls]="'collapse' + project?.codename" [ngStyle]="getPreviewState()">
           Описание
         </a>
-        <a [ngStyle]="getDetailsState()" class="preview-button" role="button" (click)="navigateToDetails()" >
+        <a [ngStyle]="getDetailsState()" class="eknm-button-small" role="button" (click)="navigateToDetails()" >
           Страница
         </a>
       </div>

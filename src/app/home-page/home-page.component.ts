@@ -18,7 +18,7 @@ export class HomePageComponent implements OnInit {
   }
 
   navigateToArticles() {
-    this.router.navigate(['/articles']);
+    this.router.navigate(['/library']);
   }
 
   navigateToBeer() {

@@ -137,3 +137,25 @@ h3 {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.eknm-button-small {
+  text-decoration: none;
+  font-family: 'Raleway';
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid white;
+  color: white;
+  text-transform: uppercase;
+  transition-duration: 0.2s;
+  padding: 3px 8px 3px 8px;
+  margin: 0px 10px 0px 0px;
+}
+
+.eknm-button-small:hover {
+  color: rgb(126, 43, 194);
+}
+
+.eknm-button-small:active {
+  color: black;
+}

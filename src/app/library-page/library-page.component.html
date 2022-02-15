@@ -1,0 +1,8 @@
+<div class="container-md">
+    <section-title [titleText]="'СТАТЬИ'"></section-title>
+    <div class="d-flex flex-column" *ngFor="let article of articles">
+        <article-info 
+        [article]="article"></article-info>
+      </div>
+  </div>
+  
