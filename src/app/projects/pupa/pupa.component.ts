@@ -6,7 +6,7 @@ import { SubjectsDataService } from 'src/app/services/subject-data.service';
 @Component({
   selector: 'app-pupa',
   templateUrl: './pupa.component.html',
-  styleUrls: ['./pupa.component.css', '../../library/lib-styles.css']
+  styleUrls: ['../../library/lib-styles.css', './pupa.component.css']
 })
 export class PupaComponent implements OnInit, OnDestroy {
 

@@ -22,6 +22,12 @@
   font-style: regular;
 }
 
+@font-face {
+  font-family: Comfortaa;
+  src: url('assets/fonts/Comfortaa.ttf') format("truetype");
+  font-style: regular;
+}
+
 p {
   text-decoration: none;
   font-family: 'Raleway';

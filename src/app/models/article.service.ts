@@ -9,8 +9,8 @@ export class ArticleService {
   getArticles() {
     const articles = [] as Article[];
     articles.push({
-      firstLine: 'Жестокость и Эксплуатация в мире Покемонов:',
-      secondLine: 'настоящая правда про мир, в котором царит Стокгольмский синдром и Эксплуатация',
+      firstLine: 'Жестокость и Насилие в мире Покемонов:',
+      secondLine: 'настоящая правда про вселенную, в которой царит Стокгольмский синдром и Эксплуатация',
       imgUrl: '',
       author: 'EKNM',
       detailsUrl: '/lib/pokemon-abuse'
