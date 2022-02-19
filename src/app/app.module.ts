@@ -20,6 +20,7 @@ import { PupaComponent } from './projects/pupa/pupa.component';
 import { LibraryPageComponent } from './library-page/library-page.component';
 import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
 import { PokemonAbuseComponent } from './library/pokemon-abuse/pokemon-abuse.component';
+import { BrewPageComponent } from './brew-page/brew-page.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { PokemonAbuseComponent } from './library/pokemon-abuse/pokemon-abuse.com
     PupaComponent,
     LibraryPageComponent,
     ArticleInfoComponent,
-    PokemonAbuseComponent
+    PokemonAbuseComponent,
+    BrewPageComponent
   ],
   imports: [
     BrowserModule,

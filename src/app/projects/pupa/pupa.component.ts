@@ -16,7 +16,7 @@ export class PupaComponent implements OnInit, OnDestroy {
 
 
   ngOnInit(): void {
-    this.subjects.subject(1).next('bg1');
+    this.subjects.subject(1).next('bgPupa');
   }
 
   navigateToArticle() {
@@ -28,7 +28,7 @@ export class PupaComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subjects.subject(1).next('bg4');
+    this.subjects.subject(1).next('bgMain');
   }
 
 

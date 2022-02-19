@@ -39,7 +39,7 @@ export class HomePageComponent implements OnInit {
   }
 
   navigateToBeer() {
-      this.router.navigate(['/beer']);
+      this.router.navigate(['/brew']);
     }
 
   navigateToEntertainment() {

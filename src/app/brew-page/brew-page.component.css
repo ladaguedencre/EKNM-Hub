@@ -1,0 +1,21 @@
+h1 {
+    overflow: hidden;
+    font-family: 'Lemon';
+    text-align: center;
+    font-weight: regular;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+}
+  
+h2 {
+    text-align: center;
+}
+  
+img {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}

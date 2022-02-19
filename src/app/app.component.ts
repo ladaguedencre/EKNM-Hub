@@ -12,7 +12,7 @@ import { SubjectsDataService } from './services/subject-data.service';
 export class AppComponent implements OnInit, OnDestroy  {
   private ngUnsubscribe = new Subject();
   title = 'EKNM Hub';
-  bg = 'bg4';
+  bg = 'bgMain';
   constructor(public sharedService: SharedService,
               private cdr: ChangeDetectorRef,
               private subjects: SubjectsDataService) { }

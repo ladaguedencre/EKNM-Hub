@@ -159,3 +159,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .eknm-button-small:active {
   color: black;
 }
+
+ul li::marker {
+  color: white;
+}
+
+li {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: normal;
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}

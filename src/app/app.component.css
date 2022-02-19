@@ -9,16 +9,15 @@
   background-size:  cover;
 }
 
-.bg1{
+.bgBeer{
   background-image: url(../assets/backgrounds/bg1.png);
 }
 
-.bg2{
-  background-image: url(../assets/backgrounds/bg2.png);
+.bgPupa{
+  background-image: url(../assets/backgrounds/bg_pupa.png);
+  background-size: cover;
 }
-.bg3{
-  background-image: url(../assets/backgrounds/bg3.png);
-}
-.bg4{
+
+.bgMain{
   background-image: url(../assets/backgrounds/bg4.png);
 }

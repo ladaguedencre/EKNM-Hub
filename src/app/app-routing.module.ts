@@ -8,6 +8,7 @@ import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.co
 import { GamesPageComponent } from './games-page/games-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { LibraryPageComponent } from './library-page/library-page.component';
+import { BrewPageComponent } from './brew-page/brew-page.component';
 
 import { PupaComponent } from './projects/pupa/pupa.component';
 
@@ -17,7 +18,7 @@ const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
-  { path: 'beer', component: PlaceholderPageComponent },
+  { path: 'brew', component: BrewPageComponent },
   { path: 'library', component: LibraryPageComponent },
   { path: 'games', component: GamesPageComponent },
   { path: 'warehouse', component: ShopPageComponent },
