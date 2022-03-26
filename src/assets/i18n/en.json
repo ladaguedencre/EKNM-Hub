@@ -1,0 +1,10 @@
+{
+    "home": {
+        "projects": "Workshop",
+        "articles": "Library",
+        "beer": "Brewery",
+        "entertainment": "Gamery",
+        "warehouse": "Warehouse",
+        "info": "Info board"
+    }
+}
