@@ -5,29 +5,49 @@
   </p>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToProjects()">Цех</button>
+    <button type="button" class="home-section" (click)="navigateToProjects()">{{ 'home.projects' | translate }}</button>
   </div>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToArticles()">Библиотека</button>
+    <button type="button" class="home-section" (click)="navigateToArticles()">{{ 'home.articles' | translate }}</button>
   </div>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToBeer()">Пивоварня</button>
+    <button type="button" class="home-section" (click)="navigateToBeer()">{{ 'home.beer' | translate }}</button>
   </div>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToEntertainment()">Игровая</button>
+    <button type="button" class="home-section" (click)="navigateToEntertainment()">{{ 'home.entertainment' | translate }}</button>
   </div>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToWarehouse()">Склад</button>
+    <button type="button" class="home-section" (click)="navigateToWarehouse()">{{ 'home.warehouse' | translate }}</button>
   </div>
   <div class="separator"></div>
   <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToInfo()">Информационная доска</button>
+    <button type="button" class="home-section" (click)="navigateToInfo()">{{ 'home.info' | translate }}</button>
   </div>
   <div class="separator"></div>
+
+  <div class="row pb-3 pt-3">
+    <div class="col">
+      <div class="separator">
+      </div>
+    </div>
+    <div class="col-md-auto width-fit-content">
+      <button class="home-lang" (click)="useLanguage('ua')">UA</button>
+    </div>
+    <div class="col-md-auto width-fit-content">
+      <button class="home-lang" (click)="useLanguage('ru')">RU</button>
+    </div>
+    <div class="col-md-auto width-fit-content">
+      <button class="home-lang" (click)="useLanguage('en')">EN</button>
+    </div>
+    <div class="col">
+      <div class="separator">
+      </div>
+    </div>
+  </div>
   <div class="pb-5"></div>
 </div>
 

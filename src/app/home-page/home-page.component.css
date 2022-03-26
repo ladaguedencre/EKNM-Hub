@@ -23,3 +23,20 @@
   background: white;
   height: 2px;
 }
+
+.home-lang {
+  text-decoration: none;
+  font-family: 'Raleway';
+  position: relative;
+  font-size: 20px;
+  border: None;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  height: 40px;
+  transition-duration: 0.2s;
+}
+
+.home-lang:hover {
+  color: rgb(126, 43, 194);
+}

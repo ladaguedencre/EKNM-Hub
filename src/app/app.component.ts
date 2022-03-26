@@ -2,6 +2,7 @@ import { ChangeDetectorRef, Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { SharedService } from './services/shared.service';
 import { SubjectsDataService } from './services/subject-data.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -15,7 +16,10 @@ export class AppComponent implements OnInit, OnDestroy  {
   bg = 'bgMain';
   constructor(public sharedService: SharedService,
               private cdr: ChangeDetectorRef,
-              private subjects: SubjectsDataService) { }
+              private subjects: SubjectsDataService,
+              private translate: TranslateService) { 
+                translate.setDefaultLang('ua');
+              }
 
   ngOnInit(): void {
     this.subjects.subject(1)
@@ -24,6 +28,12 @@ export class AppComponent implements OnInit, OnDestroy  {
       this.bg = data;
       this.cdr.detectChanges();
     });
+    const savedLang = localStorage.getItem('language');
+    if (!savedLang) {
+      localStorage.setItem('language', 'ua');
+    } else {
+      this.translate.use(savedLang);
+    }
   }
 
 
