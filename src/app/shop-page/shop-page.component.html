@@ -1,5 +1,5 @@
 <div class="container-md">
-  <section-title [titleText]="'СТИКЕРЫ'"></section-title>
+  <section-title [titleText]="{{ 'shop_page.stickers' | translate}}"></section-title>
   <mat-grid-list cols="{{numberOfColumns}}" rowHeight="1:1" gutterSize="0.5rem">
     <div class="d-flex flex-column" *ngFor="let item of stickers">
       <mat-grid-tile>
@@ -7,7 +7,7 @@
       </mat-grid-tile>
     </div>
   </mat-grid-list>
-  <section-title [titleText]="'УНИФОРМА'"></section-title>
+  <section-title [titleText]="{{ 'shop_page.uniform' | translate}}"></section-title>
   <mat-grid-list cols="{{numberOfColumns}}" rowHeight="1:1" gutterSize="0.5rem">
     <div class="d-flex flex-column" *ngFor="let item of clothing">
       <mat-grid-tile>
