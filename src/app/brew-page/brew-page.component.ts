@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SubjectsDataService } from 'src/app/services/subject-data.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-brew-page',
