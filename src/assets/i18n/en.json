@@ -16,6 +16,72 @@
         "beer_3": "Dacha blend #2 - light fruity beer, reminiscent of Indian pale ale",
         "technology": "Each batch is produced in a circulation of about 20 bottles of 0.5 liters and packaged in bottles with a unique sticker ",
         "order": "For pre-order or other questions, please contact by mail: oko.eknm@gmail.com"
+    },
+    "games": {
+        "server_name": "Server name:",
+        "server_ip": "Server address:",
+        "server_version": "Server version:",
+        "server_mode": "Server mode:",
+        "server_status": "Server status:",
+        "server_ok": "Server running",
+        "server_error": "Server unavailable"
+    },
+    "info": {
+        "public_resources": "PUBLIC RESOURCES",
+        "feedback": "FEEDBACK"
+    },
 
+    "library": {
+        "article": "ARTICLES",
+        "read": "READ"
+    },
+
+    "pokemon_article":
+    {
+        "header_1": "Cruelty and Violence in the Pokémon World:",
+        "header_2": "The Real Truth About a Universe Run by Stockholm Syndrome and Exploitation",
+        "paragraph_1": "We all know this cute and colorful world of Pokemon, but what if everything is not as colorful as it seems. This world has long been drowned in the greed of terrible monsters, and now I'm not talking about monsters like Gengar, Gyarados or Mewtwo, I'm talking about people. It would seem that people and wonderful animals live in peace, have fun, make friends and spend time together, but in fact this society has been exploiting these unfortunate and cute monsters for centuries. This society has lived so long and cruelly worked Pokemon that everyone has long considered this the norm.",
+        "paragraph_2": "Let's look at this world differently. People have learned to tame Pokémon, even to the point of forcibly imprisoning them with the help of technology and further using them for personal purposes, these technologies are called Pokeballs and they are quite common. On the one hand, it may seem that the relationship between these creatures and the so-called “trainer” is rather more friendly, but this is not entirely true. The goals of capturing these creatures are different, ranging from the banal desire to have a pet, ending with their use for some industrial purposes, for example: some creatures can control electricity and use them for various purposes to power various electrical appliances, installations, etc. Just imagine: poor animals in the form of cogs and magnets Magnemits are forced to work in factories for FREE instead of men or at least electricians (approx. feminitive from the word electrician)",
+        "paragraph_3": "Separately, it is worth noting the culture of competitions and tournaments in this world. Many people catch these Pokémon for the purpose of taming a pet or for the purpose of winning competitions with them. This is taught to children from an early age, almost any student dreams of getting his first pokeball in order to forcefully catch some harmless Charmander. Many children dream of growing up, catching a team of Pokemon and going to battles in stadiums, fighting with their animals against each other, and they don’t just scratch - they breathe fire, call a thunderstorm, create rockfalls and this is just the tip of the iceberg of what Pokemon are capable of. . You can only imagine that in our world people, the owners of their animals, would gather in stadiums and fight on dogs just to find out who would win Dachshund or Cane Corso. This is what kind of monsters you have to be, so that your\"friends \" and\"pets \" lead to such torment. And these tournaments, where children fight day and night between themselves for some trinkets just to satisfy their selfishness and thirst for self-realization, are world-famous, thousands, if not hundreds of thousands of people and fans are going to watch a big fire-breathing dragon fight to the death with an electric rat.",
+        "paragraph_4": "And the worst thing is that all these kinds of \"communication\" with your pet, friend, partner is considered the norm and is served as a mutual desire on both sides. Everyone is well aware that each Pokemon is unique and has its own individual character, and the most famous character, Pikachu, who, no matter what and under no circumstances, wants to get into the Pokeball, will serve as an example of this. The audience is trying to show that the trainers are trying to build friendly relations between them and their caught pets, but then the meaning of those pokeballs becomes incomprehensible, in fact people forcibly catch and use the capabilities of these creatures, although the same goals can be achieved in a similar way without catching a pokeball, but just trying to tame. Thus, it turns out that, as it were, relations are built in advance on forcible domestication by means of the possibility at any moment to limit the freedom of a being, so that later on they will be able to use it, if necessary, for their own purposes, whether it be the desire to communicate and find a friend, win tournaments or use in production. purposes. It's possible that most Pokémon really like to be imprisoned in little balls the size of plums, but in that case I can't find any other explanation other than the fact that all Pokémon have developed Stockholm Syndrome over the years of exploitation.",
+        "paragraph_5": "Perhaps, after reading this short article, you will take a different look at the world of Pokemon, and even better at our world and our relationship to our real pets. Take care and love our little brothers and yet let's try to help the poor animals with superpowers to gain at least a modicum of freedom and rights by promoting the #FreedomForPokemonsEKNM tag in our social networks."
+    },
+
+    "placeholder":
+    {
+        "example": "Coming soon..."
+    },
+
+    "project_preview":
+    {
+        "condition": "Status",
+        "description": "Description",
+        "page": "Page"
+    },
+
+    "pupa":
+    {
+        "header": "Tale of Punk's Ear",
+        "paragraph_1": "The universe in the tunnel is both similar and unlike many other universes, including our real one. In it, both playable and non-playable characters have their own history, character, characteristics, appearance, knowledge and skills. Among all the various life forms of this world, only a few are worthy of being called intelligent, and it is these races that your character can be:",
+        "list_1": "<li>Humans</li> <li>Lithoids</li> <li>Dendroids and Fungoids</li> <li>Beastmen</li> <li>Spectrals</li> <li>Elemental</li> <li>Swarmers</li>",
+        "paragraph_2": "In addition to race, your character will have to choose traits, which include racial, religious, and disadvantages; one of over 50 backstories; skills; as well as schools of magic and/or fighting styles. With such extensive customization options, you can create both a smart and mysterious magician, and a brave charismatic warrior, or any other image from your mind, even beyond the classic RPG characters. And returning to magic combat styles, you will have the following options:",
+        "list_2": "<li>School of Magic: Organics</li> <li>School of Magic: Psionics</li> <li>School of Magic: Elemental (4 branches)</li> <li>School of Magic: Summon</li><li >Magic School: Geometry</li> <li>5 different fighting styles</li>",
+        "paragraph_3": "Since the world of PUPA is in a technological development similar to our renaissance, in addition to classic and exotic melee weapons, you will have the opportunity to use crossbows, muskets and other mechanical devices. Cities are noticeably larger and more complex than in the Middle Ages, science is developing, albeit in its own special way. A significant part of this incredible world is already available for the game:",
+        "list_3": "<li>More than 60 weapons of different materials and purposes</li> <li>More than 35 artifacts of varying rarity and power</li> <li>A well-thought-out system of alchemy, ingredients and recipes</li> <li>18 superimposed effects, including violent orgasm</li> <li>AIDS, Leprosy and PTSD</li>",
+        "link_1": "The first scientific history of Cumzonsk",
+        "link_2": "Read player's book"
+    },
+
+    "project_page":
+    {
+        "developments": "DEVELOPMENTS",
+        "projects": "PROJECT"
+    },
+
+    "shop_page":
+    {
+        "stickers": "STICKERS",
+        "uniform": "UNIFORM"
+        
     }
 }

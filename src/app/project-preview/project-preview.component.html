@@ -4,14 +4,14 @@
     <div class="p-2">
       <h3 class="pb-1">{{project?.name}}</h3>
       <p class="pb-1">{{project?.text}}</p>
-      <p class="pb-2">Статус: {{project?.state}}</p>
+      <p class="pb-2">{{ 'project_preview.condition' | translate}} {{project?.state}}</p>
       <div class="d-flex flex-row">
         <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
         [attr.aria-controls]="'collapse' + project?.codename" [ngStyle]="getPreviewState()">
-          Описание
+        {{ 'project_preview.description' | translate}}
         </a>
         <a [ngStyle]="getDetailsState()" class="eknm-button-small" role="button" (click)="navigateToDetails()" >
-          Страница
+          {{ 'project_preview.page' | translate}}
         </a>
       </div>
     </div>
