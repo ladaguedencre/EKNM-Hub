@@ -30,7 +30,8 @@
 
     "info": {
         "public_resources": "ПУБЛІЧНІ РЕСУРСИ",
-        "feedback": "ЗВОРОТНІЙ ЗВ'ЯЗОК"
+        "feedback": "ЗВОРОТНІЙ ЗВ'ЯЗОК",
+        "about": "про нас"
     },
 
     "library": {

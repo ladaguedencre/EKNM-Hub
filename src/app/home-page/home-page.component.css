@@ -38,5 +38,5 @@
 }
 
 .home-lang:hover {
-  color: rgb(126, 43, 194);
+  color: rgb(126, 43, 194) !important;
 }

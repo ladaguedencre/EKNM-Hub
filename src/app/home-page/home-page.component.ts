@@ -9,20 +9,22 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class HomePageComponent implements OnInit {
 
-  mainText: string = "";
+  mainText: string = '';
+  currentLanguage = '';
 
   constructor(private router: Router,
               private translate: TranslateService) { }
 
   ngOnInit(): void {
     this.updateHeaderText();
+    this.currentLanguage = this.translate.currentLang;
   }
 
   updateHeaderText() {
     var texts = [
       'What can we say... Just welcome',
     ];
-    if (this.translate.currentLang == 'ua') {
+    if (this.currentLanguage == 'ua') {
       texts = [
         'EKNM это организация, которая бросает студентам-первокурсникам в руки их скромный дневник! Знаете, чем он заканчивается? Террором! И представьте – секретность! Потому что от страха остаются лишь микроскопические следы на языке, имена участников и расписание занятий.',
         'EKNM это организация, которая объявляет о намерении совершить невозможное и одновременно в корне изменить мир! Теперь представьте, что после первого толчка в истории с глобальной финансовой аферой появляется версия о том, что конечной целью всех этих манипуляций является полный конец истории. Представьте, что тогда случится.',
@@ -36,7 +38,7 @@ export class HomePageComponent implements OnInit {
         'Цель EKNM заключается в следующем: жизнь на Земле протекает не так, как было задумано Создателем – когда люди имеют души, у них может родиться новый мирный член Ундины. Зачем ангелам терять души?',
         'Цель EKNM заключается в том, чтобы разделить восприятие на последовательность непосредственного и опосредованного опыта. Первый представляет собой само событие. Во время своего первого выхода по каналу смерти каждый из наших детей получил от Бога нематериальную помощь.',
       ];
-    } else if (this.translate.currentLang == 'ru') {
+    } else if (this.currentLanguage == 'ru') {
       texts = [
         '- Шо по русні? - Русні пизда!',
         'Русский военный корабль, иди нахуй',
@@ -74,6 +76,7 @@ export class HomePageComponent implements OnInit {
   useLanguage(language: string): void {
     this.translate.use(language);
     localStorage.setItem("language", language);
+    this.currentLanguage = language;
     this.updateHeaderText();
   }
 

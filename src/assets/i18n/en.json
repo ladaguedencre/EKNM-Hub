@@ -28,7 +28,8 @@
     },
     "info": {
         "public_resources": "PUBLIC RESOURCES",
-        "feedback": "FEEDBACK"
+        "feedback": "FEEDBACK",
+        "about": "about"
     },
 
     "library": {

@@ -1,6 +1,7 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ItemService } from '../models/item.service'
 import { Item } from '../models/item';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-shop-page',
@@ -27,7 +28,7 @@ export class ShopPageComponent implements OnInit {
   clothing = [] as Item[];
 
   // Constructor
-  constructor(private itemService: ItemService) {
+  constructor(private itemService: ItemService, private translate: TranslateService) {
       this.onWindowResize();
   }
 

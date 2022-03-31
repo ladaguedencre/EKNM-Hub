@@ -1,5 +1,5 @@
 <div class="container-md">
-    <section-title [titleText]="{{ 'library.article' | translate}}"></section-title>
+    <section-title [titleText]="'library.article' | translate"></section-title>
     <div class="d-flex flex-column" *ngFor="let article of articles">
         <article-info 
         [article]="article"></article-info>

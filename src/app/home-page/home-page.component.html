@@ -35,13 +35,16 @@
       </div>
     </div>
     <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('ua')">UA</button>
+      <button class="home-lang" (click)="useLanguage('ua')"
+      [ngStyle]="{'color': this.currentLanguage==='ua' ? 'white' : 'gray'}">UA</button>
     </div>
     <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('ru')">RU</button>
+      <button class="home-lang" (click)="useLanguage('ru')"
+      [ngStyle]="{'color': this.currentLanguage==='ru' ? 'white' : 'gray'}">RU</button>
     </div>
     <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('en')">EN</button>
+      <button class="home-lang" (click)="useLanguage('en')"
+      [ngStyle]="{'color': this.currentLanguage==='en' ? 'white' : 'gray'}">EN</button>
     </div>
     <div class="col">
       <div class="separator">
