@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item, ItemState } from '../../models/item';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'shop-item',
@@ -9,11 +10,17 @@ import { Item, ItemState } from '../../models/item';
 export class ShopItemComponent implements OnInit {
 
   @Input() item?: Item;
+  name?: string;
+  state?: string;
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit(): void {
-    const a = this.item;
+    this.name = this.item?.name_localized[this.translate.currentLang];
+    if (this.name == null) {
+      this.name = this.item?.name;
+    }
+    this.state = ItemState.translatedString(this.item!.state, this.translate.currentLang);
   }
 
   setColor = () => {

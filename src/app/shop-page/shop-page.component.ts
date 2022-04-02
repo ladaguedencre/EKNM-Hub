@@ -32,8 +32,6 @@ export class ShopPageComponent implements OnInit {
       this.onWindowResize();
   }
 
-
-
   ngOnInit(): void {
     this.stickers = this.itemService.getStickers();
     this.clothing = this.itemService.getClothing();
