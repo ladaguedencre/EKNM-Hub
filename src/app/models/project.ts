@@ -1,5 +1,5 @@
 export enum ProjectState {
-  Done = "Рабочее",
+  Done = "Работает",
   InProgress = "В разработке",
   ComingSoon = "Временно недоступно",
   Cancelled = "Отменено",
