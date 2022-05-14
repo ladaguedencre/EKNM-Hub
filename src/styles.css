@@ -39,6 +39,17 @@ p {
   text-align: justify;
 }
 
+.textdiv  {
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: normal;
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+}
+
 .lp {
   text-decoration: none;
   font-family: 'Raleway';
@@ -180,4 +191,11 @@ li {
 
 .blackBG{
   background-color: black;
+}
+
+.w-33 {
+  width: 33%;
+}
+.w-66 {
+  width: 66%;
 }

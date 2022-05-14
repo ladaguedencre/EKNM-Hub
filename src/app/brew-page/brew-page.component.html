@@ -1,37 +1,18 @@
-<div class="container-md">
+<div class="container-md d-flex flex-column">
     <div class="pt-3"></div>
     <h1>EKNM BREWERY</h1> 
     <p class="mb-4">{{ 'brew.description' | translate }}</p>
-    <div class="d-flex flex-row">
-        <div class="col-4 image-left">
-            <img src="../../../assets/brewery/etick1.png">
-        </div>
-        <div class="col-8">
+    
+    <div *ngFor="let brewDesc of brewDescList; let i = index" class="d-flex flex-column pb-3">
+        <div class="textdiv">
+            <img class="w-33" [ngClass]="setImgStyle(i)" [src]="brewDesc.image">
             <h2>Dacha Blend #1</h2>
-            <p>{{ 'brew.beer_1' | translate}}</p>
-            <p class="label-not pt-3">{{ 'brew.not_available' | translate}}</p>
+            {{ brewDesc.description | translate}}
+            <br>
+            <p class="label-not pt-2 d-flex justify-content-center">{{ brewDesc.status | translate}}</p>
         </div>
     </div>
-    <div class="d-flex flex-row">
-        <div class="col-8">
-            <h2>Dacha Blend #2</h2>
-            <p>{{ 'brew.beer_2' | translate}}</p>
-            <p class="label-not pt-3">{{ 'brew.not_available' | translate}}</p>
-        </div>
-        <div class="col-4 image-right">
-            <img src="../../../assets/brewery/etick2.png">
-        </div>
-    </div>
-    <div class="d-flex flex-row">
-        <div class="col-4 image-left">
-            <img src="../../../assets/brewery/etick3.png">
-        </div>
-        <div class="col-8">
-            <h2>Naphta Brew</h2>
-            <p>{{ 'brew.beer_3' | translate}}</p>
-            <p class="label-not pt-3">{{ 'brew.not_available' | translate}}</p>
-        </div>
-    </div>
+
     <p>{{ 'brew.technology' | translate}}</p>
     <div class="separator mt-3 mb-3"></div>
     <p>{{ 'brew.order' | translate}}</p>

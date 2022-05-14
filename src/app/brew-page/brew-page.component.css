@@ -20,12 +20,14 @@ img {
     max-height: 100%;
 }
 
-.image-left {
-    margin-right: 10px;
-}
 
-.image-right {
-    margin-left: 10px;
+.leftimg {
+    float:left; 
+    margin: 8px 8px 8px 0; 
+}
+.rightimg  {
+    float: right; 
+    margin: 8px 0 8px 8px; 
 }
 
 .flex-row {

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SubjectsDataService } from 'src/app/services/subject-data.service';
+import { BrewModel } from '../models/brewModel';
 
 @Component({
   selector: 'app-brew-page',
@@ -9,9 +10,20 @@ import { SubjectsDataService } from 'src/app/services/subject-data.service';
 export class BrewPageComponent implements OnInit {
 
   constructor(private subjects: SubjectsDataService) { }
+  brewDescList: BrewModel[] = [];
 
   ngOnInit(): void {
+    this.brewDescList.push({image:'../../../assets/brewery/etick1.png',description:'brew.beer_1',status:'brew.not_available'} as BrewModel);
+    this.brewDescList.push({image:'../../../assets/brewery/etick2.png',description:'brew.beer_2',status:'brew.not_available'} as BrewModel);
+    this.brewDescList.push({image:'../../../assets/brewery/etick3.png',description:'brew.beer_3',status:'brew.not_available'} as BrewModel);
     this.subjects.subject(1).next('bgBeer');
+  }
+
+  setImgStyle = (i: number) => {
+    return{
+      'leftimg': i%2===0,
+      'rightimg': i%2===1,
+    }
   }
 
   ngOnDestroy(): void {
