@@ -12,10 +12,11 @@
         "description": "Starting from the summer of 2021, we have been brewing craft beer in the format of small experimental batches. In the future, it is planned to repeat successful recipes and develop new ones. The brewing of our beer takes place in compliance with all possible technologies, but manually and in a craft country atmosphere.",
         "amount": "At the moment, 3 different types of beer have been made:",
         "beer_1": "Dacha blend #1 - extremely light and airy with a pronounced hop flavor",
-        "beer_2": "Naphta - dark and dense, rather bitter, has a chocolate-caramel aroma and aftertaste",
-        "beer_3": "Dacha blend #2 - light fruity beer, reminiscent of Indian pale ale",
-        "technology": "Each batch is produced in a circulation of about 20 bottles of 0.5 liters and packaged in bottles with a unique sticker ",
-        "order": "For pre-order or other questions, please contact by mail: oko.eknm@gmail.com"
+        "beer_2": "Dacha blend #2 - light fruity beer, reminiscent of Indian pale ale",
+        "beer_3": "Naphta - dark and dense, rather bitter, has a chocolate-caramel aroma and aftertaste",
+        "not_available": "Not available",
+        "technology": "In experimental routine each batch is produced in a circulation of about 20 bottles of 0.5 liters and packaged in bottles with a unique sticker ",
+        "order": "During the war manufactoring is paused"
     },
     "games": {
         "server_name": "Server name:",
