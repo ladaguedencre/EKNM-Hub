@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Project } from '../models/project';
+import { Project, ProjectState } from '../models/project';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'project-preview',
@@ -10,10 +11,12 @@ import { Router } from '@angular/router';
 export class ProjectPreviewComponent implements OnInit {
 
   @Input() project?: Project;
+  state?: string;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private translate: TranslateService) { }
 
   ngOnInit(): void {
+    this.state = ProjectState.translatedString(this.project!.state, this.translate.currentLang);
   }
 
   navigateToDetails() {

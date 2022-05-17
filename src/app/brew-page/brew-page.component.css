@@ -23,11 +23,11 @@ img {
 
 .leftimg {
     float:left; 
-    margin: 8px 8px 8px 0; 
+    margin: 2px 8px 0px 0; 
 }
 .rightimg  {
     float: right; 
-    margin: 8px 0 8px 8px; 
+    margin: 2px 0 0px 8px; 
 }
 
 .flex-row {
