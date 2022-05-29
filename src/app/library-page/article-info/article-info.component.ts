@@ -17,7 +17,13 @@ export class ArticleInfoComponent implements OnInit {
   }
 
   navigateToArticle() {
-    this.router.navigate([this.article!.detailsUrl]);
+    this.router.navigate([`/lib/${this.article!.id}`]);
+  }
+
+  setBackground = () => {
+    return {
+      'background-image': `url(${this.article!.imgUrl})`,
+    };
   }
 
 }

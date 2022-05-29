@@ -9,11 +9,12 @@ export class ArticleService {
   getArticles() {
     const articles = [] as Article[];
     articles.push({
+      id: 'pokemon-abuse',
       firstLine: 'Жестокость и Насилие в мире Покемонов:',
       secondLine: 'настоящая правда про вселенную, в которой царит Стокгольмский синдром и Эксплуатация',
-      imgUrl: '',
+      imgUrl: '../../../assets/library/pokemon_abuse/sadpikachu_2.png',
       author: 'EKNM',
-      detailsUrl: '/lib/pokemon-abuse'
+      content: [],
     } as Article);
     return articles
   }

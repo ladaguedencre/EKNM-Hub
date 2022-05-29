@@ -12,8 +12,6 @@ import { BrewPageComponent } from './brew-page/brew-page.component';
 
 import { PupaComponent } from './projects/pupa/pupa.component';
 
-import { PokemonAbuseComponent } from './library/pokemon-abuse/pokemon-abuse.component';
-
 const routes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
@@ -26,8 +24,6 @@ const routes: Routes = [
   { path: 'placeholder', component: PlaceholderPageComponent },
 
   { path: 'projects/pupa', component: PupaComponent },
-
-  { path: 'lib/pokemon-abuse', component: PokemonAbuseComponent },
 ];
 
 @NgModule({

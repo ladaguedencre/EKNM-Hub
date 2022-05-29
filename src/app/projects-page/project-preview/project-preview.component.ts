@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Project, ProjectState } from '../models/project';
+import { Project, ProjectState } from '../../models/project';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 

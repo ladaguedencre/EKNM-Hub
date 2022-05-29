@@ -1,6 +1,6 @@
 h3 {
     overflow: hidden;
-    font-family: 'Comfortaa';
+    font-family: 'Raleway';
     font-weight: 600;
     font-size: 28px;
     color: white;
@@ -16,4 +16,8 @@ p {
     color: white;
     text-align: justify;
     text-transform: none;
+}
+
+.bgimg {
+    background-size: cover;
 }
