@@ -31,5 +31,8 @@ export class PupaComponent implements OnInit, OnDestroy {
     this.subjects.subject(1).next('bgMain');
   }
 
+  navigateToProjects() {
+    this.router.navigate(['/projects']);
+  }
 
 }

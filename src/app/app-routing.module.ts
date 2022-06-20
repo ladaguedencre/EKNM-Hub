@@ -11,6 +11,7 @@ import { LibraryPageComponent } from './library-page/library-page.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
 
 import { PupaComponent } from './projects/pupa/pupa.component';
+import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'placeholder', component: PlaceholderPageComponent },
 
   { path: 'projects/pupa', component: PupaComponent },
+  { path: 'projects/scpwa', component: ScpWaComponent },
 ];
 
 @NgModule({

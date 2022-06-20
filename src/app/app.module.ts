@@ -23,6 +23,7 @@ import { PupaComponent } from './projects/pupa/pupa.component';
 import { LibraryPageComponent } from './library-page/library-page.component';
 import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
+import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { BrewPageComponent } from './brew-page/brew-page.component';
     PupaComponent,
     LibraryPageComponent,
     ArticleInfoComponent,
-    BrewPageComponent
+    BrewPageComponent,
+    ScpWaComponent
   ],
   imports: [
     BrowserModule,

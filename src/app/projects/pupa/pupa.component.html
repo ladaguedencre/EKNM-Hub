@@ -1,5 +1,8 @@
 <div class="container-md">
-    <h1>{{ 'pupa.header' | translate}}</h1> 
+    <div class="row justify-content-md-center mb-3">
+        <button type="button" class="header-button" (click)="navigateToProjects()">PROJECTS</button>
+    </div> 
+    <h1 class="pt-3">{{ 'pupa.header' | translate}}</h1> 
     <p>{{ 'pupa.paragraph_1' | translate}}
     </p>
     <ul [innerHTML]="'pupa.list_1' | translate">

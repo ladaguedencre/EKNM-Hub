@@ -3,7 +3,6 @@ export enum ProjectState {
   InProgress = 1,
   ComingSoon = 2,
   Cancelled = 3,
-  InfoDeleted = 4,
 }
 
 export enum ProjectType {
@@ -19,21 +18,18 @@ export namespace ProjectState {
       [ProjectState.InProgress, 'В процесі'], 
       [ProjectState.ComingSoon, 'Очікується'],
       [ProjectState.Cancelled, 'Скасовано'],
-      [ProjectState.InfoDeleted, '[ДАНІ ВИДАЛЕНІ]']
     ]);
     let ruLabels = new Map<number, string>([
       [ProjectState.Done, 'Сделано'], 
       [ProjectState.InProgress, 'В процессе'], 
       [ProjectState.ComingSoon, 'Ожидается'],
       [ProjectState.Cancelled, 'Отменено'],
-      [ProjectState.InfoDeleted, '[ДАННЫЕ УДАЛЕНЫ]']
     ]);
     let enLabels = new Map<number, string>([
       [ProjectState.Done, 'Done'], 
       [ProjectState.InProgress, 'In progress'], 
       [ProjectState.ComingSoon, 'Coming soon'],
       [ProjectState.Cancelled, 'Cancelled'],
-      [ProjectState.InfoDeleted, '[DATA EXPUNGED]']
     ]);
     switch (lang) {
       case 'ua':
