@@ -5,23 +5,18 @@
   font-size: 30px;
   border: None;
   background-color: transparent;
-  color: white;
+  color: #e1e8eb;
   text-transform: uppercase;
   height: 100px;
   transition-duration: 0.2s;
 }
 
 .home-section:hover {
-  color: rgb(126, 43, 194);
+  color: #9d4edd;
 }
 
 .home-section:active {
-  color: black;
-}
-
-.separator {
-  background: white;
-  height: 2px;
+  color: #5a189a;
 }
 
 .home-lang {
@@ -31,12 +26,12 @@
   font-size: 20px;
   border: None;
   background-color: transparent;
-  color: white;
+  color: #e1e8eb;
   text-transform: uppercase;
   height: 40px;
   transition-duration: 0.2s;
 }
 
 .home-lang:hover {
-  color: rgb(126, 43, 194) !important;
+  color: #9d4edd !important;
 }

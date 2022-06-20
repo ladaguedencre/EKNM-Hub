@@ -1,19 +1,11 @@
 @font-face {
-  font-family: Bebas;
-  src: url('assets/fonts/BebasNeue Regular.ttf') format("truetype");
-  font-weight: 500;
-  font-style: regular;
-}
-
-@font-face {
   font-family: Raleway;
   src: url('assets/fonts/Raleway.ttf') format("truetype");
 }
 
 @font-face {
-  font-family: Megrim;
-  src: url('assets/fonts/Megrim-Regular.ttf') format("truetype");
-  font-style: regular;
+  font-family: RalewayDots;
+  src: url('assets/fonts/RalewayDots.ttf') format("truetype");
 }
 
 @font-face {
@@ -22,10 +14,20 @@
   font-style: regular;
 }
 
-@font-face {
-  font-family: Comfortaa;
-  src: url('assets/fonts/Comfortaa.ttf') format("truetype");
-  font-style: regular;
+.color-white {
+  color: #e1e8eb;
+}
+
+.color-purple-bright {
+  color: #9d4edd;
+}
+
+.color-purple-middle {
+  color: #5a189a;
+}
+
+.color-purple-dark {
+  color: #240046;
 }
 
 p {
@@ -35,7 +37,7 @@ p {
   position: relative;
   margin: 0;
   font-size: 18px;
-  color: white;
+  color: #e1e8eb;
   text-align: justify;
 }
 
@@ -46,7 +48,7 @@ p {
   position: relative;
   margin: 0;
   font-size: 18px;
-  color: white;
+  color: #e1e8eb;
   text-align: justify;
 }
 
@@ -64,11 +66,11 @@ p {
 h1
 {
   overflow: hidden;
-  font-family: 'Megrim';
+  font-family: 'RalewayDots';
   text-align: center;
   font-weight: regular;
-  font-size: 60px;
-  color: white;
+  font-size: 80px;
+  color: #e1e8eb;
   text-align: center;
   text-transform: uppercase;
 }
@@ -80,7 +82,7 @@ h2 {
   position: relative;
   margin: 0;
   font-size: 24px;
-  color: white;
+  color: #e1e8eb;
   text-align: justify;
   text-transform: uppercase;
 }
@@ -92,13 +94,13 @@ h3 {
   position: relative;
   margin: 0;
   font-size: 24px;
-  color: white;
+  color: #e1e8eb;
   text-align: justify;
 }
 
 .separator {
   margin: 0;
-  background: white;
+  background: #e1e8eb;
   height: 2px;
   position: relative;
   top: 50%;
@@ -150,7 +152,7 @@ h3 {
 }
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; }
 
 .eknm-button-small {
   text-decoration: none;
@@ -158,8 +160,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   position: relative;
   font-size: 18px;
   font-weight: 500;
-  border: 2px solid white;
-  color: white;
+  border: 2px solid #e1e8eb;
+  color: #e1e8eb;
   text-transform: uppercase;
   transition-duration: 0.2s;
   padding: 3px 8px 3px 8px;
@@ -167,15 +169,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .eknm-button-small:hover {
-  color: rgb(126, 43, 194);
+  color: #9d4edd;
 }
 
 .eknm-button-small:active {
-  color: black;
+  color: #5a189a;
 }
 
 ul li::marker {
-  color: white;
+  color: #e1e8eb;
 }
 
 li {
@@ -185,7 +187,7 @@ li {
   position: relative;
   margin: 0;
   font-size: 18px;
-  color: white;
+  color: #e1e8eb;
   text-align: justify;
 }
 
@@ -198,4 +200,25 @@ li {
 }
 .w-66 {
   width: 66%;
+}
+
+.header-button {
+  text-decoration: none;
+  font-family: 'RalewayDots';
+  position: relative;
+  font-size: 80px;
+  border: None;
+  background-color: transparent;
+  color: #e1e8eb;
+  text-transform: uppercase;
+  height: 100px;
+  transition-duration: 0.2s;
+}
+
+.header-button:hover {
+  color: #9d4edd;
+}
+
+.header-button:active {
+  color: #5a189a;
 }

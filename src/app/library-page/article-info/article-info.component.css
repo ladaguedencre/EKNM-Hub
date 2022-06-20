@@ -3,17 +3,6 @@ h3 {
     font-family: 'Raleway';
     font-weight: 600;
     font-size: 28px;
-    color: white;
-    text-align: justify;
-    text-transform: none;
-}
-
-p {
-    overflow: hidden;
-    font-family: 'Comfortaa';
-    font-weight: medium;
-    font-size: 18px;
-    color: white;
     text-align: justify;
     text-transform: none;
 }

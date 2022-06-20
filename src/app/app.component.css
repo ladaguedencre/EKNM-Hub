@@ -10,7 +10,7 @@
 }
 
 .bgBeer{
-  background-image: url(../assets/backgrounds/bg1.png);
+  background-image: url(../assets/backgrounds/bg_brew.png);
 }
 
 .bgPupa{
@@ -19,5 +19,5 @@
 }
 
 .bgMain{
-  background-image: url(../assets/backgrounds/bg4.png);
+  background-image: url(../assets/backgrounds/bg_main.png);
 }
