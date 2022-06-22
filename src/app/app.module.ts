@@ -24,6 +24,10 @@ import { LibraryPageComponent } from './library-page/library-page.component';
 import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
 import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
+import { ArticlePageComponent } from './articles/article-page/article-page.component';
+import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph.component';
+import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
+import { CombinedParagraphComponent } from './articles/combined-paragraph/combined-paragraph.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +46,11 @@ import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
     LibraryPageComponent,
     ArticleInfoComponent,
     BrewPageComponent,
-    ScpWaComponent
+    ScpWaComponent,
+    ArticlePageComponent,
+    TextParagraphComponent,
+    ImageParagraphComponent,
+    CombinedParagraphComponent
   ],
   imports: [
     BrowserModule,

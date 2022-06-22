@@ -3,9 +3,9 @@
         <button type="button" class="header-button">LIBRARY</button>
     </div>
     <section-title [titleText]="'library.article' | translate"></section-title>
-    <div class="d-flex flex-column" *ngFor="let article of articles">
+    <div class="d-flex flex-column" *ngFor="let binding of bindings">
         <article-info 
-        [article]="article"></article-info>
-      </div>
-  </div>
+        [binding]="binding"></article-info>
+    </div>
+</div>
   

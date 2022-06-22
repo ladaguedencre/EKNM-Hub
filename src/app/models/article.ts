@@ -1,9 +1,13 @@
-export interface Article {
+export interface Binding {
   id: string;
   firstLine: string;
   secondLine: string;
   imgUrl: string;
   author: string;
+}
+
+export interface Article {
+  info: Binding;
   content: Paragraph[];
 }
 

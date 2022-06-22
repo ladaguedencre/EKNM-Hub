@@ -5,7 +5,7 @@ import { BrewModel } from '../models/brewModel';
 @Component({
   selector: 'app-brew-page',
   templateUrl: './brew-page.component.html',
-  styleUrls: ['./brew-page.component.css']
+  styleUrls: ['./brew-page.component.css', '../articles/article-styles.css']
 })
 export class BrewPageComponent implements OnInit {
 
@@ -21,8 +21,8 @@ export class BrewPageComponent implements OnInit {
 
   setImgStyle = (i: number) => {
     return{
-      'leftimg': i%2===0,
-      'rightimg': i%2===1,
+      'paragraph-img-left': i%2===0,
+      'paragraph-img-right': i%2===1,
     }
   }
 

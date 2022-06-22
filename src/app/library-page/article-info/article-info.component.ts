@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Article } from '../../models/article';
+import { Binding } from '../../models/article';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class ArticleInfoComponent implements OnInit {
 
-  @Input() article?: Article;
+  @Input() binding?: Binding;
 
   constructor(private router: Router) { }
 
@@ -17,12 +17,12 @@ export class ArticleInfoComponent implements OnInit {
   }
 
   navigateToArticle() {
-    this.router.navigate([`/lib/${this.article!.id}`]);
+    this.router.navigate([`/library/${this.binding!.id}`]);
   }
 
   setBackground = () => {
     return {
-      'background-image': `url(${this.article!.imgUrl})`,
+      'background-image': `url(${this.binding!.imgUrl})`,
     };
   }
 

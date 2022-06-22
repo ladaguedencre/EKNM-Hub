@@ -12,9 +12,9 @@ import { BrewPageComponent } from './brew-page/brew-page.component';
 
 import { PupaComponent } from './projects/pupa/pupa.component';
 import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
+import { ArticlePageComponent } from './articles/article-page/article-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
   { path: 'home', component: HomePageComponent },
   { path: 'projects', component: ProjectsPageComponent },
   { path: 'brew', component: BrewPageComponent },
@@ -26,6 +26,10 @@ const routes: Routes = [
 
   { path: 'projects/pupa', component: PupaComponent },
   { path: 'projects/scpwa', component: ScpWaComponent },
+  { path: 'library/:code', component: ArticlePageComponent },
+
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: PlaceholderPageComponent },
 ];
 
 @NgModule({

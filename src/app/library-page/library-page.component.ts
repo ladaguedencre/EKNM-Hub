@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Article } from '../models/article';
-import { ArticleService } from '../models/article.service';
-import { ArticleInfoComponent } from './article-info/article-info.component';
+import { Binding } from '../models/article';
+import { LibraryService } from '../models/library.service';
 
 @Component({
   selector: 'app-library-page',
@@ -10,12 +9,12 @@ import { ArticleInfoComponent } from './article-info/article-info.component';
 })
 export class LibraryPageComponent implements OnInit {
 
-  articles = [] as Article[];
+  bindings = [] as Binding[];
 
-  constructor(private articleService: ArticleService) { }
+  constructor(private libraryService: LibraryService) { }
 
   ngOnInit(): void {
-    this.articles = this.articleService.getArticles();
+    this.bindings = this.libraryService.getPublicBindings();
   }
 
 }
