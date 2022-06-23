@@ -29,7 +29,12 @@ p {
 
 .paragraph-img-full {
     height: 10rem;
-    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.paragraph-img-full-big {
+    height: 15rem;
     width: 100%;
     object-fit: cover;
 }

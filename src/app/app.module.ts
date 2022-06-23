@@ -28,6 +28,7 @@ import { ArticlePageComponent } from './articles/article-page/article-page.compo
 import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph.component';
 import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
 import { CombinedParagraphComponent } from './articles/combined-paragraph/combined-paragraph.component';
+import { ButtonParagraphComponent } from './articles/button-paragraph/button-paragraph.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { CombinedParagraphComponent } from './articles/combined-paragraph/combin
     ArticlePageComponent,
     TextParagraphComponent,
     ImageParagraphComponent,
-    CombinedParagraphComponent
+    CombinedParagraphComponent,
+    ButtonParagraphComponent
   ],
   imports: [
     BrowserModule,

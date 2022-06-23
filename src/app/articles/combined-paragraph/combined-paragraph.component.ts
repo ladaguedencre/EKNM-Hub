@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Paragraph } from '../../models/article';
+import { DisplayParagraph } from '../display-paragraph';
 
 @Component({
   selector: 'combined-paragraph',
@@ -8,7 +9,7 @@ import { Paragraph } from '../../models/article';
 })
 export class CombinedParagraphComponent implements OnInit {
 
-  @Input() paragraph?: Paragraph;
+  @Input() paragraph?: DisplayParagraph;
   @Input() order?: number
 
   constructor() { }
@@ -17,10 +18,12 @@ export class CombinedParagraphComponent implements OnInit {
   }
 
   setImgStyle = () => {
-    return{
+    const dict: { [id: string]: boolean; } = {
       'paragraph-img-left': (this.order ?? 0)%2===0,
       'paragraph-img-right': (this.order ?? 0)%2===1,
     }
+    dict[this.paragraph!.subclass] = true;
+    return dict;
   }
 
 }

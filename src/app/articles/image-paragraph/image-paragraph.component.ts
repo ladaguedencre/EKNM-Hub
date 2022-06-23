@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Paragraph } from '../../models/article';
+import { DisplayParagraph } from '../display-paragraph';
 
 @Component({
   selector: 'image-paragraph',
@@ -8,11 +8,17 @@ import { Paragraph } from '../../models/article';
 })
 export class ImageParagraphComponent implements OnInit {
 
-  @Input() paragraph?: Paragraph;
+  @Input() paragraph?: DisplayParagraph;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setImgStyle = () => {
+    const dict: { [id: string]: boolean; } = {};
+    dict[this.paragraph!.subclass] = true;
+    return dict;
   }
 
 }
