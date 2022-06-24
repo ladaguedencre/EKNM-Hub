@@ -7,15 +7,15 @@ p {
 }
 
 .carousel{
-  height: 230px;
-  width: 420px;
+  width: 80%;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
-  aspect-ratio: 1 / 1;
 }
 
 .carousel .carousel-item {
-  height: 230px;
+  max-height: 370px;
+  height: 40vw;
 }
 
 .carousel-item img {

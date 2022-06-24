@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Project, ProjectState, ProjectType } from './project';
+import { SubjectsDataService } from 'src/app/services/subject-data.service';
 
 
 @Injectable({
@@ -11,8 +12,8 @@ export class ProjectService {
     projects.push({
       name: 'SCP: WA',
       logoUrl: '../../assets/projects/scpwa.png',
-      text: 'Глобальная стратегия в реальном времени, игрок управляет Фондом SCP от лица Основателя',
-      description: '[ДАННЫЕ УДАЛЕНЫ]',
+      text: 'projects.scp_text',
+      description: 'projects.scp_description',
       detailsUrl: '/projects/scpwa',
       codename: 'scpwa',
       state: ProjectState.Cancelled,
@@ -21,11 +22,11 @@ export class ProjectService {
     projects.push({
       name: 'BottleShelf',
       logoUrl: '../../assets/projects/bottleshelf.png',
-      text: 'Система контроля и управления баром, коктейлями и ингридиентами',
-      description: '',
-      detailsUrl: '',
+      text: 'projects.bottleshelf_text',
+      description: 'projects.bottleshelf_description',
+      detailsUrl: 'https://github.com/monsteroko/EKNM-Bottleshelf',
       codename: 'bottleshelf',
-      state: ProjectState.InProgress,
+      state: ProjectState.Done,
       ptype: ProjectType.Development
     } as Project);
     return projects
@@ -36,8 +37,8 @@ export class ProjectService {
     projects.push({
       name: 'PUPA',
       logoUrl: '../../assets/projects/pupa.png',
-      text: 'Авторская система для ролевых настольных игр',
-      description: 'Добро пожаловать в мир, образовавшийся в незапамятные времена на внутреней поверхности тоннеля в ухе панка! В нем вы можете создать своего уникального персонажа с различными характеристиками и особенностями. Пользуйтесь магией, стилями боя, разнообразным оружием и мощными артефактами.',
+      text: 'projects.pupa_text',
+      description: 'projects.pupa_description',
       detailsUrl: '/projects/pupa',
       codename: 'pupa',
       state: ProjectState.Done,

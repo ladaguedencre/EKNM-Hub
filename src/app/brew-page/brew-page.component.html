@@ -7,7 +7,7 @@
     <div *ngFor="let brewDesc of brewDescList; let i = index" class="d-flex flex-column pb-3">
         <div class="text-div">
             <img class="w-33" [ngClass]="setImgStyle(i)" [src]="brewDesc.image">
-            <h2>Dacha Blend #1</h2>
+            <h2>{{brewDesc.name}}</h2>
             {{ brewDesc.description | translate}}
             <br>
             <p class="label-not pt-2 d-flex">{{ brewDesc.status | translate}}</p>

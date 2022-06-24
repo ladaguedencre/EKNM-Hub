@@ -3,7 +3,7 @@
     <img src={{project?.logoUrl}}>
     <div class="p-2">
       <h3 class="pb-1">{{project?.name}}</h3>
-      <p class="pb-1">{{project?.text}}</p>
+      <p class="pb-1">{{project!.text| translate}}</p>
       <p class="pb-2">{{ 'project_preview.condition' | translate}}: {{state}}</p>
       <div class="d-flex flex-row">
         <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
@@ -18,7 +18,7 @@
   </div>
   <div class="collapse" [id]="'collapse' + project?.codename">
     <div class="card card-body">
-      <p class="lp">{{project?.description}}</p>
+      <p class="lp">{{project!.description| translate}}</p>
     </div>
   </div>
   <div class="pb-4"></div>

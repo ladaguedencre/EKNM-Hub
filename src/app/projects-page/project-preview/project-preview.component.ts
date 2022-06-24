@@ -20,7 +20,14 @@ export class ProjectPreviewComponent implements OnInit {
   }
 
   navigateToDetails() {
-    this.router.navigate([this.project!.detailsUrl]);
+    if(this.project!.detailsUrl.includes("http"))
+    {
+      window.open(this.project!.detailsUrl);
+    }
+    else
+    {
+      this.router.navigate([this.project!.detailsUrl]);
+    }
   }
 
   getPreviewState = () => {

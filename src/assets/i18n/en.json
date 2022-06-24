@@ -9,15 +9,25 @@
     },
 
     "brew": {
-        "description": "Starting from the summer of 2021, we have been brewing craft beer in the format of small experimental batches. In the future, it is planned to repeat successful recipes and develop new ones. The brewing of our beer takes place in compliance with all possible technologies, but manually and in a craft country atmosphere.",
-        "amount": "At the moment, 3 different types of beer have been made:",
-        "beer_1": "Dacha blend #1 - extremely light and airy with a pronounced hop flavor",
-        "beer_2": "Dacha blend #2 - light fruity beer, reminiscent of Indian pale ale",
-        "beer_3": "Naphta - dark and dense, rather bitter, has a chocolate-caramel aroma and aftertaste",
+        "description": "Since the summer of 2021, we have been brewing craft beer in the format of small experimental batches. In the future we plan to repeat successful recipes and develop new recipes.",
+        "amount": "Currently 3 different beers have been produced:",
+        "beer_1": "Extremely light and airy, with a pronounced taste of hops. You can imagine that you only drink kvass, but in fact you get drunk and go to the bushes to feed local hedgehogs.",
+        "beer_2": "Light fruit beer, tastes and textures reminiscent of Indian pale ale. Ideal for warm evenings under the windows of old houses in the city center, or near the sprawling trees in nature.",
+        "beer_3": "Beer is dark as Ukrainian night and dense as your mother's. Quite rich and bitter, chocolate-caramel notes are felt in the taste and smell. This is real black gold from the world of beer.",
         "not_available": "Not available",
-        "technology": "In experimental routine each batch is produced in a circulation of about 20 bottles of 0.5 liters and packaged in bottles with a unique sticker ",
+        "technology": "In the experimental mode, each batch is made with a circulation of about 20 bottles of 0.5 liters and is packaged in bottles with a unique label.",
         "order": "During the war manufactoring is paused"
     },
+
+    "projects":{
+        "scp_text": "Global real-time strategy, the player manages the SCP Foundation on behalf of the Founder",
+        "scp_description": "[DATA DELETED]",
+        "bottleshelf_text": "Bar, cocktails and ingredients control and management system",
+        "bottleshelf_description": "This system was developed mainly for a promising project of a bar-casino, which in the future should exist and have in its assortment unique cocktails developed by EKNM and own brewed beer.",
+        "pupa_text": "Author system for role-playing board games",
+        "pupa_description": "Welcome to a world that was formed in ancient times on the inner surface of the punk ear tunnel! In it, you can create your own unique character with various characteristics and features. Use magic, fighting styles, a variety of weapons and powerful artifacts."
+    },
+
     "games": {
         "server_name": "Server name:",
         "server_ip": "Server address:",
@@ -30,7 +40,17 @@
     "info": {
         "public_resources": "PUBLIC RESOURCES",
         "feedback": "FEEDBACK",
-        "about": "about"
+        "about": "ABOUT US",
+        "question1": "- What is EKNM?",
+        "answer1": "Organization, company, sect, brand, corporation, syndicate, lullaby, just a bunch of letters. Choose what you like best.",
+        "question2": "- What is the purpose of EKNM?",
+        "answer2": "Creation and support of initiatives, projects and developments in the field of science, creativity and business. Something else is possible.",
+        "question3": "- Why?",
+        "answer3": "The time of working alone is over and this approach is hopelessly outdated. Collaboration is more efficient and allows you to use more knowledge, resources and diverse views. We live in the era of factories.",
+        "question4": "- How to help or join?",
+        "answer4": "Contact the contacts on this page and describe what you have to offer or how we can help you. Ideally you should know one of us personally, but this is not required.",
+        "question5": "- What is EKNM interested in at the moment?",
+        "answer5": "Designs, articles and projects of any kind that contain something innovative and/or creative value. A clearer framework doesn't make sense."
     },
 
     "library": {
