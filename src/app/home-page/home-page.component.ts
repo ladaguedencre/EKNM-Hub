@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { MenuItem } from './menu-item';
 
 @Component({
   selector: 'app-home-page',
@@ -12,8 +13,35 @@ export class HomePageComponent implements OnInit {
   mainText: string = '';
   currentLanguage = '';
 
+  items: MenuItem[] = [];
+
   constructor(private router: Router,
-              private translate: TranslateService) { }
+              private translate: TranslateService) {
+    this.items.push({
+      tag: 'home.projects',
+      path: '/projects'
+    });
+    this.items.push({
+      tag: 'home.articles',
+      path: '/library'
+    });
+    this.items.push({
+      tag: 'home.beer',
+      path: '/brew'
+    });
+    this.items.push({
+      tag: 'home.entertainment',
+      path: '/games'
+    });
+    this.items.push({
+      tag: 'home.warehouse',
+      path: '/warehouse'
+    });
+    this.items.push({
+      tag: 'home.info',
+      path: '/info'
+    });
+  }
 
   ngOnInit(): void {
     this.currentLanguage = this.translate.currentLang;
@@ -47,28 +75,8 @@ export class HomePageComponent implements OnInit {
     this.mainText = texts[textIndex];
   }
 
-  navigateToProjects() {
-    this.router.navigate(['/projects']);
-  }
-
-  navigateToArticles() {
-    this.router.navigate(['/library']);
-  }
-
-  navigateToBeer() {
-      this.router.navigate(['/brew']);
-    }
-
-  navigateToEntertainment() {
-    this.router.navigate(['/games']);
-  }
-
-  navigateToWarehouse() {
-    this.router.navigate(['/warehouse']);
-  }
-
-  navigateToInfo() {
-    this.router.navigate(['/info']);
+  navigate(path: string) {
+    this.router.navigate([path]);
   }
 
   useLanguage(language: string): void {

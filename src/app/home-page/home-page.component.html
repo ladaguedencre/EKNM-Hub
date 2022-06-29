@@ -2,29 +2,11 @@
   <p class="pb-4 pt-4">
     {{mainText}}
   </p>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToProjects()">{{ 'home.projects' | translate }}</button>
-  </div>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToArticles()">{{ 'home.articles' | translate }}</button>
-  </div>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToBeer()">{{ 'home.beer' | translate }}</button>
-  </div>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToEntertainment()">{{ 'home.entertainment' | translate }}</button>
-  </div>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToWarehouse()">{{ 'home.warehouse' | translate }}</button>
-  </div>
-  <div class="separator"></div>
-  <div class="row justify-content-md-center">
-    <button type="button" class="home-section" (click)="navigateToInfo()">{{ 'home.info' | translate }}</button>
+  <div class="d-flex flex-column" *ngFor="let item of items">
+    <div class="separator"></div>
+    <div class="row justify-content-md-center">
+      <button type="button" class="home-section" (click)="navigate(item.path)" translate>{{ item.tag }}</button>
+    </div>
   </div>
   <div class="separator"></div>
 
