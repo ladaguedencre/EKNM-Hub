@@ -1,15 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Paragraph } from '../../models/article';
 import { Router } from '@angular/router';
+import { DisplayParagraph } from '../display-paragraph';
 
 @Component({
-  selector: 'app-button-paragraph',
+  selector: 'button-paragraph',
   templateUrl: './button-paragraph.component.html',
-  styleUrls: ['./button-paragraph.component.css']
+  styleUrls: ['./button-paragraph.component.css', '../article-styles.css']
 })
 export class ButtonParagraphComponent implements OnInit {
 
-  @Input() paragraph?: Paragraph;
+  @Input() paragraph?: DisplayParagraph;
 
   constructor(private router: Router) { }
 
@@ -17,7 +17,7 @@ export class ButtonParagraphComponent implements OnInit {
   }
 
   openLink() {
-    this.router.navigate([this.paragraph?.link]);
+    this.router.navigate([this.paragraph?.paragraph.link]);
   }
 
 }

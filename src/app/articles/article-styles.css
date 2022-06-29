@@ -48,3 +48,23 @@ p {
     float: right; 
     margin: 2px 0 0px 10px; 
 }
+
+.paragraph-button-long {
+    text-decoration: none;
+    font-family: 'Raleway';
+    position: relative;
+    font-size: 28px;
+    border: None;
+    background-color: transparent;
+    color: white;
+    height: 80px;
+    transition-duration: 0.2s;
+}
+
+.paragraph-button-long:hover {
+    color: #9d4edd;
+}
+
+.eknm-button-long:active {
+    color: #5a189a;
+}

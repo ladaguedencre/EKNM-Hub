@@ -1,5 +1,8 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+import { DisplayParagraph } from 'src/app/articles/display-paragraph';
+import { ParagraphType } from 'src/app/models/article';
 import { SharedService } from 'src/app/services/shared.service';
 import { SubjectsDataService } from 'src/app/services/subject-data.service';
 
@@ -10,10 +13,12 @@ import { SubjectsDataService } from 'src/app/services/subject-data.service';
 })
 export class PupaComponent implements OnInit, OnDestroy {
 
+  paragraphs: DisplayParagraph[] = [];
+
   constructor(private router: Router,
               private sharedService: SharedService,
-              private subjects: SubjectsDataService,) { }
-
+              private subjects: SubjectsDataService) {
+  }
 
   ngOnInit(): void {
     this.subjects.subject(1).next('bgPupa');

@@ -29,6 +29,7 @@ import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph
 import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
 import { CombinedParagraphComponent } from './articles/combined-paragraph/combined-paragraph.component';
 import { ButtonParagraphComponent } from './articles/button-paragraph/button-paragraph.component';
+import { ArticleContentComponent } from './articles/article-content/article-content.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ButtonParagraphComponent } from './articles/button-paragraph/button-par
     TextParagraphComponent,
     ImageParagraphComponent,
     CombinedParagraphComponent,
-    ButtonParagraphComponent
+    ButtonParagraphComponent,
+    ArticleContentComponent
   ],
   imports: [
     BrowserModule,

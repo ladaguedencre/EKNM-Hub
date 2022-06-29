@@ -33,14 +33,20 @@ export class ScpWaComponent implements OnInit {
         link: ""
       }
     })
+    
+    this.paragraphs.push({
+      type: "button",
+      subclass: "",
+      paragraph: {
+        type: ParagraphType.Transition,
+        text: "SCP:WA on GitHub",
+        link: "https://github.com/monsteroko/SCPF-WA"
+      }
+    })
   }
 
   navigateToProjects() {
     this.router.navigate(['/projects']);
-  }
-
-  viewRepo() {
-    window.open('https://github.com/monsteroko/SCPF-WA');
   }
 
 }

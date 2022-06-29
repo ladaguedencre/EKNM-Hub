@@ -1,20 +1,8 @@
 <div class="container-md">
     <div class="row justify-content-md-center mb-3">
         <button type="button" class="header-button" (click)="navigateToProjects()">PROJECTS</button>
-    </div> 
-    <div class="d-flex flex-column" *ngFor="let paragraph of paragraphs">
-        <container-element [ngSwitch]="paragraph.type">
-            <text-paragraph *ngSwitchCase="'text'" [paragraph]="paragraph"></text-paragraph>
-            <combined-paragraph *ngSwitchCase="'combined0'" [paragraph]="paragraph" [order]="0"></combined-paragraph>
-            <combined-paragraph *ngSwitchCase="'combined1'" [paragraph]="paragraph" [order]="1"></combined-paragraph>
-            <image-paragraph *ngSwitchCase="'image'" [paragraph]="paragraph"></image-paragraph>
-            <p *ngSwitchDefault>none</p>
-          </container-element>
     </div>
-    <div class="separator"></div>
-    <div class="row justify-content-md-center">
-        <button type="button" class="eknm-button-long" (click)="viewRepo()">SCP:WA on GitHub</button>
-    </div>
+    <article-content [paragraphs]="paragraphs"></article-content>
     <div class="pb-5"></div>
 </div>
   

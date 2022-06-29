@@ -3,6 +3,7 @@
         <button type="button" class="header-button" (click)="navigateToProjects()">PROJECTS</button>
     </div>
     <h1 class="pt-3">{{ 'pupa.header' | translate}}</h1> 
+    <article-content [paragraphs]="paragraphs"></article-content>
     <div class="paragraph-div">
         <p>{{ 'pupa.paragraph_1' | translate}}</p>
     <div>
@@ -31,11 +32,11 @@
     </div>
     <div class="separator"></div>
     <div class="row justify-content-md-center">
-        <button type="button" class="eknm-button-long" (click)="navigateToArticle()">{{ 'pupa.link_1' | translate}}</button>
+        <button type="button" class="paragraph-button-long" (click)="navigateToArticle()">{{ 'pupa.link_1' | translate}}</button>
     </div>
     <div class="separator"></div>
     <div class="row justify-content-md-center">
-        <button type="button" class="eknm-button-long" (click)="viewFile()">{{ 'pupa.link_2' | translate}}</button>
+        <button type="button" class="paragraph-button-long" (click)="viewFile()">{{ 'pupa.link_2' | translate}}</button>
     </div>
     <div class="separator"></div>
     <div class="pb-5"></div>

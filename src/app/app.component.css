@@ -1,9 +1,10 @@
 @media only screen and (min-width: 400px) {
-.width-preset {
-  min-width: 400px;
-  overflow: auto;
+  .width-preset {
+    min-width: 400px;
+    overflow: auto;
+  }
 }
-}
+
 .bgBase{
   background-color: #000000;
   background-attachment: fixed;
