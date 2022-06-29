@@ -45,5 +45,9 @@ Thumbs.db
 /src/assets/backgrounds/
 /src/assets/icons/
 /src/assets/raw/
+/src/assets/library/
+/src/assets/projects/
+/src/__MACOSX/
+
 
 src/assets.zip

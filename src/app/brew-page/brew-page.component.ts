@@ -13,9 +13,9 @@ export class BrewPageComponent implements OnInit {
   brewDescList: BrewModel[] = [];
 
   ngOnInit(): void {
-    this.brewDescList.push({image:'../../../assets/brewery/etick1.png',description:'brew.beer_1',status:'brew.not_available'} as BrewModel);
-    this.brewDescList.push({image:'../../../assets/brewery/etick2.png',description:'brew.beer_2',status:'brew.not_available'} as BrewModel);
-    this.brewDescList.push({image:'../../../assets/brewery/etick3.png',description:'brew.beer_3',status:'brew.not_available'} as BrewModel);
+    this.brewDescList.push({name:'Dacha blend #1', image:'../../../assets/brewery/etick1.png',description:'brew.beer_1',status:'brew.not_available'} as BrewModel);
+    this.brewDescList.push({name:'Dacha blend #2', image:'../../../assets/brewery/etick2.png',description:'brew.beer_2',status:'brew.not_available'} as BrewModel);
+    this.brewDescList.push({name:'Naphta Brew', image:'../../../assets/brewery/etick3.png',description:'brew.beer_3',status:'brew.not_available'} as BrewModel);
     this.subjects.subject(1).next('bgBeer');
   }
 

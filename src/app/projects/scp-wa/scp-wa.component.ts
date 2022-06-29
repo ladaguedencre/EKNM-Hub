@@ -39,4 +39,8 @@ export class ScpWaComponent implements OnInit {
     this.router.navigate(['/projects']);
   }
 
+  viewRepo() {
+    window.open('https://github.com/monsteroko/SCPF-WA');
+  }
+
 }
