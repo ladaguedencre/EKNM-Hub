@@ -20,13 +20,13 @@ export class ProjectPreviewComponent implements OnInit {
   }
 
   navigateToDetails() {
-    if(this.project!.detailsUrl.includes("http"))
+    if(this.project!.link.includes("http"))
     {
-      window.open(this.project!.detailsUrl);
+      window.open(this.project!.link);
     }
     else
     {
-      this.router.navigate([this.project!.detailsUrl]);
+      this.router.navigate([this.project!.link]);
     }
   }
 
@@ -44,7 +44,7 @@ export class ProjectPreviewComponent implements OnInit {
   }
 
   getDetailsState = () => {
-    if (this.project!.detailsUrl.length > 0) {
+    if (this.project!.link.length > 0) {
       return { 
         'visibility': 'visible', 
       };

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { ProjectPreviewComponent } from './project-preview/project-preview.component';
 import { ProjectService } from '../models/project.service'
-import { Project } from '../models/project';
+import { Project, ProjectType } from '../models/project';
 
 @Component({
   selector: 'app-projects-page',
@@ -12,13 +12,27 @@ import { Project } from '../models/project';
 export class ProjectsPageComponent implements OnInit {
 
   developments = [] as Project[];
-  otherProjects = [] as Project[];
+  other = [] as Project[];
 
   constructor(private projectService: ProjectService) {}
 
   ngOnInit(): void {
-    this.developments = this.projectService.getDevelopments();
-    this.otherProjects = this.projectService.getOthers();
+
+    this.projectService.getProjectsMock().toPromise().then(projects => { 
+      if (!projects) {
+        return
+      }
+      for (let project of projects) {
+        switch (project.type) {
+          case ProjectType.Development:
+            this.developments.push(project);
+            break;
+          case ProjectType.Other:
+            this.other.push(project)
+            break;
+        }
+      }
+    });
   }
 
 }

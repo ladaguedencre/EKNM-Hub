@@ -3,11 +3,11 @@
     <img src={{project?.logoUrl}}>
     <div class="p-2">
       <h3 class="pb-1">{{project?.name}}</h3>
-      <p class="pb-1">{{project!.text| translate}}</p>
+      <p class="pb-1">{{project!.info| translate}}</p>
       <p class="pb-2">{{ 'project_preview.condition' | translate}}: {{state}}</p>
       <div class="d-flex flex-row">
-        <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.codename" role="button" aria-expanded="false"
-        [attr.aria-controls]="'collapse' + project?.codename" [ngStyle]="getPreviewState()">
+        <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.id" role="button" aria-expanded="false"
+        [attr.aria-controls]="'collapse' + project?.id" [ngStyle]="getPreviewState()">
         {{ 'project_preview.description' | translate}}
         </a>
         <a [ngStyle]="getDetailsState()" class="eknm-button-small" role="button" (click)="navigateToDetails()" >
@@ -16,7 +16,7 @@
       </div>
     </div>
   </div>
-  <div class="collapse" [id]="'collapse' + project?.codename">
+  <div class="collapse" [id]="'collapse' + project?.id">
     <div class="card card-body">
       <p class="lp">{{project!.description| translate}}</p>
     </div>

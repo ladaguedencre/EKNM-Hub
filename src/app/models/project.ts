@@ -43,12 +43,12 @@ export namespace ProjectState {
 }
 
 export interface Project {
+  id: string;
   name: string;
-  logoUrl: string;
-  text: string;
+  info: string;
   description: string;
-  codename: string;
-  detailsUrl: string;
+  logoUrl: string;
+  link: string;
   state: ProjectState;
-  ptype: ProjectType;
+  type: ProjectType;
 }
