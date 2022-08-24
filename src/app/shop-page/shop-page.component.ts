@@ -1,6 +1,6 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ItemService } from '../models/item.service'
-import { Item } from '../models/item';
+import { Item, ItemType } from '../models/item';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -33,7 +33,20 @@ export class ShopPageComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.stickers = this.itemService.getStickers();
-    this.clothing = this.itemService.getClothing();
+    this.itemService.getItemsMock().toPromise().then(items => { 
+      if (!items) {
+        return
+      }
+      for (let item of items) {
+        switch (item.type) {
+          case ItemType.Sticker:
+            this.stickers.push(item);
+            break;
+          case ItemType.Clothing:
+            this.clothing.push(item)
+            break;
+        }
+      }
+    });
   }
 }
