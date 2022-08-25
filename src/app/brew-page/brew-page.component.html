@@ -3,19 +3,12 @@
         <button type="button" class="header-button">BREWERY</button>
     </div> 
     <p class="mb-4">{{ 'brew.description' | translate }}</p>
-    
-    <div *ngFor="let brewDesc of brewDescList; let i = index" class="d-flex flex-column pb-3">
-        <div class="text-div">
-            <img class="w-33" [ngClass]="setImgStyle(i)" [src]="brewDesc.image">
-            <h2>{{brewDesc.name}}</h2>
-            {{ brewDesc.description | translate}}
-            <br>
-            <p class="label-not pt-2 d-flex">{{ brewDesc.status | translate}}</p>
-        </div>
-    </div>
-
     <p>{{ 'brew.technology' | translate}}</p>
-    <div class="separator mt-3 mb-3"></div>
     <p>{{ 'brew.order' | translate}}</p>
+    <section-title [titleText]="'brew.sorts' | translate"></section-title>
+    
+    <div *ngFor="let brew of brews; let i = index" class="d-flex flex-column pb-3">
+        <brew-item [brew]="brew"></brew-item>
+    </div>
     <div class="pb-5"></div>
 </div>

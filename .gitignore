@@ -41,12 +41,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/src/assets/fonts/
 /src/assets/backgrounds/
-/src/assets/icons/
 /src/assets/raw/
 /src/assets/library/
-/src/assets/projects/
 /src/__MACOSX/
 
 

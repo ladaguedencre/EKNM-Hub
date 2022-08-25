@@ -8,6 +8,7 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './shop-page.component.html',
   styleUrls: ['./shop-page.component.css']
 })
+
 export class ShopPageComponent implements OnInit {
   getScreenWidth:any;
   getScreenHeight:any;

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { SubjectsDataService } from 'src/app/services/subject-data.service';
-import { BrewModel } from '../models/brewModel';
+import { Brew } from '../models/brew';
+import { BrewService } from '../models/brew.service';
 
 @Component({
   selector: 'app-brew-page',
@@ -9,21 +11,19 @@ import { BrewModel } from '../models/brewModel';
 })
 export class BrewPageComponent implements OnInit {
 
-  constructor(private subjects: SubjectsDataService) { }
-  brewDescList: BrewModel[] = [];
+  brews: Brew[] = [];
 
-  ngOnInit(): void {
-    this.brewDescList.push({name:'Dacha blend #1', image:'../../../assets/brewery/etick1.png',description:'brew.beer_1',status:'brew.not_available'} as BrewModel);
-    this.brewDescList.push({name:'Dacha blend #2', image:'../../../assets/brewery/etick2.png',description:'brew.beer_2',status:'brew.not_available'} as BrewModel);
-    this.brewDescList.push({name:'Naphta Brew', image:'../../../assets/brewery/etick3.png',description:'brew.beer_3',status:'brew.not_available'} as BrewModel);
-    this.subjects.subject(1).next('bgBeer');
+  constructor(private subjects: SubjectsDataService, private brewService: BrewService, private translate: TranslateService) {
   }
 
-  setImgStyle = (i: number) => {
-    return{
-      'paragraph-img-left': i%2===0,
-      'paragraph-img-right': i%2===1,
-    }
+  ngOnInit(): void {
+    this.subjects.subject(1).next('bgBeer');
+    this.brewService.getBrewsMock().toPromise().then(brews => { 
+      if (!brews) {
+        return
+      }
+      this.brews = brews
+    });
   }
 
   ngOnDestroy(): void {

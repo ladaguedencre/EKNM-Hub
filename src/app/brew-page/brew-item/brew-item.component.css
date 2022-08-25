@@ -1,0 +1,10 @@
+img {
+    height: 125pt;
+    object-fit: cover;
+    padding-right: 5pt;
+}
+
+.label-long {
+    height: 80pt;
+    overflow: hidden;
+}

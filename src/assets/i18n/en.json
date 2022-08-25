@@ -10,13 +10,9 @@
 
     "brew": {
         "description": "Since the summer of 2021, we have been brewing craft beer in the format of small experimental batches. In the future we plan to repeat successful recipes and develop new recipes.",
-        "amount": "Currently 3 different beers have been produced:",
-        "beer_1": "Extremely light and airy, with a pronounced taste of hops. You can imagine that you only drink kvass, but in fact you get drunk and go to the bushes to feed local hedgehogs.",
-        "beer_2": "Light fruit beer, tastes and textures reminiscent of Indian pale ale. Ideal for warm evenings under the windows of old houses in the city center, or near the sprawling trees in nature.",
-        "beer_3": "Beer is dark as Ukrainian night and dense as your mother's. Quite rich and bitter, chocolate-caramel notes are felt in the taste and smell. This is real black gold from the world of beer.",
-        "not_available": "Not available",
         "technology": "In the experimental mode, each batch is made with a circulation of about 20 bottles of 0.5 liters and is packaged in bottles with a unique label.",
-        "order": "During the war manufactoring is paused"
+        "order": "During the war manufactoring is paused",
+        "sorts": "Sorts"
     },
 
     "projects":{
