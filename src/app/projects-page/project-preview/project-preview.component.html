@@ -1,24 +1,15 @@
 <div class="container">
   <div class="d-flex flex-row">
-    <img src={{project?.logoUrl}}>
-    <div class="p-2">
-      <h3 class="pb-1">{{project?.name}}</h3>
-      <p class="pb-1">{{project!.info| translate}}</p>
-      <p class="pb-2">{{ 'project_preview.condition' | translate}}: {{state}}</p>
-      <div class="d-flex flex-row">
-        <a class="eknm-button-small" data-bs-toggle="collapse" [href]="'#collapse' + project?.id" role="button" aria-expanded="false"
-        [attr.aria-controls]="'collapse' + project?.id" [ngStyle]="getPreviewState()">
-        {{ 'project_preview.description' | translate}}
-        </a>
-        <a [ngStyle]="getDetailsState()" class="eknm-button-small" role="button" (click)="navigateToDetails()" >
-          {{ 'project_preview.page' | translate}}
-        </a>
-      </div>
+    <div class="left-container">
+      <img src={{project?.logoUrl}}>
+      <a class="eknm-button-small" role="button" (click)="navigateToDetails()" >
+        {{ 'project_preview.page' | translate}}
+      </a>
     </div>
-  </div>
-  <div class="collapse" [id]="'collapse' + project?.id">
-    <div class="card card-body">
-      <p class="lp">{{project!.description| translate}}</p>
+    <div>
+      <h3 class="pb-2">{{project?.name}}</h3>
+      <p class="pb-2">{{ 'project_preview.condition' | translate}}: {{state}}</p>
+      <p>{{project!.description| translate}}</p>
     </div>
   </div>
   <div class="pb-4"></div>

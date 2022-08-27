@@ -1,19 +1,10 @@
-h1 {
-    overflow: hidden;
-    font-family: 'Lemon';
-    text-align: center;
-    font-weight: regular;
-    font-size: 60px;
-    text-align: center;
-}
-  
 h2 {
     text-align: left;
 }
 
 .flex-row {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .label-not {

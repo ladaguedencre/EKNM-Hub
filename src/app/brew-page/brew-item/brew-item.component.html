@@ -1,7 +1,7 @@
 <div class="container">
     <div class="d-flex flex-row">
-        <img class="w-33" [src]="brew!.imageUrl">
-        <div class="w-66">
+        <img [src]="brew!.imageUrl">
+        <div>
             <h2>{{brew!.name}}</h2>
             <p class="label-long">{{description}}</p>
             <p class="pt-2 d-flex" [ngStyle]="setColor()">{{ state }}</p>

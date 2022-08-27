@@ -1,24 +1,21 @@
-.incline-line {
-  width: 50%;
-  margin: auto;
-  border-color: #e1e8eb;
+img {
+  max-height: 10rem;
+  max-width: 10rem;
+  margin-bottom: 0.5rem;
 }
 
-img {
-  max-height: 130px;
-  max-width: 140px;
-  padding: 5px 10px 5px 10px;
+.left-container {
+  max-width: 10rem;
+  margin-right: 0.5rem;
+}
+
+.eknm-button-small {
+  width: 100%;
 }
 
 .separator {
   background: #e1e8eb;
   height: 2px;
-}
-
-.card {
-  background: transparent;
-  background-color: transparent;
-  border: 0px;
 }
 
 .preview-button:hover {

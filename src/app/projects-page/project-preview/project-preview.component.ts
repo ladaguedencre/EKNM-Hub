@@ -29,30 +29,4 @@ export class ProjectPreviewComponent implements OnInit {
       this.router.navigate([this.project!.link]);
     }
   }
-
-  getPreviewState = () => {
-    if (this.project!.description.length > 0) {
-      return { 
-        'visibility': 'visible', 
-      };
-    } else {
-      return { 
-        'visibility': 'hidden', 
-      };
-    }
-    
-  }
-
-  getDetailsState = () => {
-    if (this.project!.link.length > 0) {
-      return { 
-        'visibility': 'visible', 
-      };
-    } else {
-      return { 
-        'visibility': 'hidden', 
-      };
-    }
-  }
-
 }

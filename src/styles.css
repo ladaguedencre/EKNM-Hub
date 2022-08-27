@@ -1,6 +1,13 @@
 @font-face {
   font-family: Raleway;
   src: url('assets/fonts/Raleway.ttf') format("truetype");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: Raleway-Bold;
+  src: url('assets/fonts/Raleway.ttf') format("truetype");
+  font-weight: bold;
 }
 
 @font-face {
@@ -36,19 +43,8 @@ p {
   font-weight: normal;
   position: relative;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.15rem;
   color: #e1e8eb;
-  text-align: justify;
-}
-
-.lp {
-  text-decoration: none;
-  font-family: 'Raleway';
-  font-weight: normal;
-  position: relative;
-  margin: 0;
-  font-size: 16px;
-  color: lightgray;
   text-align: justify;
 }
 
@@ -58,7 +54,7 @@ h1
   font-family: 'RalewayDots';
   text-align: center;
   font-weight: regular;
-  font-size: 80px;
+  font-size: 5rem;
   color: #e1e8eb;
   text-align: center;
   text-transform: uppercase;
@@ -70,7 +66,7 @@ h2 {
   font-weight: bold;
   position: relative;
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #e1e8eb;
   text-align: justify;
   text-transform: uppercase;
@@ -78,11 +74,11 @@ h2 {
 
 h3 {
   text-decoration: none;
-  font-family: 'Raleway';
-  font-weight: regular;
+  font-family: 'Raleway-Bold';
+  font-weight: bold;
   position: relative;
   margin: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #e1e8eb;
   text-align: justify;
 }
@@ -99,7 +95,7 @@ h3 {
 }
 
 .img-icon {
-  max-width: 120px;
+  max-width: 7.5rem;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -126,24 +122,38 @@ h3 {
   width: fit-content;
 }
 
-.container-sm {
+.container-standard {
   margin-right: auto;
   margin-left: auto;
-  max-width: 700px;
-  padding: 0px 40px 0px 40px;
+  max-width: 50rem;
+  padding: 0rem 2rem 0rem 2rem;
 }
 
-.container-md {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 900px;
-  padding: 0px 40px 0px 40px;
+.eknm-button-small {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 1.15rem;
+  border: 2px solid #e1e8eb;
+  border-radius: 360px;
+  color: #e1e8eb;
+  text-transform: uppercase;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.eknm-button-small:hover {
+  color: #9d4edd;
+}
+
+.eknm-button-small:active {
+  color: #5a189a;
 }
 
 html, body { height: 100%; }
 body { margin: 0; }
-
-
 
 ul li::marker {
   color: #e1e8eb;
@@ -155,7 +165,7 @@ li {
   font-weight: normal;
   position: relative;
   margin: 0;
-  font-size: 18px;
+  font-size: 1.15rem;
   color: #e1e8eb;
   text-align: justify;
 }
@@ -179,92 +189,40 @@ li {
 .w-66 {
   width: 66%;
 }
-@media only screen and (min-width: 600px) {
-  .header-button {
-    text-decoration: none;
-    font-family: 'RalewayDots';
-    position: relative;
-    font-size: 80px;
-    border: None;
-    background-color: transparent;
-    color: #e1e8eb;
-    text-transform: uppercase;
-    height: 100px;
-    transition-duration: 0.2s;
-  }
-  
-  .header-button:hover {
-    color: #9d4edd;
-  }
-  
-  .header-button:active {
-    color: #5a189a;
-  }
 
-  .eknm-button-small {
-    text-decoration: none;
-    font-family: 'Raleway';
-    position: relative;
-    font-size: 18px;
-    font-weight: 500;
-    border: 2px solid #e1e8eb;
-    color: #e1e8eb;
-    text-transform: uppercase;
-    transition-duration: 0.2s;
-    padding: 3px 8px 3px 8px;
-    margin: 0px 10px 0px 0px;
-  }
-  
-  .eknm-button-small:hover {
-    color: #9d4edd;
-  }
-  
-  .eknm-button-small:active {
-    color: #5a189a;
+*{
+  transition-duration: 0.2s;
+}
+
+@media only screen and (min-width: 864px) {
+  :root {
+    font-size: 16px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .header-button {
-    text-decoration: none;
-    font-family: 'RalewayDots';
-    position: relative;
-    font-size: 12vw;
-    border: None;
-    background-color: transparent;
-    color: #e1e8eb;
-    text-transform: uppercase;
-    height: 100px;
-    transition-duration: 0.2s;
+@media only screen and (max-width: 864px) {
+  :root {
+    font-size: 12px;
   }
-  
-  .header-button:hover {
-    color: #9d4edd;
-  }
-  
-  .header-button:active {
-    color: #5a189a;
-  }
+}
 
-  .eknm-button-small {
-    text-decoration: none;
-    font-family: 'Raleway';
-    position: relative;
-    font-size: 3vw;
-    font-weight: 500;
-    border: 2px solid #e1e8eb;
-    color: #e1e8eb;
-    text-transform: uppercase;
-    transition-duration: 0.2s;
-    padding: 3px 8px 3px 8px;
-    margin: 0px 10px 0px 0px;
-  }
-  
-  .eknm-button-small:hover {
-    color: #9d4edd;
-  }
-  
-  .eknm-button-small:active {
-    color: #5a189a;
-  }
+.header-button {
+  text-decoration: none;
+  font-family: 'RalewayDots';
+  position: relative;
+  font-size: 5rem;
+  border: None;
+  background-color: transparent;
+  color: #e1e8eb;
+  text-transform: uppercase;
+  height: 6rem;
+  transition-duration: 0.2s;
+}
+
+.header-button:hover {
+  color: #9d4edd;
+}
+
+.header-button:active {
+  color: #5a189a;
 }
