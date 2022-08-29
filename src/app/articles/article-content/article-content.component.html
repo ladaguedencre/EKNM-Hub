@@ -1,8 +1,6 @@
 <div class="d-flex flex-column" *ngFor="let paragraph of paragraphs">
     <container-element [ngSwitch]="paragraph.type">
         <text-paragraph *ngSwitchCase="'text'" [paragraph]="paragraph"></text-paragraph>
-        <combined-paragraph *ngSwitchCase="'combined0'" [paragraph]="paragraph" [order]="0"></combined-paragraph>
-        <combined-paragraph *ngSwitchCase="'combined1'" [paragraph]="paragraph" [order]="1"></combined-paragraph>
         <image-paragraph *ngSwitchCase="'image'" [paragraph]="paragraph"></image-paragraph>
         <button-paragraph *ngSwitchCase="'button'" [paragraph]="paragraph"></button-paragraph>
         <p *ngSwitchDefault>none</p>

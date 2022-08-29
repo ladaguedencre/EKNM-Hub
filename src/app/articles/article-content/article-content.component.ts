@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { DisplayParagraph } from '../display-paragraph';
+import { Paragraph } from 'src/app/models/article';
 
 @Component({
   selector: 'article-content',
@@ -8,7 +8,7 @@ import { DisplayParagraph } from '../display-paragraph';
 })
 export class ArticleContentComponent implements OnInit {
 
-  @Input() paragraphs?: DisplayParagraph[] = [];
+  @Input() paragraphs?: Paragraph[] = [];
 
   constructor() { }
 

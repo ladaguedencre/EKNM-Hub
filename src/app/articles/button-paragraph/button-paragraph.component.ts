@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
-import { DisplayParagraph } from '../display-paragraph';
+import { Paragraph } from 'src/app/models/article';
 
 @Component({
   selector: 'button-paragraph',
@@ -9,7 +9,7 @@ import { DisplayParagraph } from '../display-paragraph';
 })
 export class ButtonParagraphComponent implements OnInit {
 
-  @Input() paragraph?: DisplayParagraph;
+  @Input() paragraph?: Paragraph;
 
   constructor(private router: Router) { }
 
@@ -17,7 +17,7 @@ export class ButtonParagraphComponent implements OnInit {
   }
 
   openLink() {
-    this.router.navigate([this.paragraph?.paragraph.link]);
+    this.router.navigate([this.paragraph?.link]);
   }
 
 }

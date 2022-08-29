@@ -26,7 +26,7 @@ export class ProjectPreviewComponent implements OnInit {
     }
     else
     {
-      this.router.navigate([this.project!.link]);
+      this.router.navigate([`/workshop${this.project!.link}`]);
     }
   }
 }

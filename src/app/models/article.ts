@@ -1,23 +1,14 @@
-export interface Binding {
-  id: string;
-  firstLine: string;
-  secondLine: string;
-  imgUrl: string;
-  author: string;
-}
 
 export interface Article {
-  info: Binding;
+  id: string;
+  name: string;
+  section: string;
   content: Paragraph[];
 }
 
-export enum ParagraphType {
-  Text = 0,
-  Transition = 1,
-}
-
 export interface Paragraph {
-  type: ParagraphType;
+  index: number;
+  type: string;
   text: string;
   link: string;
 }

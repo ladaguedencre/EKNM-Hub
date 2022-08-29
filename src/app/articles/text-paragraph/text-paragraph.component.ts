@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { DisplayParagraph } from '../display-paragraph';
+import { Paragraph } from 'src/app/models/article';
 
 @Component({
   selector: 'text-paragraph',
@@ -8,7 +8,7 @@ import { DisplayParagraph } from '../display-paragraph';
 })
 export class TextParagraphComponent implements OnInit {
 
-  @Input() paragraph?: DisplayParagraph;
+  @Input() paragraph?: Paragraph;
 
   constructor() { }
 

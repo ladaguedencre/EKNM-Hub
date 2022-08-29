@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Paragraph } from 'src/app/models/article';
 import { LibraryService } from '../../models/library.service';
-import { DisplayParagraph, createDisplayParagraphs } from '../display-paragraph';
 
 @Component({
   selector: 'app-article',
@@ -10,27 +10,31 @@ import { DisplayParagraph, createDisplayParagraphs } from '../display-paragraph'
 })
 export class ArticlePageComponent implements OnInit {
 
-  paragraphs: DisplayParagraph[] = [];
-  firstLine: String = "";
-  secondLine: String = "";
+  paragraphs: Paragraph[] = [];
+  section: String = "";
+  headline: String = "";
 
   constructor(private router: Router, private route: ActivatedRoute, private libraryService: LibraryService) { 
+    console.log(this.route.snapshot)
     const code = this.route.snapshot.paramMap.get('code')!;
-    const article = libraryService.getArticleWithId(code);
-    if (article == null) {
-      this.firstLine = "This article does not exist";
-    } else {
-      this.firstLine = article.info.firstLine;
-      this.secondLine = article.info.secondLine;
-      this.paragraphs = createDisplayParagraphs(article.content);
-    }
+    this.section = this.route.snapshot["url"][0]["path"].toUpperCase();
+
+    this.libraryService.getArticleWithIdMock(code).toPromise().then(article => { 
+      if (!article) {
+        this.headline = "This article does not exist";
+        return;
+      }
+      this.headline = article.name
+      this.paragraphs = article.content
+      console.log(article)
+    });
   }
 
   ngOnInit(): void {
   }
 
-  navigateToLibrary() {
-    this.router.navigate(['/library']);
+  navigateBack() {
+    this.router.navigate([`/${this.section}`.toLowerCase()]);
   }
 
 }

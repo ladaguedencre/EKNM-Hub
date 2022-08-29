@@ -5,6 +5,13 @@ h3 {
     text-transform: none;
 }
 
+.eknm-button-small {
+    width: 10rem;
+}
+
 .bgimg {
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
 }

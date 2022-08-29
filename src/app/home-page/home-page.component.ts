@@ -19,7 +19,7 @@ export class HomePageComponent implements OnInit {
               private translate: TranslateService) {
     this.items.push({
       tag: 'home.projects',
-      path: '/projects'
+      path: '/workshop'
     });
     this.items.push({
       tag: 'home.articles',
@@ -27,11 +27,11 @@ export class HomePageComponent implements OnInit {
     });
     this.items.push({
       tag: 'home.beer',
-      path: '/brew'
+      path: '/brewery'
     });
     this.items.push({
       tag: 'home.entertainment',
-      path: '/games'
+      path: '/gamery'
     });
     this.items.push({
       tag: 'home.warehouse',

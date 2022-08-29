@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Binding } from '../models/article';
-import { LibraryService } from '../models/library.service';
+import { Binding } from '../models/binding';
+import { BindingService } from '../models/binding.service';
 
 @Component({
   selector: 'app-library-page',
@@ -11,10 +11,15 @@ export class LibraryPageComponent implements OnInit {
 
   bindings = [] as Binding[];
 
-  constructor(private libraryService: LibraryService) { }
+  constructor(private bindingService: BindingService) { }
 
   ngOnInit(): void {
-    this.bindings = this.libraryService.getPublicBindings();
+    this.bindingService.getBindingsMock().toPromise().then(bindings => { 
+      if (!bindings) {
+        return
+      }
+      this.bindings = bindings
+    });
   }
 
 }

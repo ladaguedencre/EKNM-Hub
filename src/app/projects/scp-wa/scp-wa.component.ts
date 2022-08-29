@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { DisplayParagraph } from 'src/app/articles/display-paragraph';
-import { ParagraphType } from 'src/app/models/article';
+import { Paragraph } from 'src/app/models/article';
 
 @Component({
   selector: 'app-scp-wa',
@@ -12,10 +11,10 @@ export class ScpWaComponent implements OnInit {
 
   constructor(private router: Router) { }
 
-  paragraphs: DisplayParagraph[] = [];
+  paragraphs: Paragraph[] = [];
 
   ngOnInit(): void {
-    this.paragraphs.push({
+    /*this.paragraphs.push({
       type: "image",
       subclass: "",
       paragraph: {
@@ -42,7 +41,7 @@ export class ScpWaComponent implements OnInit {
         text: "SCP:WA on GitHub",
         link: "https://github.com/monsteroko/SCPF-WA"
       }
-    })
+    })*/
   }
 
   navigateToProjects() {

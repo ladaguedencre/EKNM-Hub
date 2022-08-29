@@ -1,10 +1,16 @@
 <div class="container-standard">
     <div class="row justify-content-md-center mb-3">
-        <button type="button" class="header-button" (click)="navigateToLibrary()">LIBRARY</button>
+        <button type="button" class="header-button" (click)="navigateBack()">{{section}}</button>
     </div>
-    <h2 class="mt-5">{{firstLine}}</h2>
-    <h3 class="mt-1">{{secondLine}}</h3>
+    <h2>{{headline}}</h2>
     <div class="separator mt-3 mb-3"></div>
-    <article-content [paragraphs]="paragraphs"></article-content>
+    <div class="d-flex flex-column" *ngFor="let paragraph of paragraphs">
+        <container-element [ngSwitch]="paragraph.type">
+            <text-paragraph *ngSwitchCase="'text'" [paragraph]="paragraph"></text-paragraph>
+            <image-paragraph *ngSwitchCase="'image'" [paragraph]="paragraph"></image-paragraph>
+            <button-paragraph *ngSwitchCase="'button'" [paragraph]="paragraph"></button-paragraph>
+            <p *ngSwitchDefault>none</p>
+          </container-element>
+    </div>
     <div class="separator mt-3 mb-5"></div>
 </div>

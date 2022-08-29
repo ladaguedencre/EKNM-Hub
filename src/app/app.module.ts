@@ -27,7 +27,6 @@ import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
 import { ArticlePageComponent } from './articles/article-page/article-page.component';
 import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph.component';
 import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
-import { CombinedParagraphComponent } from './articles/combined-paragraph/combined-paragraph.component';
 import { ButtonParagraphComponent } from './articles/button-paragraph/button-paragraph.component';
 import { ArticleContentComponent } from './articles/article-content/article-content.component';
 import { BrewItemComponent } from './brew-page/brew-item/brew-item.component';
@@ -53,7 +52,6 @@ import { BrewItemComponent } from './brew-page/brew-item/brew-item.component';
     ArticlePageComponent,
     TextParagraphComponent,
     ImageParagraphComponent,
-    CombinedParagraphComponent,
     ButtonParagraphComponent,
     ArticleContentComponent,
     BrewItemComponent

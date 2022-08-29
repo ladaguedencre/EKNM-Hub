@@ -71,7 +71,7 @@ export class ProjectService {
         info: "Just a luntik test",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         logoUrl: "../../assets/mock/icon1.png",
-        link: "",
+        link: "http://google.com",
         state: ProjectState.ComingSoon,
         type: ProjectType.Development
       },
@@ -81,7 +81,7 @@ export class ProjectService {
         info: "Just a luntik test",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         logoUrl: "../../assets/mock/icon2.png",
-        link: "",
+        link: "/test2",
         state: ProjectState.Done,
         type: ProjectType.Development
       },

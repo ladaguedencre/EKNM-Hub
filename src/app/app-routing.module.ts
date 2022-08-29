@@ -16,17 +16,15 @@ import { ArticlePageComponent } from './articles/article-page/article-page.compo
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent },
-  { path: 'projects', component: ProjectsPageComponent },
-  { path: 'brew', component: BrewPageComponent },
+  { path: 'workshop', component: ProjectsPageComponent },
+  { path: 'brewery', component: BrewPageComponent },
   { path: 'library', component: LibraryPageComponent },
-  { path: 'games', component: GamesPageComponent },
+  { path: 'gamery', component: GamesPageComponent },
   { path: 'warehouse', component: ShopPageComponent },
   { path: 'info', component: InfoPageComponent },
-  { path: 'placeholder', component: PlaceholderPageComponent },
 
-  { path: 'projects/pupa', component: PupaComponent },
-  { path: 'projects/scpwa', component: ScpWaComponent },
   { path: 'library/:code', component: ArticlePageComponent },
+  { path: 'workshop/:code', component: ArticlePageComponent },
 
   { path: '',   redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PlaceholderPageComponent },
