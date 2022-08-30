@@ -101,5 +101,7 @@
             }
         }
     },
-    "defaultProject": "eknmhub"
+    "cli": {
+      "analytics": false
+    }
 }
