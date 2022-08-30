@@ -1,16 +1,22 @@
 <div class="container">
-  <div class="d-flex flex-row">
-    <div class="left-container">
-      <img src={{project?.logoUrl}}>
-      <a class="eknm-button-small" role="button" (click)="navigateToDetails()" >
-        {{ 'project_preview.page' | translate}}
-      </a>
+    <div class="d-flex flex-row">
+        <div class="left-container">
+            <img src="{{ project?.logoUrl }}" />
+            <a
+                class="eknm-button-small"
+                role="button"
+                (click)="navigateToDetails()"
+            >
+                {{ "project_preview.page" | translate }}
+            </a>
+        </div>
+        <div>
+            <h3 class="pb-2">{{ project?.name }}</h3>
+            <p class="pb-2">
+                {{ "project_preview.condition" | translate }}: {{ state }}
+            </p>
+            <p>{{ project!.description | translate }}</p>
+        </div>
     </div>
-    <div>
-      <h3 class="pb-2">{{project?.name}}</h3>
-      <p class="pb-2">{{ 'project_preview.condition' | translate}}: {{state}}</p>
-      <p>{{project!.description| translate}}</p>
-    </div>
-  </div>
-  <div class="pb-4"></div>
+    <div class="pb-4"></div>
 </div>

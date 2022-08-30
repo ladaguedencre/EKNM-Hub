@@ -13,23 +13,23 @@ import { BrewPageComponent } from './brew-page/brew-page.component';
 import { ArticlePageComponent } from './articles/article-page/article-page.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomePageComponent },
-  { path: 'workshop', component: ProjectsPageComponent },
-  { path: 'brewery', component: BrewPageComponent },
-  { path: 'library', component: LibraryPageComponent },
-  { path: 'gamery', component: GamesPageComponent },
-  { path: 'warehouse', component: ShopPageComponent },
-  { path: 'info', component: InfoPageComponent },
+    { path: 'home', component: HomePageComponent },
+    { path: 'workshop', component: ProjectsPageComponent },
+    { path: 'brewery', component: BrewPageComponent },
+    { path: 'library', component: LibraryPageComponent },
+    { path: 'gamery', component: GamesPageComponent },
+    { path: 'warehouse', component: ShopPageComponent },
+    { path: 'info', component: InfoPageComponent },
 
-  { path: 'library/:code', component: ArticlePageComponent },
-  { path: 'workshop/:code', component: ArticlePageComponent },
+    { path: 'library/:code', component: ArticlePageComponent },
+    { path: 'workshop/:code', component: ArticlePageComponent },
 
-  { path: '',   redirectTo: '/home', pathMatch: 'full' },
-  { path: '**', component: PlaceholderPageComponent },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', component: PlaceholderPageComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

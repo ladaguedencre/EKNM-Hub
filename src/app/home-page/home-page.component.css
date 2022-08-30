@@ -1,37 +1,37 @@
 .home-section {
-  text-decoration: none;
-  font-family: 'Raleway';
-  position: relative;
-  font-size: 2rem;
-  border: None;
-  background-color: transparent;
-  color: #e1e8eb;
-  text-transform: uppercase;
-  height: 7.5rem;
-  transition-duration: 0.2s;
+    text-decoration: none;
+    font-family: "Raleway";
+    position: relative;
+    font-size: 2rem;
+    border: None;
+    background-color: transparent;
+    color: #e1e8eb;
+    text-transform: uppercase;
+    height: 7.5rem;
+    transition-duration: 0.2s;
 }
 
 .home-section:hover {
-  color: #9d4edd;
+    color: #9d4edd;
 }
 
 .home-section:active {
-  color: #5a189a;
+    color: #5a189a;
 }
 
 .home-lang {
-  text-decoration: none;
-  font-family: 'Raleway';
-  position: relative;
-  font-size: 1.25rem;
-  border: None;
-  background-color: transparent;
-  color: #e1e8eb;
-  text-transform: uppercase;
-  height: 2.5rem;
-  transition-duration: 0.2s;
+    text-decoration: none;
+    font-family: "Raleway";
+    position: relative;
+    font-size: 1.25rem;
+    border: None;
+    background-color: transparent;
+    color: #e1e8eb;
+    text-transform: uppercase;
+    height: 2.5rem;
+    transition-duration: 0.2s;
 }
 
 .home-lang:hover {
-  color: #9d4edd !important;
+    color: #9d4edd !important;
 }

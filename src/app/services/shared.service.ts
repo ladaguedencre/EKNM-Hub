@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class SharedService {
-  basebg = 'bg4';
+    basebg = 'bg4';
 
-  constructor() { }
+    constructor() {}
 }

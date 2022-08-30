@@ -1,38 +1,62 @@
 <div class="container-standard">
-  <p class="pb-4 pt-4">
-    {{mainText}}
-  </p>
-  <div class="d-flex flex-column" *ngFor="let item of items">
+    <p class="pb-4 pt-4">
+        {{ mainText }}
+    </p>
+    <div class="d-flex flex-column" *ngFor="let item of items">
+        <div class="separator"></div>
+        <div class="row justify-content-md-center">
+            <button
+                type="button"
+                class="home-section"
+                (click)="navigate(item.path)"
+                translate
+            >
+                {{ item.tag }}
+            </button>
+        </div>
+    </div>
     <div class="separator"></div>
-    <div class="row justify-content-md-center">
-      <button type="button" class="home-section" (click)="navigate(item.path)" translate>{{ item.tag }}</button>
-    </div>
-  </div>
-  <div class="separator"></div>
 
-  <div class="row pb-3 pt-3">
-    <div class="col">
-      <div class="separator">
-      </div>
+    <div class="row pb-3 pt-3">
+        <div class="col">
+            <div class="separator"></div>
+        </div>
+        <div class="col-md-auto width-fit-content">
+            <button
+                class="home-lang"
+                (click)="useLanguage('ua')"
+                [ngStyle]="{
+                    color: this.currentLanguage === 'ua' ? '#e1e8eb' : 'gray'
+                }"
+            >
+                UA
+            </button>
+        </div>
+        <div class="col-md-auto width-fit-content">
+            <button
+                class="home-lang"
+                (click)="useLanguage('ru')"
+                [ngStyle]="{
+                    color: this.currentLanguage === 'ru' ? '#e1e8eb' : 'gray'
+                }"
+            >
+                RU
+            </button>
+        </div>
+        <div class="col-md-auto width-fit-content">
+            <button
+                class="home-lang"
+                (click)="useLanguage('en')"
+                [ngStyle]="{
+                    color: this.currentLanguage === 'en' ? '#e1e8eb' : 'gray'
+                }"
+            >
+                EN
+            </button>
+        </div>
+        <div class="col">
+            <div class="separator"></div>
+        </div>
     </div>
-    <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('ua')"
-      [ngStyle]="{'color': this.currentLanguage==='ua' ? '#e1e8eb' : 'gray'}">UA</button>
-    </div>
-    <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('ru')"
-      [ngStyle]="{'color': this.currentLanguage==='ru' ? '#e1e8eb' : 'gray'}">RU</button>
-    </div>
-    <div class="col-md-auto width-fit-content">
-      <button class="home-lang" (click)="useLanguage('en')"
-      [ngStyle]="{'color': this.currentLanguage==='en' ? '#e1e8eb' : 'gray'}">EN</button>
-    </div>
-    <div class="col">
-      <div class="separator">
-      </div>
-    </div>
-  </div>
-  <div class="pb-5"></div>
+    <div class="pb-5"></div>
 </div>
-
-

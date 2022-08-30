@@ -1,27 +1,27 @@
 img {
-  max-height: 10rem;
-  max-width: 10rem;
-  margin-bottom: 0.5rem;
+    max-height: 10rem;
+    max-width: 10rem;
+    margin-bottom: 0.5rem;
 }
 
 .left-container {
-  max-width: 10rem;
-  margin-right: 0.5rem;
+    max-width: 10rem;
+    margin-right: 0.5rem;
 }
 
 .eknm-button-small {
-  width: 100%;
+    width: 100%;
 }
 
 .separator {
-  background: #e1e8eb;
-  height: 2px;
+    background: #e1e8eb;
+    height: 2px;
 }
 
 .preview-button:hover {
-  color: rgb(126, 43, 194);
+    color: rgb(126, 43, 194);
 }
 
 .preview-button:active {
-  color: black;
+    color: black;
 }

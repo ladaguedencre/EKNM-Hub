@@ -2,17 +2,14 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Paragraph } from 'src/app/models/article';
 
 @Component({
-  selector: 'formatted-paragraph',
-  templateUrl: './formatted-paragraph.component.html',
-  styleUrls: ['./formatted-paragraph.component.css']
+    selector: 'formatted-paragraph',
+    templateUrl: './formatted-paragraph.component.html',
+    styleUrls: ['./formatted-paragraph.component.css'],
 })
 export class FormattedParagraphComponent implements OnInit {
+    @Input() paragraph?: Paragraph;
 
-  @Input() paragraph?: Paragraph;
+    constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+    ngOnInit(): void {}
 }

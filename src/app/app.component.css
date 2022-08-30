@@ -1,26 +1,26 @@
 @media only screen and (min-width: 400px) {
-  .width-preset {
-    min-width: 400px;
-    overflow: auto;
-  }
+    .width-preset {
+        min-width: 400px;
+        overflow: auto;
+    }
 }
 
-.bgBase{
-  background-color: #000000;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size:  cover;
+.bgBase {
+    background-color: #000000;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bgBeer{
-  background-image: url(../assets/backgrounds/bg_brew.png);
+.bgBeer {
+    background-image: url(../assets/backgrounds/bg_brew.png);
 }
 
-.bgPupa{
-  background-image: url(../assets/backgrounds/bg_pupa.png);
-  background-size: cover;
+.bgPupa {
+    background-image: url(../assets/backgrounds/bg_pupa.png);
+    background-size: cover;
 }
 
-.bgMain{
-  background-image: url(../assets/backgrounds/bg_main.png);
+.bgMain {
+    background-image: url(../assets/backgrounds/bg_main.png);
 }

@@ -5,4 +5,3 @@ export interface Binding {
     imageUrl: string;
     link: string;
 }
-  

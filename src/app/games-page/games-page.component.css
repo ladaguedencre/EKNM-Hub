@@ -1,26 +1,26 @@
 b {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 p {
-  text-align: center;
+    text-align: center;
 }
 
-.carousel{
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
+.carousel {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .carousel .carousel-item {
-  max-height: 370px;
-  height: 40vw;
+    max-height: 370px;
+    height: 40vw;
 }
 
 .carousel-item img {
     position: absolute;
-    object-fit:cover;
+    object-fit: cover;
     top: 0;
     left: 0;
 }

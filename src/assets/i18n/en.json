@@ -15,7 +15,7 @@
         "sorts": "Sorts"
     },
 
-    "projects":{
+    "projects": {
         "scp_text": "Global real-time strategy, the player manages the SCP Foundation on behalf of the Founder",
         "scp_description": "[DATA DELETED]",
         "bottleshelf_text": "Bar, cocktails and ingredients control and management system",
@@ -54,8 +54,7 @@
         "read": "READ"
     },
 
-    "pokemon_article":
-    {
+    "pokemon_article": {
         "header_1": "Cruelty and Violence in the Pokémon World:",
         "header_2": "The Real Truth About a Universe Run by Stockholm Syndrome and Exploitation",
         "paragraph_1": "We all know this cute and colorful world of Pokemon, but what if everything is not as colorful as it seems. This world has long been drowned in the greed of terrible monsters, and now I'm not talking about monsters like Gengar, Gyarados or Mewtwo, I'm talking about people. It would seem that people and wonderful animals live in peace, have fun, make friends and spend time together, but in fact this society has been exploiting these unfortunate and cute monsters for centuries. This society has lived so long and cruelly worked Pokemon that everyone has long considered this the norm.",
@@ -65,20 +64,17 @@
         "paragraph_5": "Perhaps, after reading this short article, you will take a different look at the world of Pokemon, and even better at our world and our relationship to our real pets. Take care and love our little brothers and yet let's try to help the poor animals with superpowers to gain at least a modicum of freedom and rights by promoting the #FreedomForPokemonsEKNM tag in our social networks."
     },
 
-    "placeholder":
-    {
+    "placeholder": {
         "example": "Coming soon..."
     },
 
-    "project_preview":
-    {
+    "project_preview": {
         "condition": "Status",
         "description": "Description",
         "page": "Page"
     },
 
-    "pupa":
-    {
+    "pupa": {
         "header": "Tale of Punk's Ear",
         "paragraph_1": "The universe in the tunnel is both similar and unlike many other universes, including our real one. In it, both playable and non-playable characters have their own history, character, characteristics, appearance, knowledge and skills. Among all the various life forms of this world, only a few are worthy of being called intelligent, and it is these races that your character can be:",
         "list_1": "<li>Humans</li> <li>Lithoids</li> <li>Dendroids and Fungoids</li> <li>Beastmen</li> <li>Spectrals</li> <li>Elemental</li> <li>Swarmers</li>",
@@ -90,16 +86,13 @@
         "link_2": "Read player's book"
     },
 
-    "project_page":
-    {
+    "project_page": {
         "developments": "DEVELOPMENTS",
         "projects": "PROJECT"
     },
 
-    "shop_page":
-    {
+    "shop_page": {
         "stickers": "STICKERS",
         "uniform": "UNIFORM"
-        
     }
 }
