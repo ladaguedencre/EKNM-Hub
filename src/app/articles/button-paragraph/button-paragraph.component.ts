@@ -5,7 +5,7 @@ import { Paragraph } from 'src/app/models/article';
 @Component({
   selector: 'button-paragraph',
   templateUrl: './button-paragraph.component.html',
-  styleUrls: ['./button-paragraph.component.css', '../article-styles.css']
+  styleUrls: ['./button-paragraph.component.css']
 })
 export class ButtonParagraphComponent implements OnInit {
 
@@ -17,7 +17,15 @@ export class ButtonParagraphComponent implements OnInit {
   }
 
   openLink() {
-    this.router.navigate([this.paragraph?.link]);
+    
+    if(this.paragraph!.ref.includes("http"))
+    {
+      window.open(this.paragraph?.ref);
+    }
+    else
+    {
+      this.router.navigate([this.paragraph?.ref]);
+    }
   }
 
 }

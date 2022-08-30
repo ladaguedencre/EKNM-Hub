@@ -1,0 +1,23 @@
+.paragraph-button-long {
+    text-decoration: none;
+    font-family: 'Raleway';
+    position: relative;
+    font-size: 1.5rem;
+    border: None;
+    background-color: transparent;
+    color: white;
+    height: 4rem;
+}
+
+.button-div {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.paragraph-button-long:hover {
+    color: #9d4edd;
+}
+
+.eknm-button-long:active {
+    color: #5a189a;
+}

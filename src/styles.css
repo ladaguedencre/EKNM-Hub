@@ -43,9 +43,8 @@ p {
   font-weight: normal;
   position: relative;
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #e1e8eb;
-  text-align: justify;
 }
 
 h1
@@ -135,7 +134,7 @@ h3 {
   align-items:center;
   text-decoration: none;
   font-family: 'Raleway';
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   border: 2px solid #e1e8eb;
   border-radius: 360px;
   color: #e1e8eb;
@@ -164,7 +163,7 @@ li {
   font-weight: normal;
   position: relative;
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #e1e8eb;
   text-align: justify;
 }

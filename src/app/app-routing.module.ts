@@ -10,8 +10,6 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
 import { LibraryPageComponent } from './library-page/library-page.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
 
-import { PupaComponent } from './projects/pupa/pupa.component';
-import { ScpWaComponent } from './projects/scp-wa/scp-wa.component';
 import { ArticlePageComponent } from './articles/article-page/article-page.component';
 
 const routes: Routes = [

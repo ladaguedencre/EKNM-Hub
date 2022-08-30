@@ -1,7 +1,13 @@
-h2 {
-    text-align: center;
+h3 {
+    font-size: 2rem;
+    text-align: left;
 }
 
-h3 {
-    text-align: center;
+.flex-column {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.author-label {
+    font-size: 1rem;
 }

@@ -7,7 +7,7 @@ import { BrewService } from '../models/brew.service';
 @Component({
   selector: 'app-brew-page',
   templateUrl: './brew-page.component.html',
-  styleUrls: ['./brew-page.component.css', '../articles/article-styles.css']
+  styleUrls: ['./brew-page.component.css']
 })
 export class BrewPageComponent implements OnInit {
 

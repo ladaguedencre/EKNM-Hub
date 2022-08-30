@@ -1,0 +1,16 @@
+.img-normal {
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+
+.img-narrow {
+    width: 100%;
+    aspect-ratio: 4/1;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+}
+

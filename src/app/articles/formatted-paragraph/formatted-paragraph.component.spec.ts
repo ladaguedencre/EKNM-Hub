@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ScpWaComponent } from './scp-wa.component';
+import { FormattedParagraphComponent } from './formatted-paragraph.component';
 
-describe('ScpWaComponent', () => {
-  let component: ScpWaComponent;
-  let fixture: ComponentFixture<ScpWaComponent>;
+describe('FormattedParagraphComponent', () => {
+  let component: FormattedParagraphComponent;
+  let fixture: ComponentFixture<FormattedParagraphComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ScpWaComponent ]
+      declarations: [ FormattedParagraphComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ScpWaComponent);
+    fixture = TestBed.createComponent(FormattedParagraphComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
