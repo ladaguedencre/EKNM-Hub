@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class SharedService {
     basebg = 'bg4';
 
-    static APIUrl: string = ''; // INSERT KEY HERE
+    static APIUrl: string = 'https://ttqv99ng55.execute-api.eu-central-1.amazonaws.com/v1'; // INSERT KEY HERE
 
     constructor() {}
 }
