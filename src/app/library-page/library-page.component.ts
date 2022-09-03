@@ -14,7 +14,7 @@ export class LibraryPageComponent implements OnInit {
 
     ngOnInit(): void {
         this.bindingService
-            .getBindingsMock()
+            .getBindings()
             .toPromise()
             .then((bindings) => {
                 if (!bindings) {

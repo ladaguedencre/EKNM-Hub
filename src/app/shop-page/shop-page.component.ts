@@ -36,7 +36,7 @@ export class ShopPageComponent implements OnInit {
 
     ngOnInit(): void {
         this.itemService
-            .getItemsMock()
+            .getItems()
             .toPromise()
             .then((items) => {
                 if (!items) {

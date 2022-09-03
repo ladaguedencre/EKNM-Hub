@@ -1,7 +1,9 @@
+import { multitext } from "../services/translate-helper";
+
 export interface Brew {
     id: string;
     name: string;
-    description: { [lang: string]: string };
+    description: multitext;
     imageUrl: string;
     count: number;
 }

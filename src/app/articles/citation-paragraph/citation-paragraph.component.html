@@ -1,4 +1,4 @@
 <div class="citation-div">
     <p>{{ paragraph?.text }}</p>
-    <div></div>
+    <p class="citation-reference" *ngIf="paragraph?.ref != ''" >{{ paragraph?.ref }}</p>
 </div>

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
+import { SharedService } from '../services/shared.service';
 import { Binding } from './binding';
 import { ItemType, Item } from './item';
 
@@ -8,7 +9,6 @@ import { ItemType, Item } from './item';
     providedIn: 'root',
 })
 export class BindingService {
-    readonly APIUrl = ''; // INSERT KEY HERE
 
     cache: Observable<Binding[]> = NEVER;
 
@@ -28,7 +28,7 @@ export class BindingService {
     getBindings() {
         if (this.cache == NEVER) {
             this.cache = this.http
-                .get<any[]>(this.APIUrl + '/bindings')
+                .get<any[]>(SharedService.APIUrl + '/bindings')
                 .pipe(
                     map((jsons: any[]) =>
                         jsons.map((json) => this.jsonToBinding(json))

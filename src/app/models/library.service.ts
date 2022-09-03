@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
+import { SharedService } from '../services/shared.service';
 import { Article, Paragraph } from './article';
 
 import testArticleData from './articleTest.json';
@@ -9,7 +10,6 @@ import testArticleData from './articleTest.json';
     providedIn: 'root',
 })
 export class LibraryService {
-    readonly APIUrl = ''; // INSERT KEY HERE
 
     articles: { [id: string]: Article } = {};
 
@@ -44,8 +44,17 @@ export class LibraryService {
     constructor(private http: HttpClient) {}
 
     getArticleWithId(id: string): Observable<Article> {
+        if (id == 'test') { 
+            return new Observable<Article>((observer) => {
+                observer.next(testArticleData as Article);
+                observer.complete();
+            });
+        }
+        if (SharedService.APIUrl.length == 0) {
+            return this.getArticleWithIdMock(id);
+        }
         let article = this.http
-            .get<any>(this.APIUrl + `/articles?id=${id}`)
+            .get<any>(SharedService.APIUrl + `/articles?id=${id}`)
             .pipe(map((json) => this.jsonToArticle(json)));
         return article;
     }
@@ -109,9 +118,6 @@ export class LibraryService {
                 },
             ],
         };
-        if (id == 'test') {
-            article = testArticleData as Article;
-        }
         return new Observable<Article>((observer) => {
             observer.next(article);
             observer.complete();

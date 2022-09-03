@@ -21,7 +21,7 @@ export class BrewPageComponent implements OnInit {
     ngOnInit(): void {
         this.subjects.subject(1).next('bgBeer');
         this.brewService
-            .getBrewsMock()
+            .getBrews()
             .toPromise()
             .then((brews) => {
                 if (!brews) {

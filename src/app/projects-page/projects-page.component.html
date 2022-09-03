@@ -11,7 +11,7 @@
     <section-title
         [titleText]="'project_page.projects' | translate"
     ></section-title>
-    <div class="d-flex flex-column" *ngFor="let project of other">
+    <div class="d-flex flex-column" *ngFor="let project of projects">
         <project-preview [project]="project"></project-preview>
     </div>
 </div>

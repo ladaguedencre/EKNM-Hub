@@ -1,13 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
+import { SharedService } from '../services/shared.service';
 import { Brew } from './brew';
 
 @Injectable({
     providedIn: 'root',
 })
 export class BrewService {
-    readonly APIUrl = ''; // INSERT KEY HERE
 
     cache: Observable<Brew[]> = NEVER;
 
@@ -25,9 +25,12 @@ export class BrewService {
     }
 
     getBrews() {
+        if (SharedService.APIUrl.length == 0) {
+            return this.getBrewsMock();
+        }
         if (this.cache == NEVER) {
             this.cache = this.http
-                .get<any[]>(this.APIUrl + '/brews')
+                .get<any[]>(SharedService.APIUrl + '/brews')
                 .pipe(
                     map((jsons: any[]) =>
                         jsons.map((json) => this.jsonToBrew(json))

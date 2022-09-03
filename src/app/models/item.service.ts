@@ -1,14 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
+import { SharedService } from '../services/shared.service';
 import { ItemType, Item } from './item';
 
 @Injectable({
     providedIn: 'root',
 })
 export class ItemService {
-    readonly APIUrl = ''; // INSERT KEY HERE
-
     cache: Observable<Item[]> = NEVER;
 
     constructor(private http: HttpClient) {}
@@ -35,9 +34,12 @@ export class ItemService {
     }
 
     getItems() {
+        if (SharedService.APIUrl.length == 0) {
+            return this.getItemsMock();
+        }
         if (this.cache == NEVER) {
             this.cache = this.http
-                .get<any[]>(this.APIUrl + '/items')
+                .get<any[]>(SharedService.APIUrl + '/items')
                 .pipe(
                     map((jsons: any[]) =>
                         jsons.map((json) => this.jsonToItem(json))

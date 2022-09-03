@@ -1,12 +1,12 @@
 img {
     max-height: 10rem;
     max-width: 10rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .left-container {
     max-width: 10rem;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
 }
 
 .eknm-button-small {
@@ -18,10 +18,29 @@ img {
     height: 2px;
 }
 
-.preview-button:hover {
-    color: rgb(126, 43, 194);
+.circle {
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 0.5rem;
 }
 
-.preview-button:active {
-    color: black;
+.button-inactive {
+    border: 2px solid gray;
+    color: gray;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.button-inactive:hover {
+    color: gray;
+}
+
+.button-inactive:active {
+    color: gray;
 }

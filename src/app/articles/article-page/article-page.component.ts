@@ -28,7 +28,7 @@ export class ArticlePageComponent implements OnInit {
         this.section = this.route.snapshot['url'][0]['path'].toUpperCase();
 
         this.libraryService
-            .getArticleWithIdMock(this.code)
+            .getArticleWithId(this.code)
             .toPromise()
             .then((article) => {
                 if (!article) {

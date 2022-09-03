@@ -15,15 +15,6 @@
         "sorts": "Sorts"
     },
 
-    "projects": {
-        "scp_text": "Global real-time strategy, the player manages the SCP Foundation on behalf of the Founder",
-        "scp_description": "[DATA DELETED]",
-        "bottleshelf_text": "Bar, cocktails and ingredients control and management system",
-        "bottleshelf_description": "This system was developed mainly for a promising project of a bar-casino, which in the future should exist and have in its assortment unique cocktails developed by EKNM and own brewed beer.",
-        "pupa_text": "Author system for role-playing board games",
-        "pupa_description": "Welcome to a world that was formed in ancient times on the inner surface of the punk ear tunnel! In it, you can create your own unique character with various characteristics and features. Use magic, fighting styles, a variety of weapons and powerful artifacts."
-    },
-
     "games": {
         "server_name": "Server name:",
         "server_ip": "Server address:",
@@ -69,9 +60,7 @@
     },
 
     "project_preview": {
-        "condition": "Status",
-        "description": "Description",
-        "page": "Page"
+        "page": "Show details"
     },
 
     "pupa": {
@@ -88,7 +77,7 @@
 
     "project_page": {
         "developments": "DEVELOPMENTS",
-        "projects": "PROJECT"
+        "projects": "PROJECTS"
     },
 
     "shop_page": {

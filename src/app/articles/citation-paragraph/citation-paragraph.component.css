@@ -2,9 +2,16 @@
     background-color: rgba(200, 200, 200, 0.3);
     margin-top: 1rem;
     margin-bottom: 1rem;
+    padding: 1.5rem;
 }
 
 p {
-    font-family: "Raleway-Bold";
-    padding: 1rem;
+    font-family: "Raleway-SemiBold";
+}
+
+.citation-reference {
+    font-family: "Raleway";
+    padding-left: 5rem;
+    padding-top: 1rem;
+    text-align: right;
 }

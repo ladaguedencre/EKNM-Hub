@@ -5,18 +5,27 @@
             <a
                 class="eknm-button-small"
                 role="button"
+                *ngIf="isButtonActive"
                 (click)="navigateToDetails()"
+            >
+                {{ "project_preview.page" | translate }}
+            </a>
+            <a
+                class="eknm-button-small button-inactive"
+                role="button"
+                *ngIf="!isButtonActive"
             >
                 {{ "project_preview.page" | translate }}
             </a>
         </div>
         <div>
             <h3 class="pb-2">{{ project?.name }}</h3>
-            <p class="pb-2">
-                {{ "project_preview.condition" | translate }}: {{ state }}
-            </p>
-            <p>{{ project!.description | translate }}</p>
+            <div class="d-flex flex-row mb-2">
+                <div class="circle" [ngStyle]="setColor()"></div>
+                <p>{{ state }}</p>
+            </div>
+            <p>{{ description! }}</p>
         </div>
     </div>
-    <div class="pb-4"></div>
+    <div class="mb-4"></div>
 </div>

@@ -1,11 +1,11 @@
 img {
-    height: 8.7rem;
-    width: 15rem;
+    height: 9rem;
+    aspect-ratio: 3/2;
     object-fit: cover;
     padding-right: 0.5rem;
 }
 
 .label-long {
-    height: 5rem;
+    height: 5.3rem;
     overflow: hidden;
 }

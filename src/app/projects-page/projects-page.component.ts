@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { ProjectPreviewComponent } from './project-preview/project-preview.component';
 import { ProjectService } from '../models/project.service';
 import { Project, ProjectType } from '../models/project';
 
@@ -10,24 +9,13 @@ import { Project, ProjectType } from '../models/project';
 })
 export class ProjectsPageComponent implements OnInit {
     developments = [] as Project[];
-    other = [] as Project[];
+    projects = [] as Project[];
 
     constructor(private projectService: ProjectService) {}
 
-    numberOfColumns = 2;
-
-    @HostListener('window:resize', ['$event'])
-    onWindowResize() {
-        if (window.innerWidth >= 600) {
-            this.numberOfColumns = 2;
-        } else {
-            this.numberOfColumns = 1;
-        }
-    }
-
     ngOnInit(): void {
         this.projectService
-            .getProjectsMock()
+            .getProjects()
             .toPromise()
             .then((projects) => {
                 if (!projects) {
@@ -38,8 +26,8 @@ export class ProjectsPageComponent implements OnInit {
                         case ProjectType.Development:
                             this.developments.push(project);
                             break;
-                        case ProjectType.Other:
-                            this.other.push(project);
+                        case ProjectType.Project:
+                            this.projects.push(project);
                             break;
                     }
                 }

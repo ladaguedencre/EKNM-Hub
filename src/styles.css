@@ -11,6 +11,12 @@
 }
 
 @font-face {
+    font-family: Raleway-SemiBold;
+    src: url("assets/fonts/Raleway.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
     font-family: RalewayDots;
     src: url("assets/fonts/RalewayDots.ttf") format("truetype");
 }
