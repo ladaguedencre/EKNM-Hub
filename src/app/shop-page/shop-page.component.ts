@@ -17,7 +17,7 @@ export class ShopPageComponent implements OnInit {
     onWindowResize() {
         this.getScreenWidth = window.innerWidth;
         this.getScreenHeight = window.innerHeight;
-        this.numberOfColumns = Math.floor(this.getScreenWidth / 200);
+        this.numberOfColumns = Math.floor(this.getScreenWidth / 12.5 / parseFloat(getComputedStyle(document.documentElement).fontSize));
         if (this.numberOfColumns > 4) {
             this.numberOfColumns = 4;
         }

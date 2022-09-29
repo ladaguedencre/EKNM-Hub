@@ -219,6 +219,18 @@ li {
     }
 }
 
+@media only screen and (max-width: 540px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 324px) {
+    :root {
+        font-size: 8px;
+    }
+}
+
 .header-button {
     text-decoration: none;
     font-family: "RalewayDots";

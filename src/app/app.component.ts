@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, OnDestroy {
         private translate: TranslateService,
         @Inject(DOCUMENT) private document: Document
     ) {
-        translate.setDefaultLang('ua');
+        translate.setDefaultLang('en');
     }
 
     ngOnInit(): void {
@@ -39,12 +39,12 @@ export class AppComponent implements OnInit, OnDestroy {
                 this.bg = data;
                 this.cdr.detectChanges();
             });
-        const savedLang = localStorage.getItem('language');
+        let savedLang = localStorage.getItem('language');
         if (!savedLang) {
-            localStorage.setItem('language', 'ua');
-        } else {
-            this.translate.use(savedLang);
+            savedLang = 'en';
+            localStorage.setItem('language', savedLang);
         }
+        this.translate.use(savedLang);
     }
 
     ngOnDestroy() {

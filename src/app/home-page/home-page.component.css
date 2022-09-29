@@ -35,3 +35,7 @@
 .home-lang:hover {
     color: #9d4edd !important;
 }
+
+p {
+    text-align: center;
+}
