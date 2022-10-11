@@ -59,7 +59,7 @@ export class LibraryService {
         return article;
     }
 
-    getArticleWithIdMock(id: string): Observable<Article> {
+    private getArticleWithIdMock(id: string): Observable<Article> {
         let article: Article = {
             id: 'mock',
             name: 'Гайд по написанню статей для сайта, який в той же час є статтею для тесту',

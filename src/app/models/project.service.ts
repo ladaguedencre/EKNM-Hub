@@ -65,7 +65,7 @@ export class ProjectService {
         return this.cache;
     }
 
-    getProjectsMock(): Observable<Project[]> {
+    private getProjectsMock(): Observable<Project[]> {
         const projects: Project[] = [
             {
                 id: 'test1',

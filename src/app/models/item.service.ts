@@ -49,7 +49,7 @@ export class ItemService {
         return this.cache;
     }
 
-    getItemsMock(): Observable<Item[]> {
+    private getItemsMock(): Observable<Item[]> {
         const items: Item[] = [
             {
                 id: 'test1',
