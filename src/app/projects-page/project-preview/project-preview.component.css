@@ -48,3 +48,8 @@ img {
 .button-inactive:active {
     color: gray;
 }
+
+.project-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+}

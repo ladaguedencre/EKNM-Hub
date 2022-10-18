@@ -13,7 +13,6 @@ import { ProjectPreviewComponent } from './projects-page/project-preview/project
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
-import { InfoPageComponent } from './info-page/info-page.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
@@ -38,7 +37,6 @@ import { FormattedParagraphComponent } from './articles/formatted-paragraph/form
         ProjectsPageComponent,
         HomePageComponent,
         SectionTitleComponent,
-        InfoPageComponent,
         PlaceholderPageComponent,
         GamesPageComponent,
         ShopPageComponent,

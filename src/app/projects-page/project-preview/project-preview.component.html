@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container mb-2 mt-2">
     <div class="d-flex flex-row">
         <div class="left-container">
             <img src="{{ project?.logoUrl }}" />
@@ -19,8 +19,8 @@
             </a>
         </div>
         <div>
-            <h3 class="pb-2">{{ project?.name }}</h3>
-            <div class="d-flex flex-row mb-2">
+            <p class="project-title">{{ project?.name }}</p>
+            <div class="d-flex flex-row mb-1">
                 <div class="circle" [ngStyle]="setColor()"></div>
                 <p>{{ state }}</p>
             </div>

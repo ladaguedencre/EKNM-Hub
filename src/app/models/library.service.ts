@@ -30,7 +30,9 @@ export class LibraryService {
             section: json['section'],
             author: json['author'],
             date: json['date'],
-            access: json['access'],
+            category: json['category'],
+            backgroundUrl: json['background'],
+            logoUrl: json['logo'],
             content: [],
         } as Article;
         let paragraphs = [];
@@ -66,7 +68,8 @@ export class LibraryService {
             section: 'lib',
             author: 'Admin',
             date: '2022',
-            access: 'test',
+            category: 'test',
+            backgroundUrl: '../../assets/mock/icon1.png',
             content: [
                 {
                     index: 0,

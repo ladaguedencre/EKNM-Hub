@@ -5,8 +5,9 @@ import {
     transition,
     trigger,
 } from '@angular/animations';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MenuItem } from 'src/app/models/menu-item';
 
 @Component({
     selector: 'app-header',
@@ -14,13 +15,35 @@ import { Router } from '@angular/router';
     styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
-    main = '../../assets/logohd.png';
-    second = '../../assets/logohd_selected.png';
+
+    @Input() inputItems?: MenuItem[];
+    @Input() includeHub?: boolean;
+    items: MenuItem[] = [];
+
     constructor(private router: Router) {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        if (this.includeHub ?? true) {
+            this.items.push({
+                tag: 'HUB',
+                path: '/',
+            });
+        } else {
+            this.items.push({
+                tag: 'EKNM',
+                path: '/',
+            });
+        }
+        for (let item of this.inputItems ?? []) {
+            this.items.push({
+                tag: '/',
+                path: '',
+            });
+            this.items.push(item)
+        }
+    }
 
-    navigateToHome() {
-        this.router.navigate(['/home']);
+    navigate(path: string) {
+        this.router.navigate([path]);
     }
 }

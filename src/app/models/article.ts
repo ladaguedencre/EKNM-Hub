@@ -4,7 +4,9 @@ export interface Article {
     section: string;
     author: string;
     date: string;
-    access: string;
+    category: string;
+    backgroundUrl: string;
+    logoUrl?: string;
     content: Paragraph[];
 }
 

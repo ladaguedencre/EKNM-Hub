@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { InfoPageComponent } from './info-page/info-page.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
@@ -19,7 +18,6 @@ const routes: Routes = [
     { path: 'library', component: LibraryPageComponent },
     { path: 'gamery', component: GamesPageComponent },
     { path: 'warehouse', component: ShopPageComponent },
-    { path: 'info', component: InfoPageComponent },
 
     { path: 'library/:code', component: ArticlePageComponent },
     { path: 'workshop/:code', component: ArticlePageComponent },

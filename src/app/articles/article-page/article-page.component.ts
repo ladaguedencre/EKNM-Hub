@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Paragraph } from 'src/app/models/article';
+import { MenuItem } from 'src/app/models/menu-item';
 import { SubjectsDataService } from 'src/app/services/subject-data.service';
 import { LibraryService } from '../../models/library.service';
 
@@ -12,10 +13,14 @@ import { LibraryService } from '../../models/library.service';
 export class ArticlePageComponent implements OnInit {
     paragraphs: Paragraph[] = [];
     section: string = '';
+    backgroundUrl: string = '';
+    logoUrl: string = '';
     showAccessory: boolean = true;
     accessory: string = '';
     headline: string = '';
     code: string = '';
+
+    menuItems: MenuItem[] = [];
 
     constructor(
         private router: Router,
@@ -25,7 +30,19 @@ export class ArticlePageComponent implements OnInit {
     ) {
         console.log(this.route.snapshot);
         this.code = this.route.snapshot.paramMap.get('code')!;
-        this.section = this.route.snapshot['url'][0]['path'].toUpperCase();
+        this.section = this.route.snapshot['url'][0]['path'];
+
+        if (this.section == 'library') {
+            this.menuItems.push({
+                tag: 'LIBRARY',
+                path: '/library',
+            });
+        } else {
+            this.menuItems.push({
+                tag: 'WORKSHOP',
+                path: '/workshop',
+            });
+        }
 
         this.libraryService
             .getArticleWithId(this.code)
@@ -37,7 +54,9 @@ export class ArticlePageComponent implements OnInit {
                 }
                 this.headline = article.name;
                 this.paragraphs = article.content;
-                this.accessory = `${article.author} / ${article.date} / ${article.access}`;
+                this.accessory = `${article.author} / ${article.date} / ${article.category}`;
+                this.backgroundUrl = article.backgroundUrl ?? '';
+                this.logoUrl = article.logoUrl ?? '';
                 if (article.section == 'projects') {
                     this.showAccessory = false;
                 }
@@ -54,6 +73,28 @@ export class ArticlePageComponent implements OnInit {
     ngOnDestroy(): void {
         this.subjects.subject(1).next('bgMain');
     }
+
+    setBackground = () => {
+        return {
+            'background-image': `url(${
+                this.backgroundUrl
+            })`,
+            'background-size': `cover`,
+            'background-repeat': `no-repeat`,
+            'background-position': `center`
+        };
+    };
+
+    setLogo = () => {
+        return {
+            'background-image': `url(${
+                this.logoUrl
+            })`,
+            'background-size': `contain`,
+            'background-repeat': `no-repeat`,
+            'background-position': `center`
+        };
+    };
 
     navigateBack() {
         this.router.navigate([`/${this.section}`.toLowerCase()]);

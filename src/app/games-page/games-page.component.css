@@ -24,3 +24,7 @@ p {
     top: 0;
     left: 0;
 }
+
+.page-header {
+    background-image: url(../../assets/backgrounds/bg_gamery.jpg);
+}

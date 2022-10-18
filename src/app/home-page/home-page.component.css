@@ -39,3 +39,7 @@
 p {
     text-align: center;
 }
+
+.page-header {
+    background-image: url(../../assets/backgrounds/bg_hub.jpg);
+}

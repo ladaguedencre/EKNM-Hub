@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { MenuItem } from './menu-item';
+import { MenuItem } from '../models/menu-item';
 
 @Component({
     selector: 'app-home-page',
@@ -35,10 +35,6 @@ export class HomePageComponent {
         this.items.push({
             tag: 'home.warehouse',
             path: '/warehouse',
-        });
-        this.items.push({
-            tag: 'home.info',
-            path: '/info',
         });
         this.updateHeaderText();
     }

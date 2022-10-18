@@ -1,9 +1,13 @@
-<div class="container-standard">
-    <div class="row justify-content-md-center mb-3">
-        <button type="button" class="header-button">LIBRARY</button>
+<div class="full-width">
+    <div class="page-header">
+        <div class="gradient-down"><app-header></app-header></div>
+        <div class="gradient-middle"><h2>LIBRARY</h2></div>
+        <div class="gradient-up"></div>
     </div>
-    <section-title [titleText]="'library.article' | translate"></section-title>
-    <div class="d-flex flex-column" *ngFor="let binding of bindings">
-        <article-info [binding]="binding"></article-info>
+    <div class="container-standard pb-5">
+        <section-title [titleText]="'library.article' | translate"></section-title>
+        <div class="d-flex flex-column" *ngFor="let binding of bindings">
+            <article-info [binding]="binding"></article-info>
+        </div>
     </div>
 </div>
