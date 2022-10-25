@@ -26,7 +26,7 @@ export class HeaderComponent implements OnInit {
         if (this.includeHub ?? true) {
             this.items.push({
                 tag: 'HUB',
-                path: '/',
+                path: '/hub',
             });
         } else {
             this.items.push({

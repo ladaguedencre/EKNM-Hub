@@ -28,6 +28,7 @@ import { ButtonParagraphComponent } from './articles/button-paragraph/button-par
 import { BrewItemComponent } from './brew-page/brew-item/brew-item.component';
 import { CitationParagraphComponent } from './articles/citation-paragraph/citation-paragraph.component';
 import { FormattedParagraphComponent } from './articles/formatted-paragraph/formatted-paragraph.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
     declarations: [
@@ -51,6 +52,7 @@ import { FormattedParagraphComponent } from './articles/formatted-paragraph/form
         BrewItemComponent,
         CitationParagraphComponent,
         FormattedParagraphComponent,
+        LandingPageComponent,
     ],
     imports: [
         BrowserModule,
