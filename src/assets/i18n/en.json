@@ -4,7 +4,8 @@
         "articles": "Library",
         "beer": "Brewery",
         "entertainment": "Gamery",
-        "warehouse": "Warehouse"
+        "warehouse": "Warehouse",
+        "status": "Due to the war, some sections, structures and functions do not work, or do not work to their full extent"
     },
 
     "brew": {

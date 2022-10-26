@@ -43,7 +43,7 @@
 }
 
 .color-purple-bright {
-    color: #9d4edd;
+    color: #a668d9;
 }
 
 .color-purple-middle {
@@ -153,7 +153,6 @@ h3 {
 .eknm-button-underlined {
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     font-family: "Raleway";
     font-size: 1.25rem;
     color: #e1e8eb;
@@ -161,12 +160,11 @@ h3 {
 
 .eknm-button-underlined:hover {
     color: #e1e8eb;
-    text-decoration: underline;
+    text-decoration-color: #a668d9;
 }
 
 .eknm-button-underlined:active {
     color: #e1e8eb;
-    text-decoration: underline;
 }
 
 html,

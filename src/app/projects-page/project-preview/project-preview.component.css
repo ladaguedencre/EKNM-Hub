@@ -35,18 +35,8 @@ img {
 }
 
 .button-inactive {
-    border: 2px solid gray;
     color: gray;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-.button-inactive:hover {
-    color: gray;
-}
-
-.button-inactive:active {
-    color: gray;
+    pointer-events: none;
 }
 
 .project-title {
