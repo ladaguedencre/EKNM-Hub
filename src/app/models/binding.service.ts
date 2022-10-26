@@ -26,6 +26,9 @@ export class BindingService {
     }
 
     getBindings() {
+        if (SharedService.APIUrl.length == 0) {
+            return this.getBindingsMock();
+        }
         if (this.cache == NEVER) {
             this.cache = this.http
                 .get<any[]>(SharedService.APIUrl + '/bindings')
@@ -38,7 +41,7 @@ export class BindingService {
         return this.cache;
     }
 
-    getBindingsMock(): Observable<Binding[]> {
+    private getBindingsMock(): Observable<Binding[]> {
         const bindings: Binding[] = [
             {
                 id: 'test1',

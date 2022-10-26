@@ -19,7 +19,7 @@ import { DOCUMENT } from '@angular/common';
 export class AppComponent implements OnInit, OnDestroy {
     private ngUnsubscribe = new Subject();
     title = 'EKNM Hub';
-    bg = 'bgMain';
+
     constructor(
         public sharedService: SharedService,
         private cdr: ChangeDetectorRef,
@@ -27,24 +27,17 @@ export class AppComponent implements OnInit, OnDestroy {
         private translate: TranslateService,
         @Inject(DOCUMENT) private document: Document
     ) {
-        translate.setDefaultLang('ua');
+        translate.setDefaultLang('en');
     }
 
     ngOnInit(): void {
         this.document.body.classList.add('blackBG');
-        this.subjects
-            .subject(1)
-            .pipe(takeUntil(this.ngUnsubscribe))
-            .subscribe((data) => {
-                this.bg = data;
-                this.cdr.detectChanges();
-            });
-        const savedLang = localStorage.getItem('language');
+        let savedLang = localStorage.getItem('language');
         if (!savedLang) {
-            localStorage.setItem('language', 'ua');
-        } else {
-            this.translate.use(savedLang);
+            savedLang = 'en';
+            localStorage.setItem('language', savedLang);
         }
+        this.translate.use(savedLang);
     }
 
     ngOnDestroy() {

@@ -1,15 +1,19 @@
-<div class="container-standard">
-    <div class="row justify-content-md-center mb-3">
-        <button type="button" class="header-button" (click)="navigateBack()">
-            {{ section }}
-        </button>
+<div class="full-width">
+    <div class="article-header" [ngStyle]="setBackground()">
+        <div class="gradient-down"><app-header [inputItems]="this.menuItems"></app-header></div>
+        <div class="gradient-middle">
+            <div class="container-standard d-flex flex-column pb-3 pt-3" *ngIf="showAccessory">
+                <h2 class="mb-3 mt-3">{{ headline }}</h2>
+                <p class="author-label">{{ accessory }}</p>
+            </div>
+            <div class="article-logo" *ngIf="showLogo" [ngStyle]="setLogo()"></div>
+            <div class="container-standard pb-3 pt-3" *ngIf="showName">
+                <h2 class="mb-3 mt-3 project-name">{{ headline }}</h2>
+            </div>
+        </div>
+        <div class="gradient-up"></div>
     </div>
-    <div class="pt-3" *ngIf="showAccessory">
-        <p class="pb-1 pt-1 author-label">{{ accessory }}</p>
-        <div class="separator"></div>
-        <h3 class="mb-3 mt-3">{{ headline }}</h3>
-    </div>
-    <div class="d-flex flex-column" *ngFor="let paragraph of paragraphs">
+    <div class="container-standard d-flex flex-column" *ngFor="let paragraph of paragraphs">
         <container-element [ngSwitch]="paragraph.type">
             <text-paragraph
                 *ngSwitchCase="'text'"

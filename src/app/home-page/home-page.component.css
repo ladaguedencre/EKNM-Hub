@@ -12,7 +12,7 @@
 }
 
 .home-section:hover {
-    color: #9d4edd;
+    color: #a668d9;
 }
 
 .home-section:active {
@@ -33,5 +33,13 @@
 }
 
 .home-lang:hover {
-    color: #9d4edd !important;
+    color: #a668d9 !important;
+}
+
+p {
+    text-align: center;
+}
+
+.page-header {
+    background-image: url(../../assets/backgrounds/bg_hub.jpg);
 }

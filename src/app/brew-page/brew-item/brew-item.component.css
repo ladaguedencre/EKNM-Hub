@@ -5,7 +5,16 @@ img {
     padding-right: 0.5rem;
 }
 
+.container {
+    padding: 0;
+}
+
 .label-long {
-    height: 5.3rem;
+    height: 5.4rem;
     overflow: hidden;
+}
+
+.brew-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
 }

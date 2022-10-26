@@ -1,4 +1,26 @@
-.container-fluid {
-    max-height: 230px;
-    padding: 10px 50px 0px 50px;
+.header-button {
+    text-decoration: none;
+    font-family: "RalewayDots";
+    position: relative;
+    font-size: 2rem;
+    border: None;
+    background-color: transparent;
+    color: #e1e8eb;
+    text-transform: uppercase;
+    height: 4rem;
+    transition-duration: 0.2s;
+    padding: 0;
+}
+
+.header-button-active:hover {
+    color: #a668d9;
+}
+
+.header-button-active:active {
+    color: #5a189a;
+}
+
+.col-md-auto {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
 }

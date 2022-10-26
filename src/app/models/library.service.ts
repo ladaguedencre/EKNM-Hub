@@ -30,7 +30,9 @@ export class LibraryService {
             section: json['section'],
             author: json['author'],
             date: json['date'],
-            access: json['access'],
+            category: json['category'],
+            backgroundUrl: json['background'],
+            logoUrl: json['logo'],
             content: [],
         } as Article;
         let paragraphs = [];
@@ -46,7 +48,7 @@ export class LibraryService {
     getArticleWithId(id: string): Observable<Article> {
         if (id == 'test') { 
             return new Observable<Article>((observer) => {
-                observer.next(testArticleData as Article);
+                observer.next(this.jsonToArticle(testArticleData) as Article);
                 observer.complete();
             });
         }
@@ -59,14 +61,15 @@ export class LibraryService {
         return article;
     }
 
-    getArticleWithIdMock(id: string): Observable<Article> {
+    private getArticleWithIdMock(id: string): Observable<Article> {
         let article: Article = {
             id: 'mock',
             name: 'Гайд по написанню статей для сайта, який в той же час є статтею для тесту',
             section: 'lib',
             author: 'Admin',
             date: '2022',
-            access: 'test',
+            category: 'test',
+            backgroundUrl: '../../assets/mock/icon1.png',
             content: [
                 {
                     index: 0,

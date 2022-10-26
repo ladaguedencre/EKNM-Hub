@@ -4,6 +4,10 @@ img {
     margin-bottom: 1rem;
 }
 
+.container {
+    padding: 0;
+}
+
 .left-container {
     max-width: 10rem;
     margin-right: 1rem;
@@ -31,16 +35,11 @@ img {
 }
 
 .button-inactive {
-    border: 2px solid gray;
     color: gray;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    pointer-events: none;
 }
 
-.button-inactive:hover {
-    color: gray;
-}
-
-.button-inactive:active {
-    color: gray;
+.project-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
 }

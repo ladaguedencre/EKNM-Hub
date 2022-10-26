@@ -1,34 +1,38 @@
-<div class="container-standard">
-    <div class="row justify-content-md-center mb-3">
-        <button type="button" class="header-button">WAREHOUSE</button>
+<div class="full-width">
+    <div class="page-header">
+        <div class="gradient-down"><app-header></app-header></div>
+        <div class="gradient-middle"><h2>WAREHOUSE</h2></div>
+        <div class="gradient-up"></div>
     </div>
-    <section-title
-        [titleText]="'shop_page.stickers' | translate"
-    ></section-title>
-    <mat-grid-list
-        cols="{{ numberOfColumns }}"
-        rowHeight="1:1"
-        gutterSize="0.5rem"
-    >
-        <div class="d-flex flex-column" *ngFor="let item of stickers">
-            <mat-grid-tile>
-                <shop-item [item]="item"></shop-item>
-            </mat-grid-tile>
-        </div>
-    </mat-grid-list>
-    <section-title
-        [titleText]="'shop_page.uniform' | translate"
-    ></section-title>
-    <mat-grid-list
-        cols="{{ numberOfColumns }}"
-        rowHeight="1:1"
-        gutterSize="0.5rem"
-    >
-        <div class="d-flex flex-column" *ngFor="let item of clothing">
-            <mat-grid-tile>
-                <shop-item [item]="item"></shop-item>
-            </mat-grid-tile>
-        </div>
-    </mat-grid-list>
-    <div class="pb-5"></div>
+    <div class="container-standard">
+        <section-title
+            [titleText]="'shop_page.stickers' | translate"
+        ></section-title>
+        <mat-grid-list
+            cols="{{ numberOfColumns }}"
+            rowHeight="1:1"
+            gutterSize="0.5rem"
+        >
+            <div class="d-flex flex-column" *ngFor="let item of stickers">
+                <mat-grid-tile>
+                    <shop-item [item]="item"></shop-item>
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+        <section-title
+            [titleText]="'shop_page.uniform' | translate"
+        ></section-title>
+        <mat-grid-list
+            cols="{{ numberOfColumns }}"
+            rowHeight="1:1"
+            gutterSize="0.5rem"
+        >
+            <div class="d-flex flex-column" *ngFor="let item of clothing">
+                <mat-grid-tile>
+                    <shop-item [item]="item"></shop-item>
+                </mat-grid-tile>
+            </div>
+        </mat-grid-list>
+        <div class="pb-5"></div>
+    </div>
 </div>
