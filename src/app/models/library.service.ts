@@ -48,7 +48,7 @@ export class LibraryService {
     getArticleWithId(id: string): Observable<Article> {
         if (id == 'test') { 
             return new Observable<Article>((observer) => {
-                observer.next(testArticleData as Article);
+                observer.next(this.jsonToArticle(testArticleData) as Article);
                 observer.complete();
             });
         }

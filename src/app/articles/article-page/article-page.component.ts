@@ -15,10 +15,14 @@ export class ArticlePageComponent implements OnInit {
     section: string = '';
     backgroundUrl: string = '';
     logoUrl: string = '';
-    showAccessory: boolean = true;
+    
     accessory: string = '';
     headline: string = '';
     code: string = '';
+
+    showAccessory: boolean = true;
+    showName: boolean = false;
+    showLogo: boolean = false;
 
     menuItems: MenuItem[] = [];
 
@@ -59,8 +63,13 @@ export class ArticlePageComponent implements OnInit {
                 this.logoUrl = article.logoUrl ?? '';
                 if (article.section == 'projects') {
                     this.showAccessory = false;
+                    if (this.logoUrl.length > 0) {
+                        this.showLogo = true;
+                    }
+                    if (this.headline.length > 0) {
+                        this.showName = true;
+                    }
                 }
-                console.log(article);
             });
     }
 

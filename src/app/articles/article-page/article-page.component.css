@@ -10,3 +10,8 @@ h2 {
 .article-logo {
     height: 15rem;
 }
+
+.project-name {
+    text-align: center;
+    font-size: 5rem;
+}

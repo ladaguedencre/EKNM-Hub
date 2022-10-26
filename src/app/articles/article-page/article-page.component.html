@@ -6,7 +6,9 @@
                 <h2 class="mb-3 mt-3">{{ headline }}</h2>
                 <p class="author-label">{{ accessory }}</p>
             </div>
-            <div class="article-logo" *ngIf="!showAccessory" [ngStyle]="setLogo()">
+            <div class="article-logo" *ngIf="showLogo" [ngStyle]="setLogo()"></div>
+            <div class="container-standard pb-3 pt-3" *ngIf="showName">
+                <h2 class="mb-3 mt-3 project-name">{{ headline }}</h2>
             </div>
         </div>
         <div class="gradient-up"></div>
