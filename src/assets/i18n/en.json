@@ -5,7 +5,7 @@
         "beer": "Brewery",
         "entertainment": "Gamery",
         "warehouse": "Warehouse",
-        "info": "Info board"
+        "status": "Due to the war, some sections, structures and functions do not work, or do not work to their full extent"
     },
 
     "brew": {
@@ -23,21 +23,6 @@
         "server_status": "Server status:",
         "server_ok": "Server running",
         "server_error": "Server unavailable"
-    },
-    "info": {
-        "public_resources": "PUBLIC RESOURCES",
-        "feedback": "FEEDBACK",
-        "about": "ABOUT US",
-        "question1": "- What is EKNM?",
-        "answer1": "Organization, company, sect, brand, corporation, syndicate, lullaby, just a bunch of letters. Choose what you like best.",
-        "question2": "- What is the purpose of EKNM?",
-        "answer2": "Creation and support of initiatives, projects and developments in the field of science, creativity and business. Something else is possible.",
-        "question3": "- Why?",
-        "answer3": "The time of working alone is over and this approach is hopelessly outdated. Collaboration is more efficient and allows you to use more knowledge, resources and diverse views. We live in the era of factories.",
-        "question4": "- How to help or join?",
-        "answer4": "Contact the contacts on this page and describe what you have to offer or how we can help you. Ideally you should know one of us personally, but this is not required.",
-        "question5": "- What is EKNM interested in at the moment?",
-        "answer5": "Designs, articles and projects of any kind that contain something innovative and/or creative value. A clearer framework doesn't make sense."
     },
 
     "library": {

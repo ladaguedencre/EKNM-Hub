@@ -1,7 +1,12 @@
-<div class="container-fluid">
-    <div class="row justify-content-md-center">
-        <button type="button" class="header-button" (click)="navigateToHome()">
-            EKNM HUB
+<div class="row">
+    <div class="col"></div>
+    <div class="col-md-auto width-fit-content" *ngFor="let item of items">
+        <button type="button" class="header-button header-button-active" (click)="navigate(item.path)" *ngIf="item.tag != '/'">
+            {{ item.tag }}
+        </button>
+        <button class="header-button" disabled *ngIf="item.tag == '/'">
+            {{ item.tag }}
         </button>
     </div>
+    <div class="col"></div>
 </div>

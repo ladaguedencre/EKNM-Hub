@@ -1,17 +1,20 @@
-<div class="container-standard d-flex flex-column">
-    <div class="row justify-content-md-center mb-3">
-        <button type="button" class="header-button">BREWERY</button>
+<div class="full-width">
+    <div class="page-header">
+        <div class="gradient-down"><app-header></app-header></div>
+        <div class="gradient-middle"><h2>BREWERY</h2></div>
+        <div class="gradient-up"></div>
     </div>
-    <p>{{ "brew.description" | translate }}</p>
-    <p>{{ "brew.technology" | translate }}</p>
-    <p>{{ "brew.order" | translate }}</p>
-    <section-title [titleText]="'brew.sorts' | translate"></section-title>
-
-    <div
-        *ngFor="let brew of brews; let i = index"
-        class="d-flex flex-column pb-3"
-    >
-        <brew-item [brew]="brew"></brew-item>
+    <div class="container-standard d-flex flex-column">
+        <p>{{ "brew.description" | translate }}</p>
+        <p>{{ "brew.technology" | translate }}</p>
+        <p class="pt-3 pb-3">{{ "brew.order" | translate }}</p>
+        <section-title [titleText]="'brew.sorts' | translate"></section-title>
+        <div
+            *ngFor="let brew of brews; let i = index"
+            class="d-flex flex-column pb-3"
+        >
+            <brew-item [brew]="brew"></brew-item>
+        </div>
+        <div class="pb-5"></div>
     </div>
-    <div class="pb-5"></div>
 </div>
