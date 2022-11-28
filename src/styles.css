@@ -12,18 +12,13 @@
 
 @font-face {
     font-family: Raleway;
-    src: url("assets/fonts/Raleway.ttf") format("truetype");   
+    src: url("assets/fonts/Raleway.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Raleway-Black;
-    src: url("assets/fonts/Raleway.ttf") format("truetype");   
+    src: url("assets/fonts/Raleway.ttf") format("truetype");
     font-weight: 900;
-}
-
-@font-face {
-    font-family: RalewayDots;
-    src: url("assets/fonts/RalewayDots.ttf") format("truetype");
 }
 
 @font-face {
@@ -66,10 +61,10 @@ p {
 
 h1 {
     overflow: hidden;
-    font-family: "RalewayDots";
+    font-family: "Raleway-Thin";
     text-align: center;
     font-weight: regular;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #e1e8eb;
     text-align: center;
     text-transform: uppercase;
