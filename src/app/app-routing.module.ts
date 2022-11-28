@@ -20,6 +20,8 @@ const routes: Routes = [
     { path: 'gamery', component: GamesPageComponent },
     { path: 'warehouse', component: ShopPageComponent },
     { path: '', component: LandingPageComponent },
+    { path: 'ua', component: LandingPageComponent },
+    { path: 'en', component: LandingPageComponent },
 
     { path: 'library/:code', component: ArticlePageComponent },
     { path: 'workshop/:code', component: ArticlePageComponent },

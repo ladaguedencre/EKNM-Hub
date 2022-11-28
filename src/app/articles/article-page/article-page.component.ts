@@ -15,7 +15,7 @@ export class ArticlePageComponent implements OnInit {
     section: string = '';
     backgroundUrl: string = '';
     logoUrl: string = '';
-    
+
     accessory: string = '';
     headline: string = '';
     code: string = '';
@@ -32,7 +32,6 @@ export class ArticlePageComponent implements OnInit {
         private libraryService: LibraryService,
         private subjects: SubjectsDataService
     ) {
-        console.log(this.route.snapshot);
         this.code = this.route.snapshot.paramMap.get('code')!;
         this.section = this.route.snapshot['url'][0]['path'];
 
