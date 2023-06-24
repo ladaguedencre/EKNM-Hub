@@ -16,10 +16,10 @@ describe('AppComponent', () => {
         expect(app).toBeTruthy();
     });
 
-    it(`should have as title 'eknmhub'`, () => {
+    it(`should have as title 'eknm-hub'`, () => {
         const fixture = TestBed.createComponent(AppComponent);
         const app = fixture.componentInstance;
-        expect(app.title).toEqual('eknmhub');
+        expect(app.title).toEqual('eknm-hub');
     });
 
     it('should render title', () => {
@@ -27,7 +27,7 @@ describe('AppComponent', () => {
         fixture.detectChanges();
         const compiled = fixture.nativeElement as HTMLElement;
         expect(compiled.querySelector('.content span')?.textContent).toContain(
-            'eknmhub app is running!'
+            'eknm-hub app is running!'
         );
     });
 });
