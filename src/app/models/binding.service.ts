@@ -17,9 +17,9 @@ export class BindingService {
     jsonToBinding(json: any): Binding {
         let binding = {
             id: json['id'],
-            firstLine: json['headline'],
-            secondLine: json['tailline'],
-            imageUrl: json['image'],
+            firstLine: json['first_line'],
+            secondLine: json['second_line'],
+            imageUrl: SharedService.BaseAssetUrl + json['image_url'],
             link: json['link'],
         } as Binding;
         return binding;

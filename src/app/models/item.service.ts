@@ -26,7 +26,7 @@ export class ItemService {
         let item = {
             id: json['id'],
             name: json['name'],
-            imageUrl: json['image'],
+            imageUrl: SharedService.BaseAssetUrl + json['image_url'],
             count: json['count'],
             type: this.typeToEnum(json['type']),
         } as Item;
@@ -39,7 +39,7 @@ export class ItemService {
         }
         if (this.cache == NEVER) {
             this.cache = this.http
-                .get<any[]>(SharedService.APIUrl + '/items')
+                .get<any[]>(SharedService.APIUrl + '/goods')
                 .pipe(
                     map((jsons: any[]) =>
                         jsons.map((json) => this.jsonToItem(json))

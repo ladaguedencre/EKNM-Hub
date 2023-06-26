@@ -41,7 +41,7 @@ export class ProjectService {
             id: json['id'],
             name: json['name'],
             description: json['description'],
-            logoUrl: json['logo'],
+            logoUrl: SharedService.BaseAssetUrl + json['logo_url'],
             link: json['link'] ?? '',
             state: this.stateToEnum(json['state']),
             type: this.typeToEnum(json['type']),

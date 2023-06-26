@@ -18,7 +18,7 @@ export class BrewService {
             id: json['id'],
             name: json['name'],
             description: json['description'],
-            imageUrl: json['image'],
+            imageUrl: SharedService.BaseAssetUrl + json['image_url'],
             count: json['count'],
         } as Brew;
         return item;

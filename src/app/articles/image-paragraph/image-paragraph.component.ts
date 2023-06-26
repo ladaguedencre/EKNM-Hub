@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Paragraph } from 'src/app/models/article';
+import { SharedService } from '../../services/shared.service';
 
 @Component({
     selector: 'image-paragraph',
@@ -8,8 +9,11 @@ import { Paragraph } from 'src/app/models/article';
 })
 export class ImageParagraphComponent implements OnInit {
     @Input() paragraph?: Paragraph;
+    imageUrl: string = "";
 
     constructor() {}
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.imageUrl = SharedService.BaseAssetUrl + this.paragraph?.ref
+    }
 }

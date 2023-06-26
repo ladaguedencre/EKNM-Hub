@@ -31,7 +31,7 @@ export class LibraryService {
             author: json['author'],
             date: json['date'],
             category: json['category'],
-            backgroundUrl: json['background'],
+            backgroundUrl: SharedService.BaseAssetUrl + json['background'],
             logoUrl: json['logo'],
             content: [],
         } as Article;
@@ -56,7 +56,7 @@ export class LibraryService {
             return this.getArticleWithIdMock(id);
         }
         let article = this.http
-            .get<any>(SharedService.APIUrl + `/articles?id=${id}`)
+            .get<any>(SharedService.APIUrl + `/articles/${id}`)
             .pipe(map((json) => this.jsonToArticle(json)));
         return article;
     }
