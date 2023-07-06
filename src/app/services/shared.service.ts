@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class SharedService {
     basebg = 'bg4';
 
-    static APIUrl: string = 'http://127.0.0.1:5003';
+    static APIUrl: string = 'http://0.0.0.0:5003';
     static BaseAssetUrl: string = 'assets/';
 
     constructor() {}

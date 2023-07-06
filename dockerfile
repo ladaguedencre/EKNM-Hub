@@ -9,9 +9,6 @@ COPY . .
 RUN node_modules/.bin/ng build
 RUN npm run build --prod
 
-FROM nginx:latest AS ngi
-
-COPY --from=build /app/dist/eknm-hub /usr/share/nginx/html
-COPY /nginx.conf  /etc/nginx/conf.d/default.conf
-
 EXPOSE 5004
+
+CMD ["node_modules/.bin/ng", "serve", "--host", "0.0.0.0", "--port", "5004"]
