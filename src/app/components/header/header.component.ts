@@ -9,7 +9,6 @@ import { MenuItem } from 'src/app/models/menu-item';
 })
 export class HeaderComponent implements OnInit {
 
-    @Input() inputItems?: MenuItem[];
     @Input() includeHub?: boolean;
     items: MenuItem[] = [];
 

@@ -12,7 +12,6 @@ import { ProjectPreviewComponent } from './components/project-preview/project-pr
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
-import { GamesPageComponent } from './games-page/games-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { ShopItemComponent } from './shop-page/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -37,7 +36,6 @@ import { FooterComponent } from './components/footer/footer.component';
         ProjectsPageComponent,
         SectionTitleComponent,
         PlaceholderPageComponent,
-        GamesPageComponent,
         ShopPageComponent,
         ShopItemComponent,
         LibraryPageComponent,

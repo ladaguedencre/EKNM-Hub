@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
-import { SharedService } from '../services/shared.service';
+import { SharedService } from '../common/shared.service';
 import { Article, Paragraph } from './article';
 
 import testArticleData from './articleTest.json';

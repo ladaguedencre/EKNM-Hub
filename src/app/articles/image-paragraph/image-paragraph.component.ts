@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Paragraph } from 'src/app/models/article';
-import { SharedService } from '../../services/shared.service';
+import { SharedService } from '../../common/shared.service';
 
 @Component({
     selector: 'image-paragraph',

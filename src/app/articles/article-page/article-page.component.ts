@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Paragraph } from 'src/app/models/article';
-import { MenuItem } from 'src/app/models/menu-item';
-import { SubjectsDataService } from 'src/app/services/subject-data.service';
+import { SubjectsDataService } from 'src/app/common/subject-data.service';
 import { LibraryService } from '../../models/library.service';
 
 @Component({
@@ -24,8 +23,6 @@ export class ArticlePageComponent implements OnInit {
     showName: boolean = false;
     showLogo: boolean = false;
 
-    menuItems: MenuItem[] = [];
-
     constructor(
         private router: Router,
         private route: ActivatedRoute,
@@ -34,18 +31,6 @@ export class ArticlePageComponent implements OnInit {
     ) {
         this.code = this.route.snapshot.paramMap.get('code')!;
         this.section = this.route.snapshot['url'][0]['path'];
-
-        if (this.section == 'library') {
-            this.menuItems.push({
-                tag: 'LIBRARY',
-                path: '/library',
-            });
-        } else {
-            this.menuItems.push({
-                tag: 'WORKSHOP',
-                path: '/workshop',
-            });
-        }
 
         this.libraryService
             .getArticleWithId(this.code)

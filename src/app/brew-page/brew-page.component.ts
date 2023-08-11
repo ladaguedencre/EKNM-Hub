@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { SubjectsDataService } from 'src/app/services/subject-data.service';
+import { SubjectsDataService } from 'src/app/common/subject-data.service';
 import { Brew } from '../models/brew';
 import { BrewService } from '../models/brew.service';
 

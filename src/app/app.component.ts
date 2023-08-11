@@ -6,8 +6,8 @@ import {
     OnInit,
 } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { SharedService } from './services/shared.service';
-import { SubjectsDataService } from './services/subject-data.service';
+import { SharedService } from './common/shared.service';
+import { SubjectsDataService } from './common/subject-data.service';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT } from '@angular/common';
 

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
-import { SharedService } from '../services/shared.service';
+import { SharedService } from '../common/shared.service';
 import { ItemType, Item } from './item';
 
 @Injectable({
