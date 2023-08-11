@@ -1,0 +1,38 @@
+img {
+    width: 20rem;
+    max-height: 13.5rem;
+    margin-right: 1.5rem;
+    object-fit: cover;
+}
+
+.container {
+    padding: 0;
+}
+
+.eknm-button-small {
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.separator {
+    background: #e1e8eb;
+    height: 2px;
+}
+
+.button-inactive {
+    color: gray;
+    pointer-events: none;
+}
+
+.project-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+}
+
+.right-container {
+    flex-direction: column;
+}
+
+.status-label {
+    margin-right: 0.5rem;
+}

@@ -1,15 +1,61 @@
+@media only screen and (min-width: 700px) {
+    .header-back {
+        height: 4rem;
+    }
+
+    .home-image {
+        height: 2rem;
+    }
+
+    .home-button {
+        height: 2rem;
+    }
+
+    .cont-main {
+        flex-direction: row;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header-back {
+        height: 6rem;
+    }
+
+    .home-image {
+        height: 4rem;
+    }
+
+    .home-button {
+        height: 4rem;
+    }
+
+    .cont-main {
+        flex-direction: column;
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.header-back {
+    height: 4rem;
+}
+
 .header-button {
     text-decoration: none;
-    font-family: "Raleway-Thin";
+    font-family: "Raleway-Mid";
     position: relative;
-    font-size: 1.75rem;
+    font-size: 1rem;
     border: None;
     background-color: transparent;
     color: #e1e8eb;
-    text-transform: uppercase;
-    height: 4rem;
+    height: 1.5rem;
     transition-duration: 0.2s;
-    padding: 0;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    margin: auto;
 }
 
 .header-button-active:hover {
@@ -20,7 +66,14 @@
     color: #5a189a;
 }
 
-.col-md-auto {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
+.home-button {
+    background: none;
+    border: none;
+}
+
+.home-image {
+    cursor: pointer;
+    border: none;
+    margin: 1rem;
+    margin-left: 0rem;
 }

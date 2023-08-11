@@ -1,10 +1,3 @@
-import {
-    animate,
-    state,
-    style,
-    transition,
-    trigger,
-} from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MenuItem } from 'src/app/models/menu-item';
@@ -23,24 +16,32 @@ export class HeaderComponent implements OnInit {
     constructor(private router: Router) {}
 
     ngOnInit(): void {
-        if (this.includeHub ?? true) {
-            this.items.push({
-                tag: 'HUB',
-                path: '/hub',
-            });
-        } else {
-            this.items.push({
-                tag: 'EKNM',
-                path: '/',
-            });
+        this.items.push({
+            tag: 'workshop',
+            path: '/',
+        });
+        this.items.push({
+            tag: 'brewery',
+            path: '/',
+        });
+        this.items.push({
+            tag: 'archive',
+            path: '/',
+        });
+        this.items.push({
+            tag: 'warehouse',
+            path: '/',
+        });
+        let separator: MenuItem = {
+            tag: ' • ',
+            path: '',
         }
-        for (let item of this.inputItems ?? []) {
-            this.items.push({
-                tag: '/',
-                path: '',
-            });
-            this.items.push(item)
-        }
+        this.items = this.items.flatMap(
+            (value, index, array) =>
+                array.length - 1 !== index
+                    ? [value, separator]
+                    : value,
+        );
     }
 
     navigate(path: string) {

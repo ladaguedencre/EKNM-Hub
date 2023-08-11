@@ -1,57 +1,50 @@
-<div class="full-width">
-    <div class="page-header">
-        <div class="gradient-down"><app-header [includeHub]="false"></app-header></div>
-        <div class="gradient-middle"><h2>HUB</h2></div>
-        <div class="gradient-up"></div>
+<div class="fade-in-image full-page">
+    <div class="gradient-down"><app-header></app-header></div>
+    <div class="gradient-middle">
+        <div class="container-standard d-flex justify-content-center align-items-center">
+            <div class="container-logo fade-in">
+                <h2 class="h0">{{titleText}}</h2>
+                <p class="p0">{{mainText}}</p>
+            </div>
+        </div>
     </div>
-    <div class="container-standard pb-5">
-        <p class="pb-4 pt-4">
-            {{ "home.status" | translate }}
-        </p>
-        <div class="d-flex flex-column" *ngFor="let item of items">
-            <div class="separator"></div>
-            <div class="row justify-content-md-center">
-                <button
-                    type="button"
-                    class="home-section"
-                    (click)="navigate(item.path)"
-                    translate
-                >
-                    {{ item.tag }}
-                </button>
+    <div class="gradient-up"></div>
+</div>
+<div class="half-page-top container-standard">
+    <div class="container-highlight">
+        <h2 class="h25 mb-3">{{ "landing.dev_title" | translate }}</h2>
+        <p>{{ "landing.dev_text" | translate }}</p>
+    </div>
+</div>
+<div class="half-page-bottom container-standard">
+    <div>
+        <div class="image-highlight developments-background"></div>
+        <a class="eknm-button-small" role="button" (click)="navigate('/workshop')">{{ "landing.dev_button" | translate }}</a>
+    </div>
+</div>
+<div class="pad-page"></div>
+<div class="page-footer">
+    <div class="gradient-down"></div>
+    <div class="gradient-bottom">
+        <div class="fade-in">
+            <h2 class="h26 mb-5">{{contactsText}}</h2>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="visit-box">
+                    <img src="../../assets/logo.png" class="img-fluid img-icon mb-4"/>
+                    <a class="eknm-button-underlined" role="button" (click)="navigate('/hub')">
+                        EKNM HUB
+                    </a>
+                </div>
+                <div class="visit-box">
+                    <img src="../../assets/icons/ic_discord.png" class="img-fluid img-icon mb-4"/>
+                    <a class="eknm-button-underlined" role="button" href="https://discord.gg/3BsCv9C">
+                        Discord Server
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="separator"></div>
-
-        <div class="row pb-3 pt-3">
-            <div class="col">
-                <div class="separator"></div>
-            </div>
-            <div class="col-md-auto width-fit-content">
-                <button
-                    class="home-lang"
-                    (click)="useLanguage('ua')"
-                    [ngStyle]="{
-                        color: this.currentLanguage === 'ua' ? '#e1e8eb' : 'gray'
-                    }"
-                >
-                    UA
-                </button>
-            </div>
-            <div class="col-md-auto width-fit-content">
-                <button
-                    class="home-lang"
-                    (click)="useLanguage('en')"
-                    [ngStyle]="{
-                        color: this.currentLanguage === 'en' ? '#e1e8eb' : 'gray'
-                    }"
-                >
-                    EN
-                </button>
-            </div>
-            <div class="col">
-                <div class="separator"></div>
-            </div>
-        </div>
+    </div>
+    <div class="gradient-up-bottom">
+        <p class="p1 pt-4">© EKNM, underground since 201X</p>
     </div>
 </div>

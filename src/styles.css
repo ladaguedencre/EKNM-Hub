@@ -1,3 +1,5 @@
+@import './animations.css';
+
 @font-face {
     font-family: OpenSans;
     src: url("assets/fonts/OpenSans-Variable.ttf") format("truetype");
@@ -22,9 +24,15 @@
 }
 
 @font-face {
+    font-family: Raleway-Mid;
+    src: url("assets/fonts/Raleway.ttf") format("truetype");
+    font-weight: 600;
+}
+
+@font-face {
     font-family: Raleway-Thin;
     src: url("assets/fonts/Raleway.ttf") format("truetype");
-    font-weight: 100;
+    font-weight: 300;
 }
 
 @font-face {
@@ -55,7 +63,7 @@ p {
     font-weight: normal;
     position: relative;
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #e1e8eb;
 }
 
@@ -117,7 +125,7 @@ h3 {
 .container-standard {
     margin-right: auto;
     margin-left: auto;
-    max-width: 50rem;
+    max-width: 60rem;
     padding: 0rem 2rem 0rem 2rem;
 }
 
@@ -190,41 +198,21 @@ li {
     background-color: #100f0d;
 }
 
-.w-33 {
-    width: 33%;
-}
-
-.w-40 {
-    width: 40%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-66 {
-    width: 66%;
-}
-
-* {
-    transition-duration: 0.2s;
-}
-
-@media only screen and (min-width: 864px) {
+@media only screen and (min-width: 700px) {
     :root {
         font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 864px) {
+@media only screen and (max-width: 700px) {
     :root {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 400px) {
     :root {
-        font-size: 10px;
+        font-size: 12px;
     }
 }
 

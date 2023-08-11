@@ -1,0 +1,16 @@
+.footer-lang {
+    text-decoration: none;
+    font-family: "Raleway";
+    position: relative;
+    font-size: 1rem;
+    border: None;
+    background-color: transparent;
+    color: #e1e8eb;
+    text-transform: uppercase;
+    height: 1.5rem;
+    transition-duration: 0.2s;
+}
+
+.footer-lang:hover {
+    color: #a668d9 !important;
+}

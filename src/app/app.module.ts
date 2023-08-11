@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { Routes, RouterModule } from '@angular/router';
 import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -9,9 +8,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ProjectPreviewComponent } from './projects-page/project-preview/project-preview.component';
+import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 import { GamesPageComponent } from './games-page/games-page.component';
@@ -28,7 +26,8 @@ import { ButtonParagraphComponent } from './articles/button-paragraph/button-par
 import { BrewItemComponent } from './brew-page/brew-item/brew-item.component';
 import { CitationParagraphComponent } from './articles/citation-paragraph/citation-paragraph.component';
 import { FormattedParagraphComponent } from './articles/formatted-paragraph/formatted-paragraph.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +35,6 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
         HeaderComponent,
         ProjectPreviewComponent,
         ProjectsPageComponent,
-        HomePageComponent,
         SectionTitleComponent,
         PlaceholderPageComponent,
         GamesPageComponent,
@@ -52,7 +50,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
         BrewItemComponent,
         CitationParagraphComponent,
         FormattedParagraphComponent,
-        LandingPageComponent,
+        HomePageComponent,
+        FooterComponent,
     ],
     imports: [
         BrowserModule,

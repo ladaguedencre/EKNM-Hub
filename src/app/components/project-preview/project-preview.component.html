@@ -1,0 +1,26 @@
+<div class="d-flex flex-row mb-2 mt-2">
+    <img src="{{ project?.logoUrl }}" />
+    <div class="d-flex right-container">
+        <p class="project-title">{{ project?.name }}</p>
+        <div class="d-flex flex-row mb-1">
+            <p class="status-label">{{ "project_page.status" | translate }} </p>
+            <p>{{ state }}</p>
+        </div>
+        <p>{{ description! }}</p>
+        <a
+            class="eknm-button-small"
+            role="button"
+            *ngIf="isButtonActive"
+            (click)="navigateToDetails()"
+        >
+            {{ "project_preview.page" | translate }}
+        </a>
+        <a
+            class="eknm-button-small button-inactive"
+            disabled
+            *ngIf="!isButtonActive"
+        >
+            {{ "project_preview.page" | translate }}
+        </a>
+    </div>
+</div>

@@ -1,12 +1,26 @@
-<div class="row">
-    <div class="col"></div>
-    <div class="col-md-auto width-fit-content" *ngFor="let item of items">
-        <button type="button" class="header-button header-button-active" (click)="navigate(item.path)" *ngIf="item.tag != '/'">
-            {{ item.tag }}
-        </button>
-        <button class="header-button" disabled *ngIf="item.tag == '/'">
-            {{ item.tag }}
-        </button>
+<div class="d-flex header-back container-standard fade-in">
+    <button class="home-button">
+        <img class="home-image" src="../../../assets/header_logo.png"/>
+    </button>
+    <div class="d-flex justify-content-between w-100 cont-main">
+        <div class="d-flex">
+            <button class="header-button header-button-active" (click)="navigate('/')">
+                HUB
+            </button>
+            <button class="header-button header-button-active" (click)="navigate('/workshop')">
+                WORKSHOP
+            </button>
+            <button class="header-button header-button-active" (click)="navigate('/brewery')">
+                BREWERY
+            </button>
+        </div>
+        <div class="d-flex">
+            <button class="header-button header-button-active" (click)="navigate('/warehouse')">
+                WAREHOUSE
+            </button>
+            <button class="header-button header-button-active" (click)="navigate('/archive')">
+                ARCHIVE
+            </button>
+        </div>
     </div>
-    <div class="col"></div>
 </div>

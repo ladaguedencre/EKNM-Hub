@@ -1,3 +1,20 @@
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @-webkit-keyframes fade-in-image {
     0% {
         background: #100f0d;
@@ -7,7 +24,7 @@
         background-blend-mode: overlay;
     }
     100% {
-        background: url(../../assets/backgrounds/bg_workshop.jpg);
+        background: url(./assets/backgrounds/bg_landing_top.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -23,7 +40,7 @@
         background-blend-mode: overlay;
     }
     100% {
-        background: url(../../assets/backgrounds/bg_workshop.jpg);
+        background: url(./assets/backgrounds/bg_landing_top.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -34,6 +51,14 @@
 .fade-in-image {
     -webkit-animation: fade-in-image 0.4s ease-in both;
     animation: fade-in-image 0.4s ease-in both;
-    -webkit-animation-delay: 0.2s;
-    animation-delay: 0.2s;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+    
+}
+
+.fade-in {
+    -webkit-animation: fade-in 0.4s ease-in both;
+    animation: fade-in 0.4s ease-in both;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }

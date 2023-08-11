@@ -39,6 +39,7 @@
     },
 
     "project_page": {
+        "status": "Status: ",
         "developments": "DEVELOPMENTS",
         "projects": "PROJECTS"
     },
@@ -49,6 +50,7 @@
     },
 
     "landing": {
+        "main_title": "WELCOME TO THE FACTORY",
         "dev_title": "DEVELOPMENTS",
         "dev_text": "We create machines to solve standard problems and have fun. Things like that, you know? We are turning civilization around, whether you like it or not. You remember that and let's not talk about it anymore. We are adults and certainly have no right to forget about human weaknesses.",
         "dev_button": "VISIT WORKSHOP →",
