@@ -9,6 +9,8 @@ import { BrewPageComponent } from './brew-page/brew-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
 import { ArticlePageComponent } from './articles/article-page/article-page.component';
+import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
+import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
 
 const routes: Routes = [
     { path: 'hub', component: HomePageComponent},
@@ -21,7 +23,8 @@ const routes: Routes = [
     { path: 'en', component: HomePageComponent },
 
     { path: 'library/:code', component: ArticlePageComponent },
-    { path: 'workshop/:code', component: ArticlePageComponent },
+    { path: 'workshop/scp-wa', component: ScpwaPageComponent },
+    { path: 'workshop/pupa', component: PupaPageComponent },
 
     { path: 'home', redirectTo: '/hub', pathMatch: 'full' },
     { path: '**', component: PlaceholderPageComponent },

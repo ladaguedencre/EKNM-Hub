@@ -3,12 +3,12 @@
         <div class="gradient-down"><app-header></app-header></div>
         <div class="gradient-middle">
             <div class="container-standard d-flex flex-column pb-3 pt-3" *ngIf="showAccessory">
-                <h2 class="mb-3 mt-3">{{ headline }}</h2>
+                <h1 class="mb-3 mt-3">{{ headline }}</h1>
                 <p class="author-label">{{ accessory }}</p>
             </div>
             <div class="article-logo" *ngIf="showLogo" [ngStyle]="setLogo()"></div>
             <div class="container-standard pb-3 pt-3" *ngIf="showName">
-                <h2 class="mb-3 mt-3 project-name">{{ headline }}</h2>
+                <h1 class="mb-3 mt-3 project-name">{{ headline }}</h1>
             </div>
         </div>
         <div class="gradient-up"></div>

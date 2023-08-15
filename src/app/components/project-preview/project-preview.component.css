@@ -1,8 +1,15 @@
 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.proj-logo-container {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    min-width: 20rem;
     width: 20rem;
     max-height: 13.5rem;
-    margin-right: 1.5rem;
-    object-fit: cover;
 }
 
 .container {
@@ -15,18 +22,13 @@ img {
 }
 
 .separator {
-    background: #e1e8eb;
+    background: #c6cbce;
     height: 2px;
 }
 
 .button-inactive {
     color: gray;
     pointer-events: none;
-}
-
-.project-title {
-    font-family: 'OpenSans-Bold';
-    font-size: 1.5rem;
 }
 
 .right-container {

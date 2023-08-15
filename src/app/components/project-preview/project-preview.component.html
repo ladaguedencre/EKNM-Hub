@@ -1,11 +1,14 @@
 <div class="d-flex flex-row mb-2 mt-2">
-    <img src="{{ project?.logoUrl }}" />
+    <div class="proj-logo-container">
+        <img src="{{ project?.logoUrl }}" />
+    </div>
     <div class="d-flex right-container">
-        <p class="project-title">{{ project?.name }}</p>
+        <h3>{{ project?.name }}</h3>
         <div class="d-flex flex-row mb-1">
             <p class="status-label">{{ "project_page.status" | translate }} </p>
             <p>{{ state }}</p>
         </div>
+        <div class="d-flex"></div>
         <p>{{ description! }}</p>
         <a
             class="eknm-button-small"

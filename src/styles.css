@@ -41,8 +41,12 @@
     font-style: normal;
 }
 
+.color-white-bright {
+    color: #ecf2f4;
+}
+
 .color-white {
-    color: #e1e8eb;
+    color: #c6cbce;
 }
 
 .color-purple-bright {
@@ -64,45 +68,40 @@ p {
     position: relative;
     margin: 0;
     font-size: 1rem;
-    color: #e1e8eb;
+    color: #c6cbce;
 }
 
 h1 {
-    overflow: hidden;
-    font-family: "Raleway-Thin";
-    text-align: center;
-    font-weight: regular;
-    font-size: 1.75rem;
-    color: #e1e8eb;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-h2 {
     text-decoration: none;
     font-family: "Raleway-Black";
     position: relative;
     margin: 0;
     font-size: 4rem;
-    color: #e1e8eb;
+    color: #ecf2f4;
     text-align: center;
 }
 
-h3 {
+h2 {
     text-decoration: none;
     font-family: "Raleway";
     font-weight: bold;
     position: relative;
     margin: 0;
     font-size: 1.5rem;
-    color: #e1e8eb;
+    color: #ecf2f4;
     text-align: justify;
     text-transform: uppercase;
 }
 
+h3 {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+    color: #ecf2f4;
+}
+
 .separator {
     margin: 0;
-    background: #e1e8eb;
+    background: #ecf2f4;
     height: 2px;
     position: relative;
     top: 50%;
@@ -137,19 +136,21 @@ h3 {
     font-family: "Raleway";
     font-size: 1.25rem;
     border-radius: 360px;
-    color: #e1e8eb;
-    background-color: #403e39;
+    color: #ecf2f4;
+    background-color: none;
+    border: solid #ecf2f4;
+    border-width: 1px;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
 }
 
 .eknm-button-small:hover {
-    color: #e1e8eb;
+    color: #ecf2f4;
     background-color: #33312d;
 }
 
 .eknm-button-small:active {
-    color: #e1e8eb;
+    color: #ecf2f4;
     background-color: #262522;
 }
 
@@ -158,16 +159,16 @@ h3 {
     align-items: center;
     font-family: "Raleway";
     font-size: 1.25rem;
-    color: #e1e8eb;
+    color: #c6cbce;
 }
 
 .eknm-button-underlined:hover {
-    color: #e1e8eb;
+    color: #c6cbce;
     text-decoration-color: #a668d9;
 }
 
 .eknm-button-underlined:active {
-    color: #e1e8eb;
+    color: #c6cbce;
 }
 
 html,
@@ -180,7 +181,7 @@ body {
 }
 
 ul li::marker {
-    color: #e1e8eb;
+    color: #c6cbce;
 }
 
 li {
@@ -190,7 +191,7 @@ li {
     position: relative;
     margin: 0;
     font-size: 1rem;
-    color: #e1e8eb;
+    color: #c6cbce;
     text-align: justify;
 }
 
@@ -251,4 +252,11 @@ li {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.img-normal {
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    object-fit: contain;
 }

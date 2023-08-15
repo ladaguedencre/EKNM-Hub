@@ -37,7 +37,7 @@ export class ShopItemComponent implements OnInit {
             };
         } else {
             return {
-                color: 'white',
+                color: '#ecf2f4',
             };
         }
     };

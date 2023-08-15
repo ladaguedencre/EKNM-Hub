@@ -27,6 +27,8 @@ import { CitationParagraphComponent } from './articles/citation-paragraph/citati
 import { FormattedParagraphComponent } from './articles/formatted-paragraph/formatted-paragraph.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
+import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
 
 @NgModule({
     declarations: [
@@ -50,6 +52,8 @@ import { FooterComponent } from './components/footer/footer.component';
         FormattedParagraphComponent,
         HomePageComponent,
         FooterComponent,
+        ScpwaPageComponent,
+        PupaPageComponent,
     ],
     imports: [
         BrowserModule,
