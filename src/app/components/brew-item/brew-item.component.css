@@ -1,0 +1,17 @@
+.container {
+    padding: 0;
+    flex-direction: column;
+}
+
+.brew-title {
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    height: 12rem;
+}
+
+

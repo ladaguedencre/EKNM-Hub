@@ -14,3 +14,7 @@
 .footer-lang:hover {
     color: #a668d9 !important;
 }
+
+.full-width {
+    background-color: transparent;
+}

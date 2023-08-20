@@ -1,20 +1,20 @@
 <div class="full-width">
-    <div class="page-header">
+    <div class="fade-in-image">
         <div class="gradient-down"><app-header></app-header></div>
-        <div class="gradient-middle"><h1 rel="preload">BREWERY</h1></div>
+        <div class="gradient-middle"><h1 class="fade-in" rel="preload">BREWERY</h1></div>
         <div class="gradient-up"></div>
     </div>
-    <div class="container-standard d-flex flex-column">
+    <div class="container-standard d-flex flex-column fade-in">
         <p>{{ "brew.description" | translate }}</p>
         <p>{{ "brew.technology" | translate }}</p>
         <p class="pt-3 pb-3">{{ "brew.order" | translate }}</p>
         <section-title [titleText]="'brew.sorts' | translate"></section-title>
-        <div
-            *ngFor="let brew of brews; let i = index"
-            class="d-flex flex-column pb-3"
-        >
-            <brew-item [brew]="brew"></brew-item>
+        <div class="brews-container d-flex flex-row flex-wrap">
+            <div class="brews-item d-flex" *ngFor="let brew of brews">
+                <brew-item [brew]="brew"></brew-item>
+            </div>
         </div>
         <div class="pb-5"></div>
     </div>
 </div>
+<app-footer></app-footer>

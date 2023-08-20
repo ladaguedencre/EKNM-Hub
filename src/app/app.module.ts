@@ -13,7 +13,7 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
 import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
 import { ShopPageComponent } from './shop-page/shop-page.component';
-import { ShopItemComponent } from './shop-page/shop-item/shop-item.component';
+import { ShopItemComponent } from './components/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LibraryPageComponent } from './library-page/library-page.component';
 import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
@@ -22,7 +22,7 @@ import { ArticlePageComponent } from './articles/article-page/article-page.compo
 import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph.component';
 import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
 import { ButtonParagraphComponent } from './articles/button-paragraph/button-paragraph.component';
-import { BrewItemComponent } from './brew-page/brew-item/brew-item.component';
+import { BrewItemComponent } from './components/brew-item/brew-item.component';
 import { CitationParagraphComponent } from './articles/citation-paragraph/citation-paragraph.component';
 import { FormattedParagraphComponent } from './articles/formatted-paragraph/formatted-paragraph.component';
 import { HomePageComponent } from './home-page/home-page.component';
