@@ -3,18 +3,6 @@
     width: 100vw;
 }
 
-.half-page-top {
-    height: 22rem;
-    display: flex;
-    align-items: flex-end;
-}
-
-.half-page-bottom {
-    height: 22rem;
-    display: flex; 
-    flex-direction: row-reverse;
-}
-
 .bottom-page {
     height: 90vh;
     width: 100vw;
@@ -78,11 +66,6 @@
     text-align: center;
 }
 
-.h15 {
-    font-size: 2rem;
-    text-align: left;
-}
-
 .h16 {
     font-size: 2rem;
     text-align: center;
@@ -106,22 +89,6 @@
 
 .container-standard {
     max-width: 60rem;
-}
-
-.container-highlight {
-    width: 35rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-}
-
-.image-highlight {
-    width: 28rem;
-    height: 14rem;
-    margin-top: 2rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: overlay;
 }
 
 .pad-page {

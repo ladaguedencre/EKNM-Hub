@@ -1,0 +1,32 @@
+.half-page-top {
+    height: 22rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+.half-page-bottom {
+    height: 22rem;
+    display: flex; 
+    flex-direction: row-reverse;
+}
+
+.h15 {
+    font-size: 2rem;
+    text-align: left;
+}
+
+.container-highlight {
+    width: 35rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.image-highlight {
+    width: 28rem;
+    height: 14rem;
+    margin-top: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+}

@@ -10,17 +10,8 @@
     </div>
     <div class="gradient-up"></div>
 </div>
-<div class="half-page-top container-standard">
-    <div class="container-highlight">
-        <h1 class="h15 mb-3">{{ "landing.dev_title" | translate }}</h1>
-        <p>{{ "landing.dev_text" | translate }}</p>
-    </div>
-</div>
-<div class="half-page-bottom container-standard">
-    <div>
-        <div class="image-highlight developments-background"></div>
-        <a class="eknm-button-small" role="button" (click)="navigate('/workshop')">{{ "landing.dev_button" | translate }}</a>
-    </div>
+<div *ngFor="let highlight of highlights">
+    <highlight-item [highlight]="highlight"></highlight-item>
 </div>
 <div class="pad-page"></div>
 <div class="page-footer">
@@ -29,12 +20,6 @@
         <div class="fade-in">
             <h1 class="h16 mb-5">{{contactsText}}</h1>
             <div class="d-flex flex-row justify-content-center">
-                <div class="visit-box">
-                    <img src="../../assets/logo.png" class="img-fluid img-icon mb-4"/>
-                    <a class="eknm-button-underlined" role="button" (click)="navigate('/hub')">
-                        EKNM HUB
-                    </a>
-                </div>
                 <div class="visit-box">
                     <img src="../../assets/icons/ic_discord.png" class="img-fluid img-icon mb-4"/>
                     <a class="eknm-button-underlined" role="button" href="https://discord.gg/3BsCv9C">

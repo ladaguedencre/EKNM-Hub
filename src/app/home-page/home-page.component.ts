@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { Observable } from 'rxjs';
+import { Highlight } from '../models/highlight';
+import { SharedService } from '../common/shared.service';
 
 @Component({
     selector: 'app-home-page',
@@ -13,6 +16,8 @@ export class HomePageComponent implements OnInit {
     contactsText: string = '';
     currentLanguage = '';
 
+    highlights = [] as Highlight[];
+
     constructor(private router: Router, private route: ActivatedRoute, private translate: TranslateService) {
         this.currentLanguage = this.translate.currentLang;
         let langParam = this.route.snapshot?.routeConfig?.path
@@ -22,9 +27,15 @@ export class HomePageComponent implements OnInit {
             this.currentLanguage = langParam;
         }
         this.updateHeaderText();
+        this.getHighlights()
+            .toPromise()
+            .then((highlights) => {
+                this.highlights = highlights ?? [];
+            });
     }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+    }
 
     updateHeaderText() {
         var texts = [
@@ -57,5 +68,30 @@ export class HomePageComponent implements OnInit {
 
     navigate(path: string) {
         this.router.navigate([path]);
+    }
+
+    private getHighlights(): Observable<Highlight[]> {
+        const highlights: Highlight[] = [
+            {
+                index: 0,
+                title: { 'ua': 'НОВА УНІФОРМА' },
+                description: { 'ua': 'Ми завжди намагаємось поєднати дизайн та функцію, елегантність та прямолінійність. І саме цим характеризується наша нова лінійка мерчу. Футболка підкреслить ваш статус на заводі і поповнить ваш гардероб повсякденних речей. А стікери дадуть всім зрозуміти які речі краще не чіпати. І можливо це ще не все...' },
+                imageUrl: SharedService.BaseAssetUrl + '/s/iyaio3SW8IWFH2P/download',
+                buttonText: { 'ua': 'Відвідати склад'},
+                link: '/warehouse',
+            },
+            {
+                index: 0,
+                title: { 'en': 'BACK 2 BEER' },
+                description: { 'ua': 'Попри всі негаразди та складності ми відновили наш експериментальний пивний цех. Деякий час він був у зоні бойових дій, але завдіки ЗСУ обладнання залишилось неушкодженим. Тепер пивний казан знову кипить і незрівнянний аромат наповнює приміщення. Зустрічайте Auferstehung Verschnitt 01!' },
+                imageUrl: SharedService.BaseAssetUrl + '/s/uFhfztdLumrNbaH/download',
+                buttonText: { 'ua': 'Відвідати пивоварню'},
+                link: '/brewery',
+            }
+        ];
+        return new Observable<Highlight[]>((observer) => {
+            observer.next(highlights);
+            observer.complete();
+        });
     }
 }

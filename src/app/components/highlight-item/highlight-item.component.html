@@ -1,0 +1,12 @@
+<div class="half-page-top container-standard">
+    <div class="container-highlight">
+        <h1 class="h15 mb-3">{{ title }}</h1>
+        <p>{{ description }}</p>
+    </div>
+</div>
+<div class="half-page-bottom container-standard">
+    <div>
+        <img class="image-highlight" src="{{ highlight!.imageUrl }}">
+        <a class="eknm-button-small" role="button" (click)="navigateToDetails()">{{ buttonText }}</a>
+    </div>
+</div>

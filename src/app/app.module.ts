@@ -29,6 +29,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
 import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
+import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
 
 @NgModule({
     declarations: [
@@ -54,6 +55,7 @@ import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
         FooterComponent,
         ScpwaPageComponent,
         PupaPageComponent,
+        HighlightItemComponent,
     ],
     imports: [
         BrowserModule,

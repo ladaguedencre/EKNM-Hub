@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Project, ProjectType, ProjectState } from '../models/project';
-import { map, NEVER, Observable } from 'rxjs';
+import { Observable } from 'rxjs';
 import { SharedService } from '../common/shared.service';
 
 @Component({
