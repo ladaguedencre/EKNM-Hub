@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 export class SharedService {
     basebg = 'bg4';
 
-    static APIUrl: string = 'http://eknm.in/api';
-    static BaseAssetUrl: string = 'http://storage.eknm.in';
+    static APIUrl: string = 'https://eknm.in/api';
+    static BaseAssetUrl: string = 'https://storage.eknm.in';
 
     constructor() {}
 }
