@@ -1,7 +1,8 @@
 export interface Binding {
     id: string;
-    firstLine: string;
-    secondLine: string;
-    imageUrl: string;
-    link: string;
+    title: string;
+    subtitle: string;
+    category: string;
+    author: string;
+    date: string;
 }

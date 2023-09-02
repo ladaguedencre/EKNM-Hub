@@ -15,18 +15,6 @@ export class ArticleInfoComponent implements OnInit {
     ngOnInit(): void {}
 
     navigateToArticle() {
-        if (this.binding!.link.includes('http')) {
-            window.open(this.binding!.link);
-        } else {
-            this.router.navigate([`/library${this.binding!.link}`]);
-        }
+        this.router.navigate([`/archive/${this.binding!.id}`]);
     }
-
-    setBackground = () => {
-        return {
-            'background-image': `url(${
-                this.binding!.imageUrl
-            }), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)`,
-        };
-    };
 }

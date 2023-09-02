@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Paragraph } from 'src/app/models/article';
 import { SubjectsDataService } from 'src/app/common/subject-data.service';
-import { LibraryService } from '../../models/library.service';
+import { ArchiveService } from '../../models/archive.service';
 
 @Component({
     selector: 'app-article',
@@ -26,7 +26,7 @@ export class ArticlePageComponent implements OnInit {
     constructor(
         private router: Router,
         private route: ActivatedRoute,
-        private libraryService: LibraryService,
+        private libraryService: ArchiveService,
         private subjects: SubjectsDataService
     ) {
         this.code = this.route.snapshot.paramMap.get('code')!;

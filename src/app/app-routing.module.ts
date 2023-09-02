@@ -16,7 +16,7 @@ const routes: Routes = [
     { path: 'hub', component: HomePageComponent},
     { path: 'workshop', component: ProjectsPageComponent },
     { path: 'brewery', component: BrewPageComponent },
-    { path: 'library', component: LibraryPageComponent },
+    { path: 'archive', component: LibraryPageComponent },
     { path: 'warehouse', component: ShopPageComponent },
     { path: '', component: HomePageComponent },
     { path: 'ua', component: HomePageComponent },

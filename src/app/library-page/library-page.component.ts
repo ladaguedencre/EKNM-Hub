@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Binding } from '../models/binding';
-import { BindingService } from '../models/binding.service';
+import { ArchiveService } from '../models/archive.service';
 
 @Component({
     selector: 'app-library-page',
@@ -10,10 +10,10 @@ import { BindingService } from '../models/binding.service';
 export class LibraryPageComponent implements OnInit {
     bindings = [] as Binding[];
 
-    constructor(private bindingService: BindingService) {}
+    constructor(private archiveService: ArchiveService) {}
 
     ngOnInit(): void {
-        this.bindingService
+        this.archiveService
             .getBindings()
             .toPromise()
             .then((bindings) => {

@@ -9,9 +9,7 @@ h2 {
     width: 10rem;
 }
 
-.bgimg {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: overlay;
+.dot {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
