@@ -4,6 +4,7 @@ import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -71,6 +72,13 @@ import { HighlightItemComponent } from './components/highlight-item/highlight-it
                 deps: [HttpClient],
             },
         }),
+        MarkdownModule.forRoot({ 
+            loader: HttpClient,
+            markedOptions: {
+                provide: MarkedOptions,
+                useFactory: markedOptionsFactory,
+            },
+        }),
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -79,4 +87,50 @@ export class AppModule {}
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     return new TranslateHttpLoader(http);
+}
+
+export function markedOptionsFactory(): MarkedOptions {
+    const renderer = new MarkedRenderer();
+  
+    renderer.text = (text: string) => {
+        if (text.length == 0 || text == null) {
+            return "";
+        }
+        return '<p class="article-p">' + text + '</p>';
+    };
+
+    renderer.heading = (text: string, level: number, raw: string, _) => {
+        if (level == 3) {
+            return `<h3 class="article-h3">` + raw + '</h3>';
+        }
+        return `<h${level}>` + raw + `</h${level}>`;
+    }
+
+    renderer.image = (href: string, title: string, text: string) => {
+        return `<img class="article-img" src='${href}' alt='${title}'>`;
+    }
+
+    renderer.link = (href: string, title: string, text: string) => {
+        let start = 0;
+        let end = text.length;
+        if (text.startsWith('<p')) {
+            start = text.search('>') + 1;
+            end -= 4;
+        }
+        let cropped = text.slice(start, end);
+        return `<a class="eknm-button-underlined" href="${href}">${cropped}</a>`
+    }
+
+    renderer.br = () => {
+        return ""
+    }
+  
+    return {
+      renderer: renderer,
+      gfm: true,
+      breaks: false,
+      pedantic: false,
+      smartLists: true,
+      smartypants: false,
+    };
 }

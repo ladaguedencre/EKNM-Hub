@@ -181,6 +181,11 @@ body {
     margin: 0;
 }
 
+ul {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
 ul li::marker {
     color: #c6cbce;
 }
@@ -255,9 +260,19 @@ li {
     background-position: center;
 }
 
-.img-normal {
+.article-img {
     width: 100%;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     object-fit: contain;
+}
+
+.article-p {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.article-h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
