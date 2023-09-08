@@ -22,7 +22,7 @@ const routes: Routes = [
     { path: 'ua', component: HomePageComponent },
     { path: 'en', component: HomePageComponent },
 
-    { path: 'library/:code', component: ArticlePageComponent },
+    { path: 'archive/:code', component: ArticlePageComponent },
     { path: 'workshop/scp-wa', component: ScpwaPageComponent },
     { path: 'workshop/pupa', component: PupaPageComponent },
 

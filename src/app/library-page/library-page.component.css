@@ -7,7 +7,7 @@
         background-blend-mode: overlay;
     }
     100% {
-        background: url(../../assets/backgrounds/bg_archive.jpg);
+        background: url(../../assets/backgrounds/bg_hub.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -23,7 +23,7 @@
         background-blend-mode: overlay;
     }
     100% {
-        background: url(../../assets/backgrounds/bg_archive.jpg);
+        background: url(../../assets/backgrounds/bg_hub.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;

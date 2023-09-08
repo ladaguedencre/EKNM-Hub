@@ -39,20 +39,11 @@ export class ArchiveService {
     jsonToArticle(json: any): Article {
         let article = {
             id: json['id'],
-            name: json['name'],
-            section: json['section'],
-            author: json['author'],
-            date: json['date'],
-            category: json['category'],
-            backgroundUrl: SharedService.BaseAssetUrl + json['background'],
-            logoUrl: json['logo'],
-            content: [],
+            title: json['title'],
+            subtitle: json['subtitle'],
+            background: json['background'],
+            content: json['content'],
         } as Article;
-        let paragraphs = [];
-        for (let parJson of json['content']) {
-            paragraphs.push(this.jsonToParagraph(parJson));
-        }
-        article.content = paragraphs;
         return article;
     }
 
@@ -66,7 +57,7 @@ export class ArchiveService {
             });
         }
         let article = this.http
-            .get<any>(SharedService.APIUrl + `/articles/${id}`)
+            .get<any>(SharedService.APIUrl + `/archive/${id}`)
             .pipe(map((json) => this.jsonToArticle(json)));
         return article;
     }

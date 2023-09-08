@@ -19,11 +19,11 @@ Objects appear during exploration of the region or randomly. They can be static 
 
 ### Basic gameplay elements
 
-Committee O5 - votes in important decisions, in case of death, a choice is made among scientists, commanders of the Ministry of Defense, administration.
-Scientists - hired for experience, have characteristics (character), assigned to the zone, can investigate objects in the region.
-MOG - are created in the MOG designer, have special characteristics, there is a limited choice during creation.
-Field agents - also have a limited selection of characteristics. They go to an unknown object, maintain secrecy.
-Technologies - divided into 3 branches: Security (finding, capturing objects, improving MOG, etc.), Containment (containment of objects, cameras, zones, etc.), Protection (everything related to the population and secrecy).
+.Committee O5 - votes in important decisions, in case of death, a choice is made among scientists, commanders of the Ministry of Defense, administration.
+.Scientists - hired for experience, have characteristics (character), assigned to the zone, can investigate objects in the region.
+.MOG - are created in the MOG designer, have special characteristics, there is a limited choice during creation.
+.Field agents - also have a limited selection of characteristics. They go to an unknown object, maintain secrecy.
+.Technologies - divided into 3 branches: Security (finding, capturing objects, improving MOG, etc.), Containment (containment of objects, cameras, zones, etc.), Protection (everything related to the population and secrecy).
 
 ### Development process
 

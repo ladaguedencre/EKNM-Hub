@@ -2,49 +2,16 @@
     <div class="article-header" [ngStyle]="setBackground()">
         <div class="gradient-down"><app-header></app-header></div>
         <div class="gradient-middle">
-            <div class="container-standard d-flex flex-column pb-3 pt-3" *ngIf="showAccessory">
-                <h1 class="mb-3 mt-3">{{ headline }}</h1>
-                <p class="author-label">{{ accessory }}</p>
-            </div>
-            <div class="article-logo" *ngIf="showLogo" [ngStyle]="setLogo()"></div>
-            <div class="container-standard pb-3 pt-3" *ngIf="showName">
-                <h1 class="mb-3 mt-3 project-name">{{ headline }}</h1>
+            <div class="container-standard">
+                <h1 class="pb-2 pt-2">{{this.title}}</h1>
+                <h2 class="pb-2 pt-2">{{this.subtitle}}</h2>
             </div>
         </div>
         <div class="gradient-up"></div>
     </div>
-    <div class="container-standard d-flex flex-column" *ngFor="let paragraph of paragraphs">
-        <container-element [ngSwitch]="paragraph.type">
-            <text-paragraph
-                *ngSwitchCase="'text'"
-                [paragraph]="paragraph"
-            ></text-paragraph>
-            <image-paragraph
-                *ngSwitchCase="'image'"
-                [paragraph]="paragraph"
-            ></image-paragraph>
-            <image-paragraph
-                *ngSwitchCase="'image-narrow'"
-                [paragraph]="paragraph"
-            ></image-paragraph>
-            <citation-paragraph
-                *ngSwitchCase="'citation'"
-                [paragraph]="paragraph"
-            ></citation-paragraph>
-            <button-paragraph
-                *ngSwitchCase="'link'"
-                [paragraph]="paragraph"
-            ></button-paragraph>
-            <section-title
-                *ngSwitchCase="'separator'"
-                [titleText]="paragraph.text"
-            ></section-title>
-            <formatted-paragraph
-                *ngSwitchCase="'formatted'"
-                [paragraph]="paragraph"
-            ></formatted-paragraph>
-            <p *ngSwitchDefault>none</p>
-        </container-element>
+    <div class="container-standard">
+        <markdown [data]="content"></markdown>
     </div>
     <div class="mt-3 mb-5"></div>
 </div>
+<app-footer></app-footer>
