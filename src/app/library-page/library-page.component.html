@@ -4,7 +4,7 @@
         <div class="gradient-middle"><h1 class="fade-in">{{ "header.archive" | translate }}</h1></div>
         <div class="gradient-up"></div>
     </div>
-    <div class="container-standard pb-5">
+    <div class="container-standard fade-in pb-5">
         <section-title [titleText]="'library.article' | translate"></section-title>
         <div class="d-flex flex-column" *ngFor="let binding of bindings">
             <article-info [binding]="binding"></article-info>

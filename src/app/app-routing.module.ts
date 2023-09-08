@@ -8,7 +8,7 @@ import { LibraryPageComponent } from './library-page/library-page.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 
-import { ArticlePageComponent } from './articles/article-page/article-page.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
 import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
 import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
 

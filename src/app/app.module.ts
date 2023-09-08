@@ -17,15 +17,10 @@ import { ShopPageComponent } from './shop-page/shop-page.component';
 import { ShopItemComponent } from './components/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LibraryPageComponent } from './library-page/library-page.component';
-import { ArticleInfoComponent } from './library-page/article-info/article-info.component';
+import { ArticleInfoComponent } from './components/article-info/article-info.component';
 import { BrewPageComponent } from './brew-page/brew-page.component';
-import { ArticlePageComponent } from './articles/article-page/article-page.component';
-import { TextParagraphComponent } from './articles/text-paragraph/text-paragraph.component';
-import { ImageParagraphComponent } from './articles/image-paragraph/image-paragraph.component';
-import { ButtonParagraphComponent } from './articles/button-paragraph/button-paragraph.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
 import { BrewItemComponent } from './components/brew-item/brew-item.component';
-import { CitationParagraphComponent } from './articles/citation-paragraph/citation-paragraph.component';
-import { FormattedParagraphComponent } from './articles/formatted-paragraph/formatted-paragraph.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
@@ -46,12 +41,7 @@ import { HighlightItemComponent } from './components/highlight-item/highlight-it
         ArticleInfoComponent,
         BrewPageComponent,
         ArticlePageComponent,
-        TextParagraphComponent,
-        ImageParagraphComponent,
-        ButtonParagraphComponent,
         BrewItemComponent,
-        CitationParagraphComponent,
-        FormattedParagraphComponent,
         HomePageComponent,
         FooterComponent,
         ScpwaPageComponent,

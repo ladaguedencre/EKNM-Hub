@@ -1,0 +1,42 @@
+h2 {
+    overflow: hidden;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-transform: none;
+}
+
+.eknm-button-small {
+    width: 10rem;
+}
+
+.dot {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.article-info-container {
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.article-info-container:hover {
+    background-color: #33312d;
+}
+
+.article-info-container:active {
+    background-color: #262522;
+}
+
+.article-arrow {
+    height: 3rem;
+    width: 3rem;
+    fill: #ecf2f4;
+}
+
+.left-part {
+    margin: 1rem;
+}
+
+.rigth-part {
+    margin: 1rem;
+}

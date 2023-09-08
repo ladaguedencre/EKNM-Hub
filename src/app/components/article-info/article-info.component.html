@@ -1,0 +1,18 @@
+<div class="d-flex flex-row mb-2 article-info-container justify-content-between" role="button" (click)="navigateToArticle()">
+    <div class="left-part">
+        <h2 class="pb-1">{{ binding?.title }}</h2>
+        <p class="pb-1">{{ binding?.subtitle }}</p>
+        <div class="d-flex flex-row">
+            <p>{{ binding?.category }}</p>
+            <p class="dot">•</p>
+            <p>{{ binding?.author }}</p>
+            <p class="dot">•</p>
+            <p>{{ binding?.date }}</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center align-self-center rigth-part">
+        <svg class="article-arrow" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+            <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/>
+        </svg>
+    </div>
+</div>
