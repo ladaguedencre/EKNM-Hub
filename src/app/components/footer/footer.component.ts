@@ -19,6 +19,7 @@ export class FooterComponent {
     this.translate.use(language);
     localStorage.setItem('language', language);
     this.currentLanguage = language;
+    window.location.reload();
   }
 
 }

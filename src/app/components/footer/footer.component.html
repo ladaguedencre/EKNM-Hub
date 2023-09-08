@@ -6,6 +6,7 @@
             [ngStyle]="{
                 color: this.currentLanguage === 'ua' ? '#c6cbce' : 'gray'
             }"
+            [ngClass]="{'footer-lang-active': this.currentLanguage !== 'ua'}"
         >
             UA
         </button>
@@ -15,14 +16,15 @@
             class="footer-lang"
             (click)="useLanguage('en')"
             [ngStyle]="{
-                color: this.currentLanguage === 'en' ? '#c6cbce' : 'gray'
+                color: this.currentLanguage === 'en' ? '#c6cbce' : 'gray' 
             }"
+            [ngClass]="{'footer-lang-active': this.currentLanguage !== 'en'}"
         >
             EN
         </button>
     </div>
 </div>
 <div class="d-flex full-width flex-row justify-content-center fade-in">
-    <p class="p1 pt-1 pb-1">© EKNM, underground since 201X</p>
+    <p class="p1 pt-1 pb-2">© EKNM, underground since 201X</p>
 </div>
 

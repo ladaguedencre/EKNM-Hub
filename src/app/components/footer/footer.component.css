@@ -11,7 +11,7 @@
     transition-duration: 0.2s;
 }
 
-.footer-lang:hover {
+.footer-lang-active:hover {
     color: #a668d9 !important;
 }
 
