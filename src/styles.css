@@ -71,6 +71,13 @@ p {
     color: #c6cbce;
 }
 
+li {
+    font-family: "OpenSans";
+    font-weight: normal;
+    font-size: 1rem;
+    color: #c6cbce;
+}
+
 h1 {
     text-decoration: none;
     font-family: "Raleway-Black";
@@ -190,17 +197,6 @@ ul li::marker {
     color: #c6cbce;
 }
 
-li {
-    text-decoration: none;
-    font-family: "Raleway";
-    font-weight: normal;
-    position: relative;
-    margin: 0;
-    font-size: 1rem;
-    color: #c6cbce;
-    text-align: justify;
-}
-
 .blackBG {
     background-color: #100f0d;
 }
@@ -265,6 +261,7 @@ li {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
     object-fit: contain;
+    max-height: 40rem;
 }
 
 .article-p {
@@ -283,4 +280,14 @@ li {
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding: 1.5rem;
+}
+
+pre {
+    background-color: rgba(200, 200, 200, 0.3);
+    color: #EAD7BB;
+    padding: 1rem;
+}
+
+code {
+    color: #EAD7BB;
 }
