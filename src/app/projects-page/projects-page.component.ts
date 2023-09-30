@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Project, ProjectType, ProjectState } from '../models/project';
 import { Observable } from 'rxjs';
 import { SharedService } from '../common/shared.service';
+import { HubStyler } from '../common/styler';
 
 @Component({
     selector: 'app-projects-page',
@@ -12,7 +13,12 @@ export class ProjectsPageComponent implements OnInit {
     developments = [] as Project[];
     projects = [] as Project[];
 
-    constructor() {}
+    constructor() {
+        HubStyler.setStyling(
+            document,
+            HubStyler.getGradientBackgroundCss('./../../../assets/backgrounds/bg_workshop.jpg')
+        );
+    }
 
     ngOnInit(): void {
         this.getProjects()

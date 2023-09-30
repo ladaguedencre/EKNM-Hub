@@ -15,39 +15,6 @@
     }
 }
 
-@-webkit-keyframes fade-in-image {
-    0% {
-        background: #100f0d;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-blend-mode: overlay;
-    }
-    100% {
-        background: url(./assets/backgrounds/bg_landing_top.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-blend-mode: overlay;
-    }
-}
-@keyframes fade-in-image {
-    0% {
-        background: #100f0d;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-blend-mode: overlay;
-    }
-    100% {
-        background: url(./assets/backgrounds/bg_landing_top.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-blend-mode: overlay;
-    }
-}
-
 .fade-in-image {
     -webkit-animation: fade-in-image 0.4s ease-in both;
     animation: fade-in-image 0.4s ease-in both;

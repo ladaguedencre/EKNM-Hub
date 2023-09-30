@@ -4,6 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { Highlight } from '../models/highlight';
 import { SharedService } from '../common/shared.service';
+import { HubStyler } from '../common/styler';
 
 @Component({
     selector: 'app-home-page',
@@ -32,6 +33,11 @@ export class HomePageComponent implements OnInit {
             .then((highlights) => {
                 this.highlights = highlights ?? [];
             });
+        HubStyler.clearStyling(document);
+        HubStyler.setStyling(
+            document,
+            HubStyler.getGradientBackgroundCss('./../../../assets/backgrounds/bg_landing_top.jpg')
+        );
     }
 
     ngOnInit(): void {

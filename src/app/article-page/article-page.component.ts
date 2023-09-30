@@ -17,10 +17,8 @@ export class ArticlePageComponent {
     subtitle: string = '';
 
     constructor(
-        private router: Router,
         private route: ActivatedRoute,
         private libraryService: ArchiveService,
-        private subjects: SubjectsDataService
     ) {
         this.code = this.route.snapshot.paramMap.get('code')!;
 

@@ -2,6 +2,7 @@ import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { ItemService } from '../models/item.service';
 import { Item, ItemType } from '../models/item';
 import { TranslateService } from '@ngx-translate/core';
+import { HubStyler } from '../common/styler';
 
 @Component({
     selector: 'app-shop-page',
@@ -32,6 +33,10 @@ export class ShopPageComponent implements OnInit {
         private translate: TranslateService
     ) {
         this.onWindowResize();
+        HubStyler.setStyling(
+            document,
+            HubStyler.getGradientBackgroundCss('./../../../assets/backgrounds/bg_warehouse.jpg')
+        );
     }
 
     ngOnInit(): void {

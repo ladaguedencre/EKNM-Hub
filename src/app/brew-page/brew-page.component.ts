@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SubjectsDataService } from 'src/app/common/subject-data.service';
-import { Brew } from '../models/brew';
-import { BrewService } from '../models/brew.service';
+import { Brew } from 'src/app/models/brew';
+import { BrewService } from 'src/app/models/brew.service';
+import { HubStyler } from 'src/app/common/styler';
 
 @Component({
     selector: 'app-brew-page',
@@ -16,7 +17,12 @@ export class BrewPageComponent implements OnInit {
         private subjects: SubjectsDataService,
         private brewService: BrewService,
         private translate: TranslateService
-    ) {}
+    ) {
+        HubStyler.setStyling(
+            document,
+            HubStyler.getGradientBackgroundCss('./../../../assets/backgrounds/bg_brew.jpg')
+        );
+    }
 
     ngOnInit(): void {
         this.subjects.subject(1).next('bgBeer');
