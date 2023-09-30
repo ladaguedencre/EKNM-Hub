@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-scpwa-page',
-  templateUrl: './scpwa-page.component.html',
-  styleUrls: ['./scpwa-page.component.css', ]
+    selector: 'app-scpwa-page',
+    templateUrl: './scpwa-page.component.html',
+    styleUrls: ['./scpwa-page.component.css', ]
 })
 export class ScpwaPageComponent {
 

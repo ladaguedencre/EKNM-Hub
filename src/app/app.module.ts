@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatGridList, MatGridListModule } from '@angular/material/grid-list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
@@ -62,7 +62,7 @@ import { HighlightItemComponent } from './components/highlight-item/highlight-it
                 deps: [HttpClient],
             },
         }),
-        MarkdownModule.forRoot({ 
+        MarkdownModule.forRoot({
             loader: HttpClient,
             markedOptions: {
                 provide: MarkedOptions,
@@ -84,7 +84,7 @@ export function markedOptionsFactory(): MarkedOptions {
 
     renderer.paragraph = (text: string) => {
         if (text.length == 0 || text == null) {
-            return "";
+            return '';
         } else if (text.startsWith('.')) {
             return `<p class="article-p">${text.replace('.', '')}</p>`;
         } else if (text.length < 100) {
@@ -92,37 +92,37 @@ export function markedOptionsFactory(): MarkedOptions {
         } else {
             return `<p class="article-p">&emsp;&emsp;&emsp;${text}</p>`;
         }
-    }
+    };
 
     renderer.heading = (text: string, level: number, raw: string, _) => {
         if (level == 3) {
             return `<h3 class="article-h3">${text}</h3>`;
         }
         return `<h${level}>${text}</h${level}>`;
-    }
+    };
 
     renderer.image = (href: string, title: string, text: string) => {
         return `<img class="article-img" src='${href}' alt='${title}'>`;
-    }
+    };
 
     renderer.link = (href: string, title: string, text: string) => {
-        return `<a class="eknm-button-underlined" href="${href}">${text}</a>`
-    }
+        return `<a class="eknm-button-underlined" href="${href}">${text}</a>`;
+    };
 
     renderer.br = () => {
-        return ""
-    }
+        return '';
+    };
 
     renderer.blockquote = (quote: string) => {
         return `<blockquote class='article-bq'><p>${quote}</p></blockquote>`;
-    }
+    };
 
     return {
-      renderer: renderer,
-      gfm: true,
-      breaks: true,
-      pedantic: false,
-      smartLists: true,
-      smartypants: true,
+        renderer: renderer,
+        gfm: true,
+        breaks: true,
+        pedantic: false,
+        smartLists: true,
+        smartypants: true,
     };
 }

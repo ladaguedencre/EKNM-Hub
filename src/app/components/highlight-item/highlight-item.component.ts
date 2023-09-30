@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Highlight } from '../../models/highlight';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
