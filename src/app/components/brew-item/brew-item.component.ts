@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Brew } from 'src/app/models/brew';
-import { Translator } from '../../common/translate';
+import { Translator } from 'src/app/common/translate';
 
 @Component({
     selector: 'brew-item',

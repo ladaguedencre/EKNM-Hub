@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Highlight } from '../../models/highlight';
+import { Highlight } from 'src/app/models/highlight';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { TransateHelper } from 'src/app/common/translate-helper';

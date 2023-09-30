@@ -1,8 +1,8 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { Project, ProjectType, ProjectState } from '../models/project';
+import { Project, ProjectType, ProjectState } from 'src/app/models/project';
 import { Observable } from 'rxjs';
-import { SharedService } from '../common/shared.service';
-import { HubStyler } from '../common/styler';
+import { SharedService } from 'src/app/common/shared.service';
+import { HubStyler } from 'src/app/common/styler';
 
 @Component({
     selector: 'app-projects-page',

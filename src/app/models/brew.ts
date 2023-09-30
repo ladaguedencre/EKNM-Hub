@@ -1,4 +1,4 @@
-import { multitext } from "../common/translate-helper";
+import { multitext } from "src/app/common/translate-helper";
 
 export interface Brew {
     id: string;

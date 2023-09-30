@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
-import { Highlight } from '../models/highlight';
-import { SharedService } from '../common/shared.service';
-import { HubStyler } from '../common/styler';
+import { Highlight } from 'src/app/models/highlight';
+import { SharedService } from 'src/app/common/shared.service';
+import { HubStyler } from 'src/app/common/styler';
 
 @Component({
     selector: 'app-home-page',

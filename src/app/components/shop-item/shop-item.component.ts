@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Item } from '../../models/item';
+import { Item } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
-import { Translator } from '../../common/translate';
+import { Translator } from 'src/app/common/translate';
 
 @Component({
     selector: 'shop-item',

@@ -1,8 +1,8 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { ItemService } from '../models/item.service';
-import { Item, ItemType } from '../models/item';
+import { ItemService } from 'src/app/models/item.service';
+import { Item, ItemType } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
-import { HubStyler } from '../common/styler';
+import { HubStyler } from 'src/app/common/styler';
 
 @Component({
     selector: 'app-shop-page',

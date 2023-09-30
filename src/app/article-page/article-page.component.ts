@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
-import { SubjectsDataService } from 'src/app/common/subject-data.service';
-import { ArchiveService } from '../models/archive.service';
+import { ActivatedRoute } from '@angular/router';
+import { ArchiveService } from 'src/app//models/archive.service';
 
 @Component({
     selector: 'app-article',
