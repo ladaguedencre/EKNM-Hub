@@ -23,8 +23,7 @@ import { ArticlePageComponent } from './article-page/article-page.component';
 import { BrewItemComponent } from './components/brew-item/brew-item.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ScpwaPageComponent } from './projects/scpwa-page/scpwa-page.component';
-import { PupaPageComponent } from './projects/pupa-page/pupa-page.component';
+import { ProjectPageComponent } from './project-page/project-page.component';
 import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
 
 @NgModule({
@@ -44,8 +43,7 @@ import { HighlightItemComponent } from './components/highlight-item/highlight-it
         BrewItemComponent,
         HomePageComponent,
         FooterComponent,
-        ScpwaPageComponent,
-        PupaPageComponent,
+        ProjectPageComponent,
         HighlightItemComponent,
     ],
     imports: [
