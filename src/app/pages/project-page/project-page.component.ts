@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { HubStyler } from 'src/app/common/styler';
-import { ProjectsService } from 'src/app/services/projects.service';
+import { ProjectsServiceInterface } from 'src/app/interfaces/projects-service.interface';
 
 @Component({
     selector: 'app-project-page',
@@ -16,7 +16,7 @@ export class ProjectPageComponent {
 
     constructor(
         private route: ActivatedRoute,
-        private projectsService: ProjectsService,
+        private projectsService: ProjectsServiceInterface,
         private translate: TranslateService
     ) {
         let id = this.route.snapshot.paramMap.get('code')!;

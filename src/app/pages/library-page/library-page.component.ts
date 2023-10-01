@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Binding } from 'src/app/models/binding';
-import { ArchiveService } from 'src/app/services/archive.service';
 import { HubStyler } from 'src/app/common/styler';
+import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
 
 @Component({
     selector: 'app-library-page',
@@ -11,7 +11,7 @@ import { HubStyler } from 'src/app/common/styler';
 export class LibraryPageComponent implements OnInit {
     bindings = [] as Binding[];
 
-    constructor(private archiveService: ArchiveService) {
+    constructor(private archiveService: ArchiveServiceInterface) {
         var style = document.createElement("STYLE");
         style.innerText = HubStyler.getGradientBackgroundCss('./../../../assets/backgrounds/bg_hub.jpg');
         document.body.appendChild(style);

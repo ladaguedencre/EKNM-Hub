@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ArchiveService } from 'src/app/services/archive.service';
+import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
 
 @Component({
     selector: 'app-article',
@@ -17,12 +17,12 @@ export class ArticlePageComponent {
 
     constructor(
         private route: ActivatedRoute,
-        private libraryService: ArchiveService,
+        private libraryService: ArchiveServiceInterface,
     ) {
         this.code = this.route.snapshot.paramMap.get('code')!;
 
         this.libraryService
-            .getArticleWithId(this.code)
+            .getArticle(this.code)
             .toPromise()
             .then((article) => {
                 if (!article) {

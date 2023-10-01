@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SubjectsDataService } from 'src/app/common/subject-data.service';
 import { Brew } from 'src/app/models/brew';
-import { BrewService } from 'src/app/services/brew.service';
+import { BrewsServiceInterface } from 'src/app/interfaces/brews-service.interface';
 import { HubStyler } from 'src/app/common/styler';
 
 @Component({
@@ -11,11 +11,12 @@ import { HubStyler } from 'src/app/common/styler';
     styleUrls: ['./brew-page.component.css'],
 })
 export class BrewPageComponent implements OnInit {
+
     brews: Brew[] = [];
 
     constructor(
         private subjects: SubjectsDataService,
-        private brewService: BrewService,
+        private brewsService: BrewsServiceInterface,
         private translate: TranslateService
     ) {
         HubStyler.setStyling(
@@ -25,8 +26,7 @@ export class BrewPageComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.subjects.subject(1).next('bgBeer');
-        this.brewService
+        this.brewsService
             .getBrews()
             .toPromise()
             .then((brews) => {
@@ -35,9 +35,5 @@ export class BrewPageComponent implements OnInit {
                 }
                 this.brews = brews;
             });
-    }
-
-    ngOnDestroy(): void {
-        this.subjects.subject(1).next('bgMain');
     }
 }

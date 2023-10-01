@@ -3,14 +3,13 @@ import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { SharedService } from 'src/app/common/shared.service';
 import { Article } from 'src/app/models/article';
-
-import testArticleData from 'src/app/models/articleTest.json';
 import { Binding } from 'src/app/models/binding';
+import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
 
 @Injectable({
     providedIn: 'root',
 })
-export class ArchiveService {
+export class ArchiveService implements ArchiveServiceInterface {
 
     articles: { [id: string]: Article } = {};
 
@@ -39,20 +38,14 @@ export class ArchiveService {
 
     constructor(private http: HttpClient) {}
 
-    getArticleWithId(id: string): Observable<Article> {
-        if (id == 'test') { 
-            return new Observable<Article>((observer) => {
-                observer.next(this.jsonToArticle(testArticleData) as Article);
-                observer.complete();
-            });
-        }
+    getArticle(id: string): Observable<Article> {
         let article = this.http
             .get<any>(SharedService.APIUrl + `/archive/${id}`)
             .pipe(map((json) => this.jsonToArticle(json)));
         return article;
     }
 
-    getBindings() {
+    getBindings(): Observable<Binding[]> {
         return this.http
             .get<any[]>(SharedService.APIUrl + '/bindings')
             .pipe(

@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { Project, ProjectContent, ProjectState, ProjectType } from 'src/app/models/project';
+import { ProjectsServiceInterface } from 'src/app/interfaces/projects-service.interface'
 import { SharedService } from 'src/app/common/shared.service';
 import { Observable } from 'rxjs';
 
 @Injectable({
     providedIn: 'root',
 })
-export class ProjectsService {
+export class ProjectsService implements ProjectsServiceInterface {
 
     constructor() {}
 

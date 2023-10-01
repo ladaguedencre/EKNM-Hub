@@ -1,8 +1,9 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { ItemService } from 'src/app/services/item.service';
+import { WarehouseService } from 'src/app/services/warehouse-service';
 import { Item, ItemType } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
 import { HubStyler } from 'src/app/common/styler';
+import { WarehouseServiceInterface } from 'src/app/interfaces/warehouse-service.interface';
 
 @Component({
     selector: 'app-shop-page',
@@ -29,7 +30,7 @@ export class ShopPageComponent implements OnInit {
 
     // Constructor
     constructor(
-        private itemService: ItemService,
+        private whService: WarehouseServiceInterface,
         private translate: TranslateService
     ) {
         this.onWindowResize();
@@ -40,7 +41,7 @@ export class ShopPageComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.itemService
+        this.whService
             .getItems()
             .toPromise()
             .then((items) => {

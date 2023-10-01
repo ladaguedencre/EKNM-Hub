@@ -26,6 +26,20 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
 
+// Injectable services
+import { ProjectsService } from 'src/app/services/projects-service';
+import { ProjectsServiceInterface } from 'src/app/interfaces/projects-service.interface';
+import { ProjectsServiceMock } from 'src/app/mocks/projects-service.mock';
+import { BrewsService } from 'src/app/services/brews-service';
+import { BrewsServiceInterface } from 'src/app/interfaces/brews-service.interface';
+import { BrewsServiceMock } from 'src/app/mocks/brews-service.mock';
+import { ArchiveService } from 'src/app/services/archive.service';
+import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
+import { ArchiveServiceMock } from 'src/app/mocks/archive-service.mock';
+import { WarehouseService } from 'src/app/services/warehouse-service';
+import { WarehouseServiceInterface } from 'src/app/interfaces/warehouse-service.interface';
+import { WarehouseServiceMock } from 'src/app/mocks/warehouse-service.mock';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -68,7 +82,13 @@ import { HighlightItemComponent } from './components/highlight-item/highlight-it
             },
         }),
     ],
-    providers: [],
+    // Place to inject mock services
+    providers: [
+        { provide: ProjectsServiceInterface, useClass: ProjectsServiceMock },
+        { provide: BrewsServiceInterface, useClass: BrewsServiceMock },
+        { provide: ArchiveServiceInterface, useClass: ArchiveServiceMock },
+        { provide: WarehouseServiceInterface, useClass: WarehouseServiceMock },
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
