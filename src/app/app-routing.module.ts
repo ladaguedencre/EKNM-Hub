@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
-import { ShopPageComponent } from './shop-page/shop-page.component';
-import { LibraryPageComponent } from './library-page/library-page.component';
-import { BrewPageComponent } from './brew-page/brew-page.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
+import { PlaceholderPageComponent } from './pages/placeholder-page/placeholder-page.component';
+import { ShopPageComponent } from './pages/shop-page/shop-page.component';
+import { LibraryPageComponent } from './pages/library-page/library-page.component';
+import { BrewPageComponent } from './pages/brew-page/brew-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
-import { ArticlePageComponent } from './article-page/article-page.component';
-import { ProjectPageComponent } from './project-page/project-page.component';
+import { ArticlePageComponent } from 'src/app/pages/article-page/article-page.component';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
 
 const routes: Routes = [
     { path: 'hub', component: HomePageComponent},

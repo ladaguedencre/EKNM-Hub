@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ArchiveService } from 'src/app//models/archive.service';
+import { ArchiveService } from 'src/app/services/archive.service';
 
 @Component({
     selector: 'app-article',

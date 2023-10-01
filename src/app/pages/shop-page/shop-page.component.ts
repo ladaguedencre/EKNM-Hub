@@ -1,5 +1,5 @@
 import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
-import { ItemService } from 'src/app/models/item.service';
+import { ItemService } from 'src/app/services/item.service';
 import { Item, ItemType } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
 import { HubStyler } from 'src/app/common/styler';

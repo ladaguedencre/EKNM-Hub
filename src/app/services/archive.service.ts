@@ -2,10 +2,10 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { SharedService } from 'src/app/common/shared.service';
-import { Article, Paragraph } from './article';
+import { Article } from 'src/app/models/article';
 
-import testArticleData from './articleTest.json';
-import { Binding } from './binding';
+import testArticleData from 'src/app/models/articleTest.json';
+import { Binding } from 'src/app/models/binding';
 
 @Injectable({
     providedIn: 'root',
@@ -24,16 +24,6 @@ export class ArchiveService {
             date: json['date'],
         } as Binding;
         return binding;
-    }
-
-    jsonToParagraph(json: any): Paragraph {
-        let paragraph = {
-            index: json['index'],
-            text: json['text'],
-            ref: json['ref'],
-            type: json['type'],
-        } as Paragraph;
-        return paragraph;
     }
 
     jsonToArticle(json: any): Article {

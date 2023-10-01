@@ -10,20 +10,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 import { SectionTitleComponent } from './components/section-title/section-title.component';
-import { PlaceholderPageComponent } from './placeholder-page/placeholder-page.component';
-import { ShopPageComponent } from './shop-page/shop-page.component';
+import { PlaceholderPageComponent } from './pages/placeholder-page/placeholder-page.component';
+import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ShopItemComponent } from './components/shop-item/shop-item.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { LibraryPageComponent } from './library-page/library-page.component';
+import { LibraryPageComponent } from './pages/library-page/library-page.component';
 import { ArticleInfoComponent } from './components/article-info/article-info.component';
-import { BrewPageComponent } from './brew-page/brew-page.component';
-import { ArticlePageComponent } from './article-page/article-page.component';
+import { BrewPageComponent } from 'src/app/pages/brew-page/brew-page.component';
+import { ArticlePageComponent } from 'src/app/pages/article-page/article-page.component';
 import { BrewItemComponent } from './components/brew-item/brew-item.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { ProjectPageComponent } from './project-page/project-page.component';
+import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
 
 @NgModule({

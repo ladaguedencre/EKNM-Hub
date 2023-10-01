@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { HubStyler } from 'src/app/common/styler';
-import { ProjectsService } from 'src/app/models/projects.service';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
     selector: 'app-project-page',
@@ -20,7 +20,7 @@ export class ProjectPageComponent {
         private translate: TranslateService
     ) {
         let id = this.route.snapshot.paramMap.get('code')!;
-        let projectContent = this.projectsService.getProjectById(id);
+        let projectContent = this.projectsService.getProjectContent(id);
 
         if (projectContent) {
             if (this.translate.currentLang == 'ua') {

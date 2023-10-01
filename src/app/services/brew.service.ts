@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
 import { SharedService } from 'src/app/common/shared.service';
-import { Brew } from './brew';
+import { Brew } from 'src/app/models/brew';
 
 @Injectable({
     providedIn: 'root',

@@ -1,8 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, NEVER, Observable } from 'rxjs';
-import { SharedService } from '../common/shared.service';
-import { ItemType, Item } from './item';
+import { SharedService } from 'src/app/common/shared.service';
+import { ItemType, Item } from 'src/app/models/item';
 
 @Injectable({
     providedIn: 'root',

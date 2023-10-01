@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { SubjectsDataService } from 'src/app/common/subject-data.service';
 import { Brew } from 'src/app/models/brew';
-import { BrewService } from 'src/app/models/brew.service';
+import { BrewService } from 'src/app/services/brew.service';
 import { HubStyler } from 'src/app/common/styler';
 
 @Component({

@@ -5,10 +5,3 @@ export interface Article {
     background: string;
     content: string;
 }
-
-export interface Paragraph {
-    index: number;
-    type: string;
-    text: string;
-    ref: string;
-}
