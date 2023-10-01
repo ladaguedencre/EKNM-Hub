@@ -1,4 +1,4 @@
-import { multitext } from "src/app/common/translate-helper";
+import { multitext } from "src/app/common/hub-translator";
 
 export enum ProjectState {
     Done = 0,

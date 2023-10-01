@@ -5,7 +5,9 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
+import { HubMdRenderer } from 'src/app/common/hub-md-renderer';
 
+// Components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -84,10 +86,10 @@ import { WarehouseServiceMock } from 'src/app/mocks/warehouse-service.mock';
     ],
     // Place to inject mock services
     providers: [
-        { provide: ProjectsServiceInterface, useClass: ProjectsServiceMock },
-        { provide: BrewsServiceInterface, useClass: BrewsServiceMock },
-        { provide: ArchiveServiceInterface, useClass: ArchiveServiceMock },
-        { provide: WarehouseServiceInterface, useClass: WarehouseServiceMock },
+        { provide: ProjectsServiceInterface, useClass: ProjectsService },
+        { provide: BrewsServiceInterface, useClass: BrewsService },
+        { provide: ArchiveServiceInterface, useClass: ArchiveService },
+        { provide: WarehouseServiceInterface, useClass: WarehouseService },
     ],
     bootstrap: [AppComponent],
 })
@@ -100,40 +102,12 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 export function markedOptionsFactory(): MarkedOptions {
     const renderer = new MarkedRenderer();
 
-    renderer.paragraph = (text: string) => {
-        if (text.length == 0 || text == null) {
-            return '';
-        } else if (text.startsWith('.')) {
-            return `<p class="article-p">${text.replace('.', '')}</p>`;
-        } else if (text.length < 100) {
-            return `<p class="article-p">${text}</p>`;
-        } else {
-            return `<p class="article-p">&emsp;&emsp;&emsp;${text}</p>`;
-        }
-    };
-
-    renderer.heading = (text: string, level: number, raw: string, _) => {
-        if (level == 3) {
-            return `<h3 class="article-h3">${text}</h3>`;
-        }
-        return `<h${level}>${text}</h${level}>`;
-    };
-
-    renderer.image = (href: string, title: string, text: string) => {
-        return `<img class="article-img" src='${href}' alt='${title}'>`;
-    };
-
-    renderer.link = (href: string, title: string, text: string) => {
-        return `<a class="eknm-button-underlined" href="${href}">${text}</a>`;
-    };
-
-    renderer.br = () => {
-        return '';
-    };
-
-    renderer.blockquote = (quote: string) => {
-        return `<blockquote class='article-bq'><p>${quote}</p></blockquote>`;
-    };
+    renderer.paragraph = HubMdRenderer.paragraph;
+    renderer.heading = HubMdRenderer.heading;
+    renderer.image = HubMdRenderer.image;
+    renderer.link = HubMdRenderer.link;
+    renderer.br = HubMdRenderer.br;
+    renderer.blockquote = HubMdRenderer.blockquote;
 
     return {
         renderer: renderer,

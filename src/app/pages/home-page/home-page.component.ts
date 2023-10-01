@@ -4,7 +4,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { Highlight } from 'src/app/models/highlight';
 import { SharedService } from 'src/app/common/shared.service';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 
 @Component({
     selector: 'app-home-page',

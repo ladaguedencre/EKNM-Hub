@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Binding } from 'src/app/models/binding';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
 
 @Component({

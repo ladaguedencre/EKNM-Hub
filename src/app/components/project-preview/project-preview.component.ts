@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Project, ProjectState } from 'src/app/models/project';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { TransateHelper } from 'src/app/common/translate-helper';
+import { HubTranslator } from 'src/app/common/hub-translator';
 
 @Component({
     selector: 'project-preview',
@@ -24,7 +24,7 @@ export class ProjectPreviewComponent implements OnInit {
             this.translate.currentLang
         );
         this.isButtonActive = (this.project?.link ?? '') != '';
-        this.description = TransateHelper.getTranslated(this.project!.description, this.translate.currentLang)
+        this.description = HubTranslator.getTranslated(this.project!.description, this.translate.currentLang)
     }
 
     navigateToDetails() {

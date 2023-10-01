@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
 import { SharedService } from './common/shared.service';
-import { SubjectsDataService } from './common/subject-data.service';
 import { TranslateService } from '@ngx-translate/core';
 import { DOCUMENT } from '@angular/common';
 
@@ -23,7 +22,6 @@ export class AppComponent implements OnInit, OnDestroy {
     constructor(
         public sharedService: SharedService,
         private cdr: ChangeDetectorRef,
-        private subjects: SubjectsDataService,
         private translate: TranslateService,
         @Inject(DOCUMENT) private document: Document
     ) {

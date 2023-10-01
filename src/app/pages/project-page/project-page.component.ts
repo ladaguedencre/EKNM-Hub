@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 import { ProjectsServiceInterface } from 'src/app/interfaces/projects-service.interface';
 
 @Component({

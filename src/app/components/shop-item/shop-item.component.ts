@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Item } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
-import { Translator } from 'src/app/common/translate';
+import { HubTranslator } from 'src/app/common/hub-translator';
 
 @Component({
     selector: 'shop-item',
@@ -20,7 +20,7 @@ export class ShopItemComponent implements OnInit {
         if (!this.name) {
             this.name = this.item?.name['en'];
         }
-        this.state = Translator.translatedState(
+        this.state = HubTranslator.translatedState(
             this.item!.count,
             this.translate.currentLang
         );

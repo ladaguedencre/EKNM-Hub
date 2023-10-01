@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { Project, ProjectType, ProjectState } from 'src/app/models/project';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 import { ProjectsService } from '../../services/projects-service';
 import { ProjectsServiceInterface } from 'src/app/interfaces/projects-service.interface';
 

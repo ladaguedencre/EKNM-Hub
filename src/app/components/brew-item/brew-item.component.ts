@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Brew } from 'src/app/models/brew';
-import { Translator } from 'src/app/common/translate';
+import { HubTranslator } from 'src/app/common/hub-translator';
 
 @Component({
     selector: 'brew-item',
@@ -20,7 +20,7 @@ export class BrewItemComponent implements OnInit {
         if (!this.description) {
             this.description = this.brew?.description['en'];
         }
-        this.state = Translator.translatedState(
+        this.state = HubTranslator.translatedState(
             this.brew!.count,
             this.translate.currentLang
         );

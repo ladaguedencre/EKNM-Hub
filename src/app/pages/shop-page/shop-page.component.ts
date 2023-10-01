@@ -2,7 +2,7 @@ import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { WarehouseService } from 'src/app/services/warehouse-service';
 import { Item, ItemType } from 'src/app/models/item';
 import { TranslateService } from '@ngx-translate/core';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 import { WarehouseServiceInterface } from 'src/app/interfaces/warehouse-service.interface';
 
 @Component({

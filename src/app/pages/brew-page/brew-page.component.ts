@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { SubjectsDataService } from 'src/app/common/subject-data.service';
 import { Brew } from 'src/app/models/brew';
 import { BrewsServiceInterface } from 'src/app/interfaces/brews-service.interface';
-import { HubStyler } from 'src/app/common/styler';
+import { HubStyler } from 'src/app/common/hub-styler';
 
 @Component({
     selector: 'app-brew-page',
@@ -15,7 +14,6 @@ export class BrewPageComponent implements OnInit {
     brews: Brew[] = [];
 
     constructor(
-        private subjects: SubjectsDataService,
         private brewsService: BrewsServiceInterface,
         private translate: TranslateService
     ) {
