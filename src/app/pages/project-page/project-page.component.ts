@@ -20,23 +20,28 @@ export class ProjectPageComponent {
         private translate: TranslateService
     ) {
         let id = this.route.snapshot.paramMap.get('code')!;
-        let projectContent = this.projectsService.getProjectContent(id);
 
-        if (projectContent) {
-            if (this.translate.currentLang == 'ua') {
-                this.source = `assets/projects/${projectContent.fileId}.ua.md`;
-            } else {
-                this.source = `assets/projects/${projectContent.fileId}.en.md`;
-            }
-            
-            this.title = projectContent.title;
-    
-            HubStyler.setStyling(
-                document,
-                HubStyler.getGradientBackgroundCss(projectContent.background)
-            );
-        } else {
-            this.title = "404: Project not found";
-        }
+        this.projectsService
+            .getProjectContent(id)
+            .toPromise()
+            .then((content) => {
+                if (!content) {
+                    this.title = "404: Project not found";
+                    return;
+                }
+                
+                if (this.translate.currentLang == 'ua') {
+                    this.source = `assets/projects/${content.fileId}.ua.md`;
+                } else {
+                    this.source = `assets/projects/${content.fileId}.en.md`;
+                }
+                
+                this.title = content.title;
+        
+                HubStyler.setStyling(
+                    document,
+                    HubStyler.getGradientBackgroundCss(content.background)
+                );
+            });
     }
 }

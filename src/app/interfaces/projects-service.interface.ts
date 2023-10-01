@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 
 export abstract class ProjectsServiceInterface {
 
-    public abstract getProjectContent(id: string): ProjectContent | null;
+    public abstract getProjectContent(id: string): Observable<ProjectContent | null>;
 
     public abstract getAllProjects(): Observable<Project[]>
 

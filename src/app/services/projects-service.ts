@@ -11,8 +11,11 @@ export class ProjectsService implements ProjectsServiceInterface {
 
     constructor() {}
 
-    getProjectContent(id: string): ProjectContent | null {
-        return this.contents[id];
+    getProjectContent(id: string): Observable<ProjectContent | null> {
+        return new Observable<ProjectContent | null>((observer) => {
+            observer.next(this.contents[id]);
+            observer.complete();
+        });
     }
 
     // Return observable to comply with other services

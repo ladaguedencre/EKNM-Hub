@@ -6,3 +6,14 @@ export interface Binding {
     author: string;
     date: string;
 }
+
+export function parseBinding(json: {[key: string]: any}): Binding {
+    return {
+        id: json['id'],
+        title: json['title'],
+        subtitle: json['subtitle'],
+        category: json['category'],
+        author: json['author'],
+        date: json['date'],
+    } as Binding;
+}

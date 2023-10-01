@@ -10,12 +10,15 @@ export class ProjectsServiceMock implements ProjectsServiceInterface {
 
     constructor() {}
 
-    getProjectContent(id: string): ProjectContent | null {
-        return {
-            title: 'TEST',
-            fileId: './test.md',
-            background: './../../../assets/mock/icon1.png'
-        } as ProjectContent;
+    getProjectContent(id: string): Observable<ProjectContent | null> {
+        return new Observable<ProjectContent | null>((observer) => {
+            observer.next({
+                title: 'TEST',
+                fileId: './test.md',
+                background: './../../../assets/mock/icon1.png'
+            });
+            observer.complete();
+        });
     }
 
     getAllProjects(): Observable<Project[]> {
