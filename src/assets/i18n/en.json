@@ -7,6 +7,11 @@
         "warehouse": "Warehouse"
     },
 
+    "home": {
+        "welcome": "WELCOME TO THE FACTORY",
+        "join": "JOIN US"
+    },
+
     "brew": {
         "description": "Since the summer of 2021, we have been brewing craft beer in the format of small experimental batches. In the future we plan to repeat successful recipes and develop new recipes.",
         "technology": "In the experimental mode, each batch is made with a circulation of about 20 bottles of 0.5 liters and is packaged in bottles with a unique label.",
@@ -46,22 +51,5 @@
     "shop_page": {
         "stickers": "STICKERS",
         "uniform": "UNIFORM"
-    },
-
-    "landing": {
-        "main_title": "WELCOME TO THE FACTORY",
-        "dev_title": "DEVELOPMENTS",
-        "dev_text": "We create machines to solve standard problems and have fun. Things like that, you know? We are turning civilization around, whether you like it or not. You remember that and let's not talk about it anymore. We are adults and certainly have no right to forget about human weaknesses.",
-        "dev_button": "VISIT WORKSHOP →",
-        "wh_title": "FACTORY",
-        "wh_text": "There are strange things in factory warehouses. In addition to alcohol - blood. There are only rumors about other drugs, but everything is known for sure about this one. And not only to our plant, but also to the police, which received the information. Even two indicative lists showed where these substances could be more. But there are no specific names yet.",
-        "wh_button": "VISIT WAREHOUSE →",
-        "lib_title": "JOURNALISM",
-        "lib_text": "Our articles show cynicism and ignorance on most issues. And the reason is not a lack of time or limitations, but the fact that most authors have not read serious books. We believe that we are honestly clarifying the issues raised in them.",
-        "lib_button": "VISIT LIBRARY →",
-        "brew_title": "BEER",
-        "brew_text": "In our brewery, there is a reverse process that the head of the best beer chain in our region knows best. Pre-arranged meetings are canceled, some, on the contrary, are scheduled, but the beer from the basement disappears somewhere.",
-        "brew_button": "VISIT BREWERY →",
-        "also_visit": "ALSO VISIT"
     }
 }

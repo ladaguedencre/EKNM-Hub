@@ -35,12 +35,15 @@ import { ProjectsServiceMock } from 'src/app/mocks/projects-service.mock';
 import { BrewsService } from 'src/app/services/brews-service';
 import { BrewsServiceInterface } from 'src/app/interfaces/brews-service.interface';
 import { BrewsServiceMock } from 'src/app/mocks/brews-service.mock';
-import { ArchiveService } from 'src/app/services/archive.service';
+import { ArchiveService } from 'src/app/services/archive-service';
 import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
 import { ArchiveServiceMock } from 'src/app/mocks/archive-service.mock';
 import { WarehouseService } from 'src/app/services/warehouse-service';
 import { WarehouseServiceInterface } from 'src/app/interfaces/warehouse-service.interface';
 import { WarehouseServiceMock } from 'src/app/mocks/warehouse-service.mock';
+import { HighlightsService } from 'src/app/services/highlights-service';
+import { HighlightsServiceInterface } from 'src/app/interfaces/highlights-service.interface';
+import { HighlightsServiceMock } from 'src/app/mocks/highlights-service.mock';
 
 @NgModule({
     declarations: [
@@ -90,6 +93,7 @@ import { WarehouseServiceMock } from 'src/app/mocks/warehouse-service.mock';
         { provide: BrewsServiceInterface, useClass: BrewsService },
         { provide: ArchiveServiceInterface, useClass: ArchiveService },
         { provide: WarehouseServiceInterface, useClass: WarehouseService },
+        { provide: HighlightsServiceInterface, useClass: HighlightsService },
     ],
     bootstrap: [AppComponent],
 })

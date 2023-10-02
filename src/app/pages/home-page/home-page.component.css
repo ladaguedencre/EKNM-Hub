@@ -106,3 +106,7 @@
     align-items: center;
     flex-direction: column;
 }
+
+.join-label {
+    height: 3rem;
+}
