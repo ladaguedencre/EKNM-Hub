@@ -1,4 +1,6 @@
-@import './animations.css';
+@import './styles-animations.css';
+@import './styles-buttons.css';
+@import './styles-md.css';
 
 @font-face {
     font-family: OpenSans;
@@ -136,47 +138,9 @@ h3 {
     width: 100%;
 }
 
-.eknm-button-small {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    font-family: "Raleway";
-    font-size: 1.25rem;
-    border-radius: 360px;
-    color: #ecf2f4;
-    background-color: none;
-    border: solid #ecf2f4;
-    border-width: 1px;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-}
-
-.eknm-button-small:hover {
-    color: #ecf2f4;
-    background-color: #33312d;
-}
-
-.eknm-button-small:active {
-    color: #ecf2f4;
-    background-color: #262522;
-}
-
-.eknm-button-underlined {
-    justify-content: center;
-    align-items: center;
-    font-family: "Raleway";
-    font-size: 1.25rem;
-    color: #c6cbce;
-}
-
-.eknm-button-underlined:hover {
-    color: #c6cbce;
-    text-decoration-color: #a668d9;
-}
-
-.eknm-button-underlined:active {
-    color: #c6cbce;
+.full-width {
+    width: 100%;
+    background-color: #100f0dff;
 }
 
 html,
@@ -219,11 +183,6 @@ ul li::marker {
     }
 }
 
-.full-width {
-    width: 100%;
-    background-color: #100f0dff;
-}
-
 .gradient-down {
     height: 10rem;
     background: linear-gradient(#100f0dff, #100f0dbf);
@@ -248,46 +207,4 @@ ul li::marker {
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: overlay;
-}
-
-.page-header {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.article-img {
-    width: 100%;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    object-fit: contain;
-    max-height: 40rem;
-}
-
-.article-p {
-    margin-top: 0.3rem;
-    margin-bottom: 0.3rem;
-    text-align: justify;
-}
-
-.article-h3 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-.article-bq {
-    background-color: rgba(200, 200, 200, 0.3);
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 1.5rem;
-}
-
-pre {
-    background-color: rgba(200, 200, 200, 0.3);
-    color: #EAD7BB;
-    padding: 1rem;
-}
-
-code {
-    color: #EAD7BB;
 }

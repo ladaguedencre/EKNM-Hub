@@ -33,10 +33,37 @@ h2 {
     fill: #ecf2f4;
 }
 
+
 .left-part {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .rigth-part {
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+    .left-part {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .rigth-part {
+        margin-right: 1rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .left-part {
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+    .rigth-part {
+        margin-right: 0rem;
+    }
 }

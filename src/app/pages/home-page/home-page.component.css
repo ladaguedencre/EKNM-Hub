@@ -8,10 +8,6 @@
     width: 100vw;
 }
 
-.page-header {
-    background-image: url(../../../assets/backgrounds/bg_landing_top.jpg);
-}
-
 .page-footer {
     background-image: url(../../../assets/backgrounds/bg_landing_bottom.jpg);
 }

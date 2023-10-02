@@ -16,13 +16,15 @@
 }
 
 .container-highlight {
-    width: 35rem;
+    max-width: 35rem;
+    width: 100%;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
 
 .image-highlight {
-    width: 28rem;
+    max-width: 28rem;
+    width: 100%;
     height: 14rem;
     margin-top: 2rem;
     background-size: cover;
