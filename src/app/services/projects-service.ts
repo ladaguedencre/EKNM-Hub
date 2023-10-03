@@ -38,6 +38,11 @@ export class ProjectsService implements ProjectsServiceInterface {
             fileId: 'scp-wa',
             background: './../../../assets/backgrounds/bg_scpwa.jpg'
         },
+        'minecraft': {
+            title: 'Minecraft Server',
+            fileId: 'mc_server',
+            background: './../../../assets/backgrounds/bg_minecraft.jpg'
+        },
     }
 
     // Static projects
@@ -77,7 +82,16 @@ export class ProjectsService implements ProjectsServiceInterface {
             link: '',
             state: ProjectState.Done,
             type: ProjectType.Other,
-        }
+        },
+        {
+            id: 'mc_server',
+            name: 'Minecraft Server',
+            description: { 'en': 'Our own minecraft server where you will find a beer plugin, a beautiful spawn with a sawmill, a brewery and much more. Open 24/7 subject to availability of electricity.', 'ua': 'Наш власний сервер майнкрафта, на якому ви знайдете плагін на пиво, красивий спавн з лісопилкою, пивоварню і багато усього іншого. Відкритий 24/7 за умови наявності електрохарчування.' },
+            logoUrl: SharedService.BaseAssetUrl + '/s/Fr1m4uwXsI3hbeK/download',
+            link: '/minecraft',
+            state: ProjectState.Done,
+            type: ProjectType.Project,
+        },
     ];
     
 }
