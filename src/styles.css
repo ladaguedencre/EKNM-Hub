@@ -37,12 +37,6 @@
     font-weight: 300;
 }
 
-@font-face {
-    font-family: Lemon;
-    src: url("assets/fonts/Lemon.ttf") format("truetype");
-    font-style: normal;
-}
-
 .color-white-bright {
     color: #ecf2f4;
 }

@@ -1,0 +1,27 @@
+.flex-row {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.label-not {
+    color: red;
+}
+
+.brews-container {
+    width: 100%;
+    margin-top: 0rem;
+}
+
+@media only screen and (min-width: 700px) {
+    .brews-item {
+        width: 50%;
+        padding: 0.5rem;
+    }    
+}
+
+@media only screen and (max-width: 700px) {
+    .brews-item {
+        width: 100%;
+        padding: 0rem;
+    }  
+}

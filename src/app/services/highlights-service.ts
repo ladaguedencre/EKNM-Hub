@@ -67,7 +67,7 @@ export class HighlightsService implements HighlightsServiceInterface {
             title: { 'en': 'BACK 2 BEER' },
             description: { 'ua': 'Попри всі негаразди та складності ми відновили наш експериментальний пивний цех. Деякий час він був у зоні бойових дій, але завдіки ЗСУ обладнання залишилось неушкодженим. Тепер пивний казан знову кипить і незрівнянний аромат наповнює приміщення. Зустрічайте Auferstehung Verschnitt 01!', 'en': 'Despite all the troubles and difficulties, we have restored our experimental brewery. For some time it was in the combat zone, but the equipment remained intact because of the Armed Forces. Now the beer cauldron is boiling again and an incomparable aroma fills the room. Meet Auferstehung Verschnitt 01!' },
             imageUrl: SharedService.BaseAssetUrl + '/s/uFhfztdLumrNbaH/download',
-            buttonText: { 'ua': 'Відвідати пивоварню', 'en': 'Visit the brewery'},
+            buttonText: { 'ua': 'Відвідати броварню', 'en': 'Visit the brewery'},
             link: '/brewery',
         }
     ];
