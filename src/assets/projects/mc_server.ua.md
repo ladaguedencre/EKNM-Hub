@@ -25,12 +25,12 @@ EKNM Minecraft Server Classic - проста сборка для класичн�
 
 .Також ми займались розробкою свого лаунчера для більш комфортної гри. Нажаль він не був закінчений через передчасне закриття серверу. Ознайомитись з ним модна на `Github`:  
 
-[EKNM Launcher](https://github.com/MixaPlt/EKNM-Launcher)
+.[EKNM Launcher](https://github.com/MixaPlt/EKNM-Launcher)
 
 ### Галерея
-![scr0](https://eknm.in/s/zgN5c4xJmqwRvo0/download)
-![scr1](https://eknm.in/s/ef8nc5zZiDK8dhI/download)
-![scr2](https://eknm.in/s/JRFjbF7ER3oGoWq/download)
-![scr3](https://eknm.in/s/bFSI8CmvsZuA1Ou/download)
-![scr4](https://eknm.in/s/l9UiDhyi1HpPy5w/download)
-![scr5](https://eknm.in/s/OYvfW6wdTxO0rTM/download)
+![scr0](/s/zgN5c4xJmqwRvo0/download)
+![scr1](/s/ef8nc5zZiDK8dhI/download)
+![scr2](/s/JRFjbF7ER3oGoWq/download)
+![scr3](/s/bFSI8CmvsZuA1Ou/download)
+![scr4](/s/l9UiDhyi1HpPy5w/download)
+![scr5](/s/OYvfW6wdTxO0rTM/download)

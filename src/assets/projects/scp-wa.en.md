@@ -13,7 +13,7 @@ There are many endings in the game, among which only one is good - the Foundatio
 
 The map is divided into regions, in each region it is possible to build a zone. First, the player starts with one zone, randomly selected from several starting zones. Next, he explores the region, gets resources, creates new zones. And so on. Construction in the regions is possible only with sufficient influence from neighboring regions. It is also possible to choose the initial branch:
 
-![img1](https://eknm.in/s/OScnEbqnjdxRf0l/download)
+![img1](/s/OScnEbqnjdxRf0l/download)
 
 Objects appear during exploration of the region or randomly. They can be static (fixed) or movable. Each object has a class determined by field agents, MOGs, or scientists. Objects provide one-time, temporary or permanent resource buffs/debuffs. Temporary and permanent buffs/debuffs are activated by scientists. Some objects have their own micro-events (probable or planned), for example, violation of conditions of maintenance or transportation, or even a change of class.
 
@@ -29,8 +29,9 @@ Objects appear during exploration of the region or randomly. They can be static 
 
 We worked out the concept and mechanics at the prototype level, and as a result of several meetings, development began. The menu, zone selection and map prototype were made. The mechanics of opening new territories, building zones and the appearance of objects have been implemented. Unfortunately, after that, the development was stopped. The main reasons for this were insufficient manpower to create a game of this scale, the emergence of competing games, and most importantly [DATA EXPUNGED]
 
-![img2](https://eknm.in/s/psxmf6gJm6jVw8v/download)
+![img2](/s/psxmf6gJm6jVw8v/download)
 
 ### Useful links
-[SCP Foundation Wiki](https://scp-wiki.wikidot.com/)
-[Project Github](https://github.com/monsteroko/SCPF-WA/)
+.[SCP Foundation Wiki](https://scp-wiki.wikidot.com/)  
+
+.[Project Github](https://github.com/monsteroko/SCPF-WA/)  

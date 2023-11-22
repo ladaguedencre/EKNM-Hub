@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ArchiveServiceInterface } from 'src/app/interfaces/archive-service.interface';
+import { SharedService } from 'src/app/common/shared.service';
 
 @Component({
     selector: 'app-article',
@@ -39,7 +40,7 @@ export class ArticlePageComponent {
     setBackground = () => {
         return {
             'background-image': `url(${
-                this.backgroundUrl
+                SharedService.BaseAssetUrl + this.backgroundUrl
             })`,
             'background-size': `cover`,
             'background-repeat': `no-repeat`,

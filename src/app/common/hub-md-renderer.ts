@@ -1,3 +1,4 @@
+import { SharedService } from 'src/app/common/shared.service';
 
 // Provides set of renderer functions for MarkedRenderer
 // HubMdRenderer follows MarkedRenderer namings
@@ -23,7 +24,7 @@ export abstract class HubMdRenderer {
     };
 
     public static image = (href: string, title: string, text: string) => {
-        return `<img class="article-img" src='${href}' alt='${title}'>`;
+        return `<img class="article-img" src='${SharedService.BaseAssetUrl+href}' alt='${title}'>`;
     };
 
     public static link = (href: string, title: string, text: string) => {
