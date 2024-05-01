@@ -10,6 +10,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 
 import { ArticlePageComponent } from 'src/app/pages/article-page/article-page.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
+import { PrivacyPageComponent } from './pages/privacy/privacy-page.component';
 
 const routes: Routes = [
     { path: 'hub', component: HomePageComponent},
@@ -23,6 +24,8 @@ const routes: Routes = [
 
     { path: 'archive/:code', component: ArticlePageComponent },
     { path: 'workshop/:code', component: ProjectPageComponent },
+
+    { path: 'workshop/pocyr/privacy', component: PrivacyPageComponent },
 
     { path: 'home', redirectTo: '/hub', pathMatch: 'full' },
     { path: '**', component: PlaceholderPageComponent },

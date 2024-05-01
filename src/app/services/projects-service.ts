@@ -38,6 +38,11 @@ export class ProjectsService implements ProjectsServiceInterface {
             fileId: 'scp-wa',
             background: './../../../assets/backgrounds/bg_scpwa.jpg'
         },
+        'pocyr': {
+            title: 'PoCyr',
+            fileId: 'pocyr',
+            background: './../../../assets/backgrounds/bg_workshop.jpg'
+        },
         'minecraft': {
             title: 'Minecraft Server',
             fileId: 'mc_server',
@@ -77,11 +82,11 @@ export class ProjectsService implements ProjectsServiceInterface {
         {
             id: 'pocyr',
             name: 'PoCyr',
-            description: { 'en': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.' },
-            logoUrl: '../../assets/mock/icon3.png',
-            link: '',
+            description: { 'en': 'Text transliteration app is useful for entertainment, scientific research and ecological activism (it is proven to reduce total text size). Currently only Polish language is supported', 'ua': 'Додаток для транслітерації тексту корисна для розваг, наукових досліджень та екологічного активізму (доведено, що вона зменшує загальний розмір тексту). Наразі підтримується лише польська мова.' },
+            logoUrl: SharedService.BaseAssetUrl + '/s/ysPAs2bPGyUB3pr/download',
+            link: '/pocyr',
             state: ProjectState.Done,
-            type: ProjectType.Other,
+            type: ProjectType.Development,
         },
         {
             id: 'mc_server',
