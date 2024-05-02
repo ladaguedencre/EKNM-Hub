@@ -7,11 +7,6 @@
     height: 2px;
 }
 
-.button-inactive {
-    color: gray;
-    pointer-events: none;
-}
-
 .right-container {
     flex-direction: column;
 }

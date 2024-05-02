@@ -15,6 +15,7 @@ export class HighlightItemComponent {
     title?: string;
     description?: string;
     buttonText?: string;
+    @Input() isButtonActive?: boolean = false;
 
     constructor(private router: Router, private translate: TranslateService) {}
 
@@ -22,6 +23,8 @@ export class HighlightItemComponent {
         this.title = HubTranslator.getTranslated(this.highlight!.title, this.translate.currentLang)
         this.description = HubTranslator.getTranslated(this.highlight!.description, this.translate.currentLang)
         this.buttonText = HubTranslator.getTranslated(this.highlight!.buttonText, this.translate.currentLang).toUpperCase() + " →"
+        console.log("KEK")
+        console.log(this.isButtonActive)
     }
 
     navigateToDetails() {

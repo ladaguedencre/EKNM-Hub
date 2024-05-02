@@ -13,6 +13,7 @@ import { HighlightsServiceInterface } from 'src/app/interfaces/highlights-servic
 })
 export class HomePageComponent {
     mainText: string = '';
+    isHubAvailable: boolean = true;
 
     highlights = [] as Highlight[];
 
@@ -23,7 +24,8 @@ export class HomePageComponent {
         private highlightsService: HighlightsServiceInterface
     ) {
         let currentLanguage = this.translate.currentLang;
-        let langParam = this.route.snapshot?.routeConfig?.path
+        this.isHubAvailable = this.route.snapshot?.routeConfig?.path != 'reserve';
+        let langParam = this.route.snapshot?.queryParamMap.get('lang')
         if (langParam == 'en' || langParam == 'ua') {
             this.translate.use(langParam);
             localStorage.setItem('language', langParam);

@@ -7,6 +7,11 @@
 <div class="half-page-bottom container-standard">
     <div>
         <img class="image-highlight" src="{{ highlight!.imageUrl }}">
-        <a class="eknm-button-small" role="button" (click)="navigateToDetails()">{{ buttonText }}</a>
+        <a class="eknm-button-small" role="button" *ngIf="isButtonActive" (click)="navigateToDetails()">
+            {{ buttonText }}
+        </a>
+        <a class="eknm-button-small button-inactive" disabled *ngIf="!isButtonActive">
+            {{ buttonText }}
+        </a>
     </div>
 </div>

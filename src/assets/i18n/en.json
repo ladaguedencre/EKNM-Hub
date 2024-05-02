@@ -8,8 +8,9 @@
     },
 
     "home": {
-        "welcome": "WELCOME TO THE FACTORY",
-        "join": "JOIN US"
+        "welcome": "ON THE DIGITAL SIDE OF THE FACTORY",
+        "join": "JOIN US",
+        "unavailable": "HUB is temporary unavailable due to blackout or other unexpected circumstances"
     },
 
     "brew": {

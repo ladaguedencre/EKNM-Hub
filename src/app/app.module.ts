@@ -6,6 +6,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MarkdownModule, MarkedOptions, MarkedRenderer } from 'ngx-markdown';
 import { HubMdRenderer } from 'src/app/common/hub-md-renderer';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 // Components
 import { AppRoutingModule } from './app-routing.module';
@@ -17,7 +18,6 @@ import { SectionTitleComponent } from './components/section-title/section-title.
 import { PlaceholderPageComponent } from './pages/placeholder-page/placeholder-page.component';
 import { ShopPageComponent } from './pages/shop-page/shop-page.component';
 import { ShopItemComponent } from './components/shop-item/shop-item.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { LibraryPageComponent } from './pages/library-page/library-page.component';
 import { ArticleInfoComponent } from './components/article-info/article-info.component';
 import { BrewPageComponent } from 'src/app/pages/brew-page/brew-page.component';
@@ -27,6 +27,7 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProjectPageComponent } from './pages/project-page/project-page.component';
 import { HighlightItemComponent } from './components/highlight-item/highlight-item.component';
+import { RedirectPageComponent } from './pages/redirect-page/redirect-page.component';
 
 // Injectable services
 import { ProjectsService } from 'src/app/services/projects-service';
@@ -64,12 +65,13 @@ import { HighlightsServiceMock } from 'src/app/mocks/highlights-service.mock';
         FooterComponent,
         ProjectPageComponent,
         HighlightItemComponent,
+        RedirectPageComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NoopAnimationsModule,
         MatGridListModule,
+        MatProgressSpinnerModule,
         TranslateModule.forRoot(),
         HttpClientModule,
         TranslateModule.forRoot({

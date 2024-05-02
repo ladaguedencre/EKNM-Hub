@@ -40,3 +40,8 @@
 .eknm-button-underlined:active {
     color: #c6cbce;
 }
+
+.button-inactive {
+    color: gray;
+    pointer-events: none;
+}
