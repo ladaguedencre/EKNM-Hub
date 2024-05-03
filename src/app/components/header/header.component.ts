@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { SharedService } from 'src/app/common/shared.service';
 import { MenuItem } from 'src/app/models/menu-item';
 
 @Component({
@@ -11,10 +12,12 @@ export class HeaderComponent implements OnInit {
 
     @Input() includeHub?: boolean;
     items: MenuItem[] = [];
+    isStatic: boolean = false;
 
     constructor(private router: Router) {}
 
     ngOnInit(): void {
+        this.isStatic = SharedService.IsStaticVersion;
         this.items.push({
             tag: 'workshop',
             path: '/',

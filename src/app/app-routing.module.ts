@@ -15,8 +15,14 @@ import { PrivacyPageComponent } from './pages/privacy/privacy-page.component';
 import { SharedService } from './common/shared.service';
 
 const routes: Routes = SharedService.IsStaticVersion ? [
-    { path: 'reserve', component: HomePageComponent},
-    { path: '**', component: RedirectPageComponent },
+    { path: '', component: HomePageComponent },
+    { path: 'home', redirectTo: '', pathMatch: 'full' },
+
+    { path: 'workshop/:code', component: ProjectPageComponent },
+
+    { path: 'workshop/pocyr/privacy', component: PrivacyPageComponent },
+
+    { path: '**', component: PlaceholderPageComponent },
 ] : [
     { path: 'hub', component: HomePageComponent},
     { path: 'workshop', component: ProjectsPageComponent },
@@ -24,8 +30,6 @@ const routes: Routes = SharedService.IsStaticVersion ? [
     { path: 'archive', component: LibraryPageComponent },
     { path: 'warehouse', component: ShopPageComponent },
     { path: '', component: HomePageComponent },
-
-    { path: 'redirect', component: RedirectPageComponent},
 
     { path: 'archive/:code', component: ArticlePageComponent },
     { path: 'workshop/:code', component: ProjectPageComponent },

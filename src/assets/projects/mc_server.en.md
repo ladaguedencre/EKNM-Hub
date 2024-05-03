@@ -1,36 +1,57 @@
-### Welcome to our server
+### Season 3
 
-EKNM Minecraft Server Classic is a simple build for the classic game, compatible with the vanilla game client. The server has plugins for privatizing the territory, improved mechanisms, brewing beer and a bunch of trinkets that improve the gaming experience, but do not interfere with enjoying the classic minecraft.
+This time we made a full-fledged factory assembly based on the Create mod.  
 
-The current version is `1.19.4`
+.Game version - `1.20.1`  
 
-No wipes are currently planned.
+.You can connect via ip: `178.150.103.215`  
 
-A large year-round sawmill with many rooms, an official hall and merchants was built on the spawning grounds. A small village of local residents is located next to it. This area is surrounded by forests, and rivers flow nearby. Can you imagine a better location for a home?
+![3s1](/s/Zyy3hd4reDC7jYt/download)
+![3s2](/s/sTKJBTCsBF4kszJ/download)
 
-### How to connect
+### Season 2
 
-1. Download the minecraft client from official sources or using TLauncher
-2. Start the client, do not forget to enter your nickname
-3. Select multiplayer, add a new server
-4. Enter `minecraft.eknm.in` or `109.86.198.149:5001` in the address field
-5. Enjoy!
-6. (optional) Join our Discord server, we have a channel dedicated to minecraft
+This was a simple build for a classic game compatible with the vanilla game client. The server has plugins for privatizing the territory, improved mechanisms, brewing beer and a bunch of trinkets that improve the gaming experience, but do not interfere with enjoying the classic minecraft.  
 
-### Server history
+Game version - `1.19.4`  
 
-.This server is not the first one we have launched. You can read about the last large-scale launch in the archive:
+A large year-round sawmill with many rooms, an official hall and merchants was built on the spawning grounds. A small village of local residents is located next to it. This area is surrounded by forests, and rivers flow nearby. Can you imagine a better location for a home?  
 
-.[First public EKNM Minecraft server](http://localhost:4200/archive/first_mc_server)  
-
-.We also worked on the development of our launcher for a more comfortable game. Unfortunately, it was not finished due to a premature shutdown of the server. You can familiarize yourself with it on `Github`:
-
-.[EKNM Launcher](https://github.com/MixaPlt/EKNM-Launcher)
-
-### Gallery
 ![scr0](/s/zgN5c4xJmqwRvo0/download)
 ![scr1](/s/ef8nc5zZiDK8dhI/download)
 ![scr2](/s/JRFjbF7ER3oGoWq/download)
 ![scr3](/s/bFSI8CmvsZuA1Ou/download)
 ![scr4](/s/l9UiDhyi1HpPy5w/download)
 ![scr5](/s/OYvfW6wdTxO0rTM/download)
+
+### 1 season
+
+In early 2020, we launched the first public EKNM minecraft server with mods, massive spawning, and plans to expand the project. A video about Luntik and the coronavirus was also filmed on this server. The mod pack has been compiled with a magic and exploration theme, with additional dimensions and improved NPCs.  
+
+The following were built on the server:
+- Three-tower spawnpoint
+- A large NPC city with a cathedral
+- A bombed-out village
+- Mine with bats
+- Mausoleum
+- Headquarters in the rock
+- Abandoned fortress
+- System of underground railways
+- Hospital
+- Favelas
+- Penthouse above the slums
+- Ice track for boating
+- Luntik's secret office
+- Private homes of players
+
+![img1](/s/4rJl5Miyg2iWwAN/download)
+![img2](/s/y6NRbwbxbzcplBr/download)
+![img3](/s/AuBYUfQNEcJBOCo/download)
+![img4](/s/lp08FLTKO9BB7EC/download)
+![img4](/s/IUS3MYPQc0C3ctA/download)
+
+### Other
+
+.We also worked on the development of our launcher for a more comfortable game. Unfortunately, it was not finished due to a premature shutdown of the server. You can familiarize yourself with it on ``Github'':
+
+.[EKNM Launcher](https://github.com/MixaPlt/EKNM-Launcher)

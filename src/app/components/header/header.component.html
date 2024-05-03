@@ -1,26 +1,37 @@
-<div class="d-flex header-back container-standard fade-in">
-    <button class="home-button" (click)="navigate('/')">
-        <img class="home-image" src="../../../assets/header_logo.png"/>
-    </button>
-    <div class="d-flex justify-content-between w-100 cont-main">
-        <div class="d-flex">
-            <button class="header-button header-button-active" (click)="navigate('/')">
-                HUB
-            </button>
-            <button class="header-button header-button-active" (click)="navigate('/workshop')">
-                WORKSHOP
-            </button>
-            <button class="header-button header-button-active" (click)="navigate('/brewery')">
-                BREWERY
-            </button>
-        </div>
-        <div class="d-flex">
-            <button class="header-button header-button-active" (click)="navigate('/warehouse')">
-                WAREHOUSE
-            </button>
-            <button class="header-button header-button-active" (click)="navigate('/archive')">
-                ARCHIVE
-            </button>
+<div *ngIf="!isStatic; then thenBlock else elseBlock"></div>
+<ng-template #thenBlock>
+    <div class="d-flex header-back container-standard fade-in">
+        <button class="home-button" (click)="navigate('/')">
+            <img class="home-image" src="../../../assets/header_logo.png"/>
+        </button>
+        <div class="d-flex justify-content-between w-100 cont-main">
+            <div class="d-flex">
+                <button class="header-button header-button-active" (click)="navigate('/')">
+                    HUB
+                </button>
+                <button class="header-button header-button-active" (click)="navigate('/workshop')">
+                    WORKSHOP
+                </button>
+                <button class="header-button header-button-active" (click)="navigate('/brewery')">
+                    BREWERY
+                </button>
+            </div>
+            <div class="d-flex">
+                <button class="header-button header-button-active" (click)="navigate('/warehouse')">
+                    WAREHOUSE
+                </button>
+                <button class="header-button header-button-active" (click)="navigate('/archive')">
+                    ARCHIVE
+                </button>
+            </div>
         </div>
     </div>
-</div>
+</ng-template>
+<ng-template #elseBlock>
+    <div class="d-flex header-back container-standard fade-in justify-content-center">
+        <button class="home-button" (click)="navigate('/')">
+            <img class="home-image" src="../../../assets/header_logo.png"/>
+        </button>
+    </div>
+</ng-template>
+
