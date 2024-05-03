@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
@@ -13,11 +14,13 @@ export class ProjectPageComponent {
 
     source: string = ""
     title: string = ""
+    content: string = ""
 
     constructor(
         private route: ActivatedRoute,
         private projectsService: ProjectsServiceInterface,
-        private translate: TranslateService
+        private translate: TranslateService,
+        private http: HttpClient
     ) {
         let id = this.route.snapshot.paramMap.get('code')!;
 
@@ -35,8 +38,11 @@ export class ProjectPageComponent {
                 } else {
                     this.source = `assets/projects/${content.fileId}.en.md`;
                 }
-                console.log("kek")
-                console.log(this.source)
+
+                this.http.get(this.source, {responseType: 'text'})
+                    .subscribe(data => {
+                        this.content = data
+                    });
 
                 this.title = content.title;
 
