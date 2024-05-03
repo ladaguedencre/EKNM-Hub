@@ -43,6 +43,7 @@ export class ProjectPageComponent {
 
                 this.http.get(this.source, {responseType: 'text'})
                     .subscribe(data => {
+                        console.log(data)
                         this.content = data
                     });
 
