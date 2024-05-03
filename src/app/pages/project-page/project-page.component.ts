@@ -39,6 +39,8 @@ export class ProjectPageComponent {
                     this.source = `assets/projects/${content.fileId}.en.md`;
                 }
 
+                console.log("loading project...")
+
                 this.http.get(this.source, {responseType: 'text'})
                     .subscribe(data => {
                         this.content = data
