@@ -23,7 +23,7 @@ export class RedirectPageComponent {
                 component.redirect_fail();
             };
         }(this), 5000);
-        //this.ping_hub("https://hub.eknm.in/s/zDp0xak3hnjShHi/download");
+        this.ping_hub("https://hub.eknm.in/s/zDp0xak3hnjShHi/download");
     }
 
     redirect_hub(path: string) {

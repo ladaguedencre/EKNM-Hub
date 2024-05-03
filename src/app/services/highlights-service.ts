@@ -58,7 +58,7 @@ export class HighlightsService implements HighlightsServiceInterface {
             index: 0,
             title: { 'ua': 'НОВА УНІФОРМА', 'en': 'NEW UNIFORM' },
             description: { 'ua': 'Ми завжди намагаємось поєднати дизайн та функцію, елегантність та прямолінійність. І саме цим характеризується наша нова лінійка мерчу. Футболка підкреслить ваш статус на заводі і поповнить ваш гардероб повсякденних речей. А стікери дадуть всім зрозуміти які речі краще не чіпати. І можливо це ще не все...', 'en': 'We always try to combine design and function, elegance and straightforwardness. And this is exactly what our new merch line is characterized by. The T-shirt will emphasize your status at the factory and complement your wardrobe of everyday items. And the stickers will let everyone understand which things are better not to touch. And maybe that\'s not all...' },
-            imageUrl: SharedService.BaseAssetUrl + '/s/iyaio3SW8IWFH2P/download',
+            imageUrl: './../../../assets/highlights/warehouse-new.png',
             buttonText: { 'ua': 'Відвідати склад', 'en': 'Visit the warehouse'},
             link: '/warehouse',
         },
@@ -66,7 +66,7 @@ export class HighlightsService implements HighlightsServiceInterface {
             index: 1,
             title: { 'en': 'BACK 2 BEER' },
             description: { 'ua': 'Попри всі негаразди та складності ми відновили наш експериментальний пивний цех. Деякий час він був у зоні бойових дій, але завдіки ЗСУ обладнання залишилось неушкодженим. Тепер пивний казан знову кипить і незрівнянний аромат наповнює приміщення. Зустрічайте Auferstehung Verschnitt 01!', 'en': 'Despite all the troubles and difficulties, we have restored our experimental brewery. For some time it was in the combat zone, but the equipment remained intact because of the Armed Forces. Now the beer cauldron is boiling again and an incomparable aroma fills the room. Meet Auferstehung Verschnitt 01!' },
-            imageUrl: SharedService.BaseAssetUrl + '/s/uFhfztdLumrNbaH/download',
+            imageUrl: './../../../assets/highlights/beer_new.png',
             buttonText: { 'ua': 'Відвідати броварню', 'en': 'Visit the brewery'},
             link: '/brewery',
         }

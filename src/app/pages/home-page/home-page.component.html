@@ -1,7 +1,7 @@
 <div class="fade-in-image full-page">
     <div class="gradient-down">
         <div *ngIf="isHubAvailable; then thenBlock else elseBlock"></div>
-        <ng-template #thenBlock><header></header></ng-template>
+        <ng-template #thenBlock><app-header></app-header></ng-template>
         <ng-template #elseBlock>
             <p class="p1">
                 {{ "home.unavailable" | translate }}
