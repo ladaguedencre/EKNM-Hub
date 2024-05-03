@@ -35,9 +35,11 @@ export class ProjectPageComponent {
                 } else {
                     this.source = `assets/projects/${content.fileId}.en.md`;
                 }
-                
+                console.log("kek")
+                console.log(this.source)
+
                 this.title = content.title;
-        
+
                 HubStyler.setStyling(
                     document,
                     HubStyler.getGradientBackgroundCss(content.background)
